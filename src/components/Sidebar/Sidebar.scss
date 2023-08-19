@@ -1,0 +1,98 @@
+.sidebar-container {
+  background-color: rgb(117, 117, 117);
+  width: 160px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  min-height: 600px;
+  top: 0;
+
+  .logo-container {
+    padding: 20px;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    & img {
+      width: 60px;
+      height: 60px;
+    }
+
+    & h1 {
+      margin: 0;
+      color: white;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+    position: absolute;
+
+    a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      background-color: rgb(70, 70, 70);
+      margin: 10px ;
+      padding: 10px;
+      border-radius: 5px;
+
+      &:hover {
+        color: rgb(31, 117, 117);
+      }
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .socials-container {
+    display: block;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    svg {
+      margin: 2px;
+      padding: 2px;
+      background-color: rgb(184, 184, 184);
+      width: 25px;
+      height: 25px;
+      border-radius: 2px;
+
+      &:hover {
+        color: rgb(31, 117, 117);
+      }
+    }
+  }
+}
