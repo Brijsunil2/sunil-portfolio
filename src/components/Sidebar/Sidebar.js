@@ -28,7 +28,7 @@ const Sidebar = () => {
           <h1>Name</h1>
         </Link>
       </div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar">
         <ul>
           <li>
             <NavLink
