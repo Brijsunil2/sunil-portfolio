@@ -4,20 +4,11 @@ import Logo from "../../assets/images/blue_box.png";
 import {
   FaHome,
   FaInfoCircle,
-  FaUserAlt,
   FaProjectDiagram,
   FaEnvelope,
   FaLinkedin,
   FaGithub
 } from "react-icons/fa";
-
-/*
-Home
-About 
-Resume
-Projects
-Contact
-*/
 
 const Sidebar = () => {
   return (
@@ -50,17 +41,6 @@ const Sidebar = () => {
             >
               <FaInfoCircle />
               <h2>About</h2>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="resume-link"
-              to="/resume"
-              exact="true"
-              activeclassname="active"
-            >
-              <FaUserAlt />
-              <h2>Resume</h2>
             </NavLink>
           </li>
           <li>
