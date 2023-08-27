@@ -1,11 +1,11 @@
 import "./Layout.scss";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = () => {
   return (
     <>
-      <Sidebar />
+      <Navbar />
       <div className="page">
         <Outlet />
       </div>
