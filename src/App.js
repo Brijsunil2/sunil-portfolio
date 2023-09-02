@@ -1,3 +1,5 @@
+//https://freesvg.org/
+
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -11,7 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route path="/" index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="contact" element={<ContactPage />} />

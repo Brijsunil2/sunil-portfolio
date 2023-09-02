@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/template-webstie/static/css/main.a7199fc4.css",
+    "main.js": "/template-webstie/static/js/main.f9543394.js",
+    "static/media/guy_on_computer.svg": "/template-webstie/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
+    "index.html": "/template-webstie/index.html",
+    "main.a7199fc4.css.map": "/template-webstie/static/css/main.a7199fc4.css.map",
+    "main.f9543394.js.map": "/template-webstie/static/js/main.f9543394.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7199fc4.css",
+    "static/js/main.f9543394.js"
+  ]
+}
