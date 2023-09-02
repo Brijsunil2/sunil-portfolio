@@ -4,8 +4,24 @@ html {
 
 body {
   margin: 0;
-  overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #183D3D;
+  color: white;
+  font-family: 'Oswald', sans-serif;
 }
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 
+#040D12
+#183D3D
+#5C8374
+#93B1A6 */
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */

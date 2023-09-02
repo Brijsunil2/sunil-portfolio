@@ -1,20 +1,18 @@
 import "./Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/images/blue_box.png";
+import Logo from "../../assets/images/guy_on_computer.svg";
 import {
   FaHome,
   FaInfoCircle,
   FaProjectDiagram,
   FaEnvelope,
-  FaLinkedin,
-  FaGithub
 } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav className="navbar navbar-expand-sm bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <div className="logo-container">
+        <div className="logo-container ">
           <Link className="logo" to="/">
             <img src={Logo} alt="website logo" />
             <h1>Name</h1>
@@ -70,11 +68,6 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-
-        <div className="socials-container">
-          <a href="#"><FaLinkedin /></a>
-          <a href="#"><FaGithub /></a>
         </div>
       </div>
     </nav>

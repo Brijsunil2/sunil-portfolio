@@ -1,25 +1,53 @@
 .homepage-container {
-  margin: 0 20%;
+  margin: 100px 20%;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 200px);
 
   img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 30%;
     margin: 20px;
+    padding: 20px;
+    background-color: #93B1A6;
   }
 
-  a {
+  .contact-link {
     display: flex;
     text-decoration: none;
-    background-color: aliceblue;
+    background-color: rgb(96, 181, 255);
     padding: 6px 20px;
     border: 1px black solid;
     border-radius: 25px 0;
+    color: black;
+
+    &:hover {
+      color: darkblue
+    }
 
     svg {
       margin: 4px;
+    }
+  }
+
+  .socials-container {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    svg {
+      margin: 10px 5px;
+      padding: 2px;
+      color: black;
+      background-color: #93B1A6;
+      width: 25px;
+      height: 25px;
+      border-radius: 4px;
+
+      &:hover {
+        color: #5C8374;
+      }
     }
   }
 }

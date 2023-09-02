@@ -3,6 +3,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
+    margin-left: 10px;
 
     & img {
       width: 30px;
@@ -11,26 +12,29 @@
 
     & h1 {
       font-size: 16px;
-      color: rgb(0, 0, 0);
+      color: white;
       margin: 0;
+      font-family: 'Bebas Neue', sans-serif;
     }
   }
 
   .navbar-nav {
     text-align: center;
-    gap: 20px;
 
     a {
       display: block;
-      color: rgb(0, 0, 0);
+      color: #93B1A6;
       text-decoration: none;
-
-      &.active {
-        color: #f70c0c;
-      }
+      min-width: 80px;
+      padding: 10px;
+      border-radius: 5px;
 
       &:hover {
-        color: rgb(31, 117, 117);
+        background-color: #5C8374;
+      }
+
+      &.active {
+        color: #2aff17;
       }
     }
 
@@ -46,27 +50,21 @@
 
     ul {
       list-style: none;
-      padding: 0;
     }
   }
 
-  .socials-container {
-    a{
-      text-decoration: none;
-      color: #fff;
-    }
+  .navbar-toggler {
+    background-color: #93B1A6;
+  }
 
-    svg {
-      margin: 2px;
-      padding: 2px;
-      background-color: rgb(255, 188, 188);
-      width: 25px;
-      height: 25px;
-      border-radius: 4px;
-
-      &:hover {
-        color: rgb(31, 117, 117);
-      }
+  @media (min-width: 576px) {
+    .navbar-nav {
+      transform: translateX(-30px);
     }
   }
 }
+
+.bg-body-tertiary {
+  background-color: #040D12 !important;
+}
+
