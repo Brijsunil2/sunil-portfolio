@@ -1,0 +1,20 @@
+.contactpage-container {
+  margin: 100px 10%;
+  margin-bottom: 0;
+
+  form {
+    margin: 25px;
+  }
+
+  .form-control {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0;
+    border-width: 0;
+    border-bottom: 2px solid #040D12;
+    background-color: #93B1A6;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+}

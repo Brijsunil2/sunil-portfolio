@@ -9,6 +9,10 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+  const toggleNavbar = () => {
+    document.querySelector("#navbarNav").classList.remove("show");
+  };
+
   return (
     <nav className="navbar navbar-expand-sm bg-body-tertiary fixed-top">
       <div className="container-fluid">
@@ -29,6 +33,7 @@ const Navbar = () => {
                 to="/"
                 exact="true"
                 activeclassname="active"
+                onClick={toggleNavbar}
               >
                 <FaHome />
                 <h2>Home</h2>
@@ -40,6 +45,7 @@ const Navbar = () => {
                 to="/about"
                 exact="true"
                 activeclassname="active"
+                onClick={toggleNavbar}
               >
                 <FaInfoCircle />
                 <h2>About</h2>
@@ -51,6 +57,7 @@ const Navbar = () => {
                 to="/projects"
                 exact="true"
                 activeclassname="active"
+                onClick={toggleNavbar}
               >
                 <FaProjectDiagram />
                 <h2>Projects</h2>
@@ -62,6 +69,7 @@ const Navbar = () => {
                 to="/contact"
                 exact="true"
                 activeclassname="active"
+                onClick={toggleNavbar}
               >
                 <FaEnvelope />
                 <h2>Contact</h2>
