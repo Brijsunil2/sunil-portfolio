@@ -1,14 +1,27 @@
 import "./AboutPage.scss";
+import { motion } from "framer-motion";
 import TempImage from "../../assets/images/blue_box.png";
-import { FaGripLinesVertical } from "react-icons/fa";
-import { TbMinusVertical } from "react-icons/tb";
 import { DiEclipse } from "react-icons/di";
-import { BiLogoJavascript, BiLogoHtml5, BiLogoCss3, BiLogoPython, BiLogoJava, BiLogoVisualStudio, BiLogoReact, BiLogoMongodb } from "react-icons/bi";
+import {
+  BiLogoJavascript,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoPython,
+  BiLogoJava,
+  BiLogoVisualStudio,
+  BiLogoReact,
+  BiLogoMongodb,
+} from "react-icons/bi";
 import { FaSass, FaGithub, FaBootstrap, FaGitAlt } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
-    <div className="aboutpage-container">
+    <motion.div
+      className="aboutpage-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h2>About Me</h2>
       <p>
         Lorem Ipsum is not simply random text. It has roots in a piece of
@@ -30,7 +43,7 @@ const AboutPage = () => {
         <h3>Frameworks</h3>
         <p>
           <BiLogoReact color="#61DBFB" title="React" />
-          <BiLogoMongodb color="#4DB33D" title="MongoDB"  />
+          <BiLogoMongodb color="#4DB33D" title="MongoDB" />
           <FaBootstrap color="#712cf9" title="Bootstrap" />
         </p>
         <h3>Tools</h3>
@@ -81,7 +94,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Logo from "../../assets/images/guy_on_computer.svg";
 import {
   FaHome,
@@ -9,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+
   const toggleNavbar = () => {
     document.querySelector("#navbarNav").classList.remove("show");
   };
@@ -22,12 +24,27 @@ const Navbar = () => {
             <h1>Name</h1>
           </Link>
         </div>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
-            <li>
+            <motion.li
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <NavLink
                 className="home-link"
                 to="/"
@@ -38,8 +55,12 @@ const Navbar = () => {
                 <FaHome />
                 <h2>Home</h2>
               </NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <NavLink
                 className="about-link"
                 to="/about"
@@ -50,8 +71,12 @@ const Navbar = () => {
                 <FaInfoCircle />
                 <h2>About</h2>
               </NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <NavLink
                 className="projects-link"
                 to="/projects"
@@ -62,8 +87,12 @@ const Navbar = () => {
                 <FaProjectDiagram />
                 <h2>Projects</h2>
               </NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <NavLink
                 className="contact-link"
                 to="/contact"
@@ -74,12 +103,12 @@ const Navbar = () => {
                 <FaEnvelope />
                 <h2>Contact</h2>
               </NavLink>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
