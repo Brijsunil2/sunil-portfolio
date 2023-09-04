@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/template-webstie/static/css/main.d4630abf.css",
-    "main.js": "/template-webstie/static/js/main.f284b622.js",
-    "static/media/guy_on_computer.svg": "/template-webstie/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
-    "index.html": "/template-webstie/index.html",
-    "main.d4630abf.css.map": "/template-webstie/static/css/main.d4630abf.css.map",
-    "main.f284b622.js.map": "/template-webstie/static/js/main.f284b622.js.map"
+    "main.css": "/sunil-portfolio/static/css/main.d4630abf.css",
+    "main.js": "/sunil-portfolio/static/js/main.6cf88f49.js",
+    "static/media/guy_on_computer.svg": "/sunil-portfolio/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
+    "index.html": "/sunil-portfolio/index.html",
+    "main.d4630abf.css.map": "/sunil-portfolio/static/css/main.d4630abf.css.map",
+    "main.6cf88f49.js.map": "/sunil-portfolio/static/js/main.6cf88f49.js.map"
   },
   "entrypoints": [
     "static/css/main.d4630abf.css",
-    "static/js/main.f284b622.js"
+    "static/js/main.6cf88f49.js"
   ]
 }
