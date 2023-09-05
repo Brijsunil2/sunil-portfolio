@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
-
   const toggleNavbar = () => {
     document.querySelector("#navbarNav").classList.remove("show");
   };
@@ -18,12 +17,18 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <div className="logo-container ">
+        <motion.div
+          className="logo-container"
+          transition={{ duration: 0.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
           <Link className="logo" to="/">
             <img src={Logo} alt="website logo" />
-            <h1>Name</h1>
+            <h1>
+              Sunil's <br /> Portfolio
+            </h1>
           </Link>
-        </div>
+        </motion.div>
         <button
           className="navbar-toggler"
           type="button"
@@ -41,8 +46,8 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <motion.li
-              transition={{ duration: 0.2 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
               <NavLink
@@ -57,8 +62,8 @@ const Navbar = () => {
               </NavLink>
             </motion.li>
             <motion.li
-              transition={{ duration: 0.2 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
               <NavLink
@@ -73,8 +78,8 @@ const Navbar = () => {
               </NavLink>
             </motion.li>
             <motion.li
-              transition={{ duration: 0.2 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
               <NavLink
@@ -89,8 +94,8 @@ const Navbar = () => {
               </NavLink>
             </motion.li>
             <motion.li
-              transition={{ duration: 0.2 }}
-              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
               <NavLink

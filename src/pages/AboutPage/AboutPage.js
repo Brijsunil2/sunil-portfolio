@@ -18,16 +18,13 @@ const AboutPage = () => {
   return (
     <motion.div
       className="aboutpage-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ x: 1000 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.4 }}
     >
       <h2>About Me</h2>
       <p>
-        Lorem Ipsum is not simply random text. It has roots in a piece of
-        classical Latin literature from 45 BC, making it over 2000 years old.
-        Richard McClintock, a Latin professor at Hampden-Sydney College in
-        Virginia, looked up one of the more obscure Latin words, consectetur,
+        My name is Sunil Brijiall and I am very interested in web development. I have graduated from Wilfrid Laurier University and recived a BSc in Honours Computer Science. I am passionate about web development 
       </p>
 
       <div className="skills-container">

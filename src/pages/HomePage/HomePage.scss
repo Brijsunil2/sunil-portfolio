@@ -2,28 +2,20 @@
   margin: 100px 20%;
   text-align: center;
   height: calc(100vh - 200px);
-
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 30%;
-    margin: 20px;
-    padding: 20px;
-    background-color: #93B1A6;
+  
+  #blobSvg {
+    min-width: 300px;
+    min-height: 300px;
   }
 
   .contact-link {
     display: flex;
     text-decoration: none;
-    background-color: #0d6efd;
+    background-color: rgb(94 234 212);
     padding: 6px 20px;
     border: 1px black solid;
     border-radius: 25px 0;
-    color: white;
-
-    &:hover {
-      color: darkblue
-    }
+    color: darkblue;
 
     svg {
       margin: 4px;
@@ -31,6 +23,7 @@
   }
 
   .socials-container {
+    display: flex;
     a {
       text-decoration: none;
       color: #fff;
@@ -39,15 +32,11 @@
     svg {
       margin: 10px 5px;
       padding: 2px;
-      color: black;
-      background-color: #93B1A6;
+      color: darkblue;
+      background-color: rgb(94 234 212);
       width: 30px;
       height: 30px;
       border-radius: 4px;
-
-      &:hover {
-        color: darkblue;
-      }
     }
   }
 }
