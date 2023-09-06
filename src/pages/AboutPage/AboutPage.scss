@@ -3,6 +3,11 @@
   margin-bottom: 0;
 
   .card {
+    background-color: #5C8374;
+    color: white;
+  }
+
+  .card {
     margin: 25px;
   }
 
@@ -24,6 +29,22 @@
       margin: 2px;
       height: 30px;
       width: 30px;
+      transition: 0.2s;
+
+      &:hover {
+        scale: 1.5;
+      }
+    }
+
+    img {
+      margin: 2px;
+      height: 30px;
+      width: 30px;
+      transition: 0.2s;
+
+      &:hover {
+        scale: 1.5;
+      }
     }
   }
 }

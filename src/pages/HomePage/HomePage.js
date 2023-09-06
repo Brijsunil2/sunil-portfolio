@@ -44,7 +44,7 @@ const HomePage = () => {
       <p>
         I am a recent Computer Science graduate looking for a position in the
         web development field so I can utilize my web development skills in a
-        professional setting. Please check out the rest of my portfolo by
+        professional setting. Please check out the rest of my portfolio by
         navigating through the navbar.
       </p>
 
@@ -65,7 +65,11 @@ const HomePage = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href="https://www.linkedin.com/in/sunil-b-575960183/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sunil-b-575960183/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
         </motion.div>
@@ -74,7 +78,11 @@ const HomePage = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href="https://github.com/Brijsunil2" target="_blank">
+          <a
+            href="https://github.com/Brijsunil2"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
         </motion.div>

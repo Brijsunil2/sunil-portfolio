@@ -13,20 +13,20 @@ const ContactPage = () => {
       <form>
         <div className="row">
           <div className="col-sm-6 mb-3">
-            <label for="firstName" className="form-label">
+            <label htmlFor="firstName" className="form-label">
               Firstname
             </label>
             <input type="text" className="form-control" id="firstName" />
           </div>
           <div className="col-sm-6 mb-3">
-            <label for="firstName" className="form-label">
+            <label htmlFor="firstName" className="form-label">
               Lastname
             </label>
             <input type="text" className="form-control" id="firstName" />
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email Address
           </label>
           <input
@@ -37,7 +37,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
+          <label htmlFor="exampleInputPassword1" className="form-label">
             Subject
           </label>
           <input
@@ -47,7 +47,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
+          <label htmlFor="exampleInputPassword1" className="form-label">
             Message
           </label>
           <textarea

@@ -1,6 +1,5 @@
 import "./AboutPage.scss";
 import { motion } from "framer-motion";
-import TempImage from "../../assets/images/blue_box.png";
 import { DiEclipse } from "react-icons/di";
 import {
   BiLogoJavascript,
@@ -13,6 +12,8 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 import { FaSass, FaGithub, FaBootstrap, FaGitAlt } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import CProgramming from "../../assets/images/c-programming.svg";
 
 const AboutPage = () => {
   return (
@@ -24,7 +25,9 @@ const AboutPage = () => {
     >
       <h2>About Me</h2>
       <p>
-        My name is Sunil Brijiall and I am very interested in web development. I have graduated from Wilfrid Laurier University and recived a BSc in Honours Computer Science. I am passionate about web development 
+        I'm Sunil, a fairly recent university graduate and I am passionate about web development. Personally I am motivated to learn, improve and would be happy to use my web development skills in a professional setting. I love doing both frontend and backend tasks since I aspire to eventually become a full stack developer. 
+        <br/>
+
       </p>
 
       <div className="skills-container">
@@ -34,8 +37,10 @@ const AboutPage = () => {
           <BiLogoCss3 color="#264de4" title="CSS" />
           <FaSass color="#cc6699" title="Sass" />
           <BiLogoJavascript color="#f0db4f" title="JavaScript" />
+          <SiMysql color="#00758F" title="SQL" />
           <BiLogoPython color="#4B8BBE" title="Python" />
           <BiLogoJava color="#5382a1" title="Java" />
+          <img src={CProgramming} />
         </p>
         <h3>Frameworks</h3>
         <p>
@@ -52,44 +57,25 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <div className="card mb-3 education-card">
-        <div className="row g-0">
-          <div className="col-md-4 card-img-container">
-            <img src={TempImage} alt="temp image" />
-          </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h3 className="card-title">Education</h3>
-              <p className="card-text">
-                Lorem Ipsum is not simply random text. It has roots in a piece
-                of classical Latin literature from 45 BC, making it over 2000
-                years old. Richard McClintock, a Latin professor at
-                Hampden-Sydney College in Virginia, looked up one of the more
-                obscure Latin words, consectetur
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="education-container">
+        <h2>Education</h2>
+        <h4 className="">Time</h4>
+        <p>
+          Lorem Ipsum is not simply random text. It has roots in a piece of
+          classical Latin literature from 45 BC, making it over 2000 years old.
+          Richard McClintock, a Latin professor at Hampden-Sydney College in
+          Virginia, looked up one of the more obscure Latin words, consectetur
+        </p>
       </div>
 
-      <div className="card mb-3 experience-card">
-        <div className="row g-0">
-          <div className="col-md-4 card-img-container">
-            <img src={TempImage} alt="temp image" />
-          </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h3 className="card-title">Experience</h3>
-              <p className="card-text">
-                Lorem Ipsum is not simply random text. It has roots in a piece
-                of classical Latin literature from 45 BC, making it over 2000
-                years old. Richard McClintock, a Latin professor at
-                Hampden-Sydney College in Virginia, looked up one of the more
-                obscure Latin words, consectetur
-              </p>
-            </div>
-          </div>
-        </div>
+      <h2>Experience</h2>
+      <div className="experience-container">
+        <p>
+          Lorem Ipsum is not simply random text. It has roots in a piece of
+          classical Latin literature from 45 BC, making it over 2000 years old.
+          Richard McClintock, a Latin professor at Hampden-Sydney College in
+          Virginia, looked up one of the more obscure Latin words, consectetur
+        </p>
       </div>
     </motion.div>
   );
