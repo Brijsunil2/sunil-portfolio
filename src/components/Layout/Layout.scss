@@ -6,3 +6,10 @@ nav {
   width: 100%;
   min-width: 300px;
 }
+
+@media (min-width: 992px) {
+  .page {
+    transition-duration: 1s;
+    padding: 0 10%;
+  }
+}

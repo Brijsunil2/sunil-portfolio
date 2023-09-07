@@ -3,7 +3,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 25px;
 
     & img {
       width: 30px;
@@ -59,7 +59,7 @@
 
   @media (min-width: 576px) {
     .navbar-nav {
-      transform: translateX(-30px);
+      transform: translateX(-40px);
     }
   }
 }
