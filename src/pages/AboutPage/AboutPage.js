@@ -113,8 +113,8 @@ const AboutPage = () => {
               Mark, explain, assist with issues regarding student assignments.
               <br />
               <br />
-              Topics required to know are basic networking protocols such as IP,
-              TCP and UDP, Dijkstra’s Shortest Path Algorithm, basic routing
+              Topics required to know are basic  networking protocols such as IP,
+              TCP and UDP, Dijkstra's Shortest Path Algorithm, basic routing
             </p>
           </div>
         </div>

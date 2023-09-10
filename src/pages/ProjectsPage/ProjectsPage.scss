@@ -2,17 +2,28 @@
   margin: 100px 10%;
   margin-bottom: 0;
 
-  .project-card {
-    background-color: #5C8374;
-    color: white;
-  }
-
-  .card {
-    margin: 25px;
-  }
+ .row {
+  margin: 25px;
+  display: flex;
+  align-items: center;
 
   img {
-    height: 400px;
-    width: auto;
+    max-height: 20rem;
   }
+
+  .pills-list {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    margin: 0;
+  }
+  
+  h5 {
+    opacity: 50%;
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+ }
 }
