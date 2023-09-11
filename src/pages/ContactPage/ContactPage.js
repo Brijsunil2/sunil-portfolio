@@ -93,6 +93,7 @@ const ContactPage = () => {
             name="user_message"
           />
         </div>
+        <p className="form-error"></p>
         <button type="submit" className="btn btn-primary">
           Send
         </button>

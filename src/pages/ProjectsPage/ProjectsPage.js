@@ -101,11 +101,11 @@ const ProjectsPage = () => {
             <ButtonPills name="HTML" />
           </div>
         </div>
-        <div id="projectOne" className="carousel slide col-md-6">
+        <div id="projectTwo" className="carousel slide col-md-6">
           <div className="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectTwo"
               data-bs-slide-to="0"
               className="active"
               aria-current="true"
@@ -113,13 +113,13 @@ const ProjectsPage = () => {
             ></button>
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectTwo"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectTwo"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
@@ -138,7 +138,7 @@ const ProjectsPage = () => {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#projectOne"
+            data-bs-target="#projectTwo"
             data-bs-slide="prev"
           >
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -147,7 +147,7 @@ const ProjectsPage = () => {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#projectOne"
+            data-bs-target="#projectTwo"
             data-bs-slide="next"
           >
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -174,11 +174,11 @@ const ProjectsPage = () => {
             <ButtonPills name="Bootstrap" />
           </div>
         </div>
-        <div id="projectOne" className="carousel slide col-md-6">
+        <div id="projectThree" className="carousel slide col-md-6">
           <div className="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectThree"
               data-bs-slide-to="0"
               className="active"
               aria-current="true"
@@ -186,13 +186,13 @@ const ProjectsPage = () => {
             ></button>
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectThree"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#projectOne"
+              data-bs-target="#projectThree"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
@@ -211,7 +211,7 @@ const ProjectsPage = () => {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#projectOne"
+            data-bs-target="#projectThree"
             data-bs-slide="prev"
           >
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -220,7 +220,7 @@ const ProjectsPage = () => {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#projectOne"
+            data-bs-target="#projectThree"
             data-bs-slide="next"
           >
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
