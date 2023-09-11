@@ -1,10 +1,14 @@
 import "./ContactPage.scss";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const form = useRef();
+  const [submitMsg, setSubmitMsg] = useState({
+    msg: "",
+    color: "black"
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,9 +22,11 @@ const ContactPage = () => {
       )
       .then(
         (res) => {
+          setSubmitMsg({msg: "Message was sent successfully!", color: "green"})
           console.log(res.text);
         },
         (err) => {
+          setSubmitMsg({msg: "Error: Unable to send message.", color: "red"})
           console.log(err.text);
         }
       );
@@ -45,6 +51,7 @@ const ContactPage = () => {
               className="form-control"
               id="userFirstnameInput"
               name="user_firstname"
+              required
             />
           </div>
           <div className="col-sm-6 mb-3">
@@ -56,6 +63,7 @@ const ContactPage = () => {
               className="form-control"
               id="userLastnameInput"
               name="user_lastname"
+              required
             />
           </div>
         </div>
@@ -69,6 +77,7 @@ const ContactPage = () => {
             id="userEmailInput"
             aria-describedby="emailHelp"
             name="user_email"
+            required
           />
         </div>
         <div className="mb-3">
@@ -80,6 +89,7 @@ const ContactPage = () => {
             className="form-control"
             id="userSubjectInput"
             name="user_subject"
+            required
           />
         </div>
         <div className="mb-3">
@@ -91,9 +101,10 @@ const ContactPage = () => {
             className="form-control"
             id="userMessageInput"
             name="user_message"
+            required
           />
         </div>
-        <p className="form-error"></p>
+        <p className="form-msg" style={{ color: submitMsg.color}}>{submitMsg.msg}</p>
         <button type="submit" className="btn btn-primary">
           Send
         </button>
