@@ -7,8 +7,19 @@
   display: flex;
   align-items: center;
 
-  img {
-    max-height: 20rem;
+  .carousel-item {
+    height: 20rem;
+    background-color: #93B1A6;
+
+    img {
+      padding: 0.4rem;
+      max-height: 20rem;
+      position: relative;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .pills-list {
@@ -25,5 +36,9 @@
     font-size: 12px;
     margin-bottom: 5px;
   }
+ }
+
+ .carousel-indicators {
+  z-index: 2;
  }
 }
