@@ -1,10 +1,13 @@
 import "./ProjectsPage.scss";
 import { motion } from "framer-motion";
-import RedBox from "../../assets/images/red_box.png";
-import GreenBox from "../../assets/images/green_box.png";
-import BlueBox from "../../assets/images/blue_box.png";
 import WeatherApp1 from "../../assets/images/Weather_App_1.png";
 import WeatherApp2 from "../../assets/images/Weather_App_2.png";
+import PortalImg1 from "../../assets/images/Portal_Img_1.png";
+import PortalImg2 from "../../assets/images/Portal_Img_2.png";
+import PortalImg3 from "../../assets/images/Portal_Img_3.png";
+import PortalImg4 from "../../assets/images/Portal_Img_4.png";
+import PortalImg5 from "../../assets/images/Portal_Img_5.png";
+import CounterImg1 from "../../assets/images/Counter_App_1.png";
 import ButtonPills from "../../components/ButtonPills/ButtonPills";
 import { useState } from "react";
 
@@ -22,7 +25,13 @@ const ProjectsPage = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <h4>Portal</h4>
+          <a
+            href="https://github.com/Brijsunil2/portal"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>Portal</h4>
+          </ a>
           <h5>Frontend / Backend</h5>
           <p>
             This project is my current on going project so far. The goal of this
@@ -64,6 +73,18 @@ const ProjectsPage = () => {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#projectOne"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectOne"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
           </div>
           <div className="carousel-inner">
             <div
@@ -71,21 +92,60 @@ const ProjectsPage = () => {
               data-bs-toggle="modal"
               data-bs-target="#imageModal"
             >
-              <img src={RedBox} className="d-block w-100" alt="..." />
+              <img
+                src={PortalImg1}
+                className="d-block w-100"
+                onClick={() => setModalImage(PortalImg1)}
+                alt="Homepage before login"
+              />
             </div>
             <div
               className="carousel-item"
               data-bs-toggle="modal"
               data-bs-target="#imageModal"
             >
-              <img src={GreenBox} className="d-block w-100" alt="..." />
+              <img
+                src={PortalImg2}
+                className="d-block w-100"
+                onClick={() => setModalImage(PortalImg2)}
+                alt="Signup section"
+              />
             </div>
             <div
               className="carousel-item"
               data-bs-toggle="modal"
               data-bs-target="#imageModal"
             >
-              <img src={BlueBox} className="d-block w-100" alt="..." />
+              <img
+                src={PortalImg3}
+                className="d-block w-100"
+                onClick={() => setModalImage(PortalImg3)}
+                alt="Homepage after login"
+              />
+            </div>
+            <div
+              className="carousel-item"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            >
+              <img
+                src={PortalImg4}
+                className="d-block w-100"
+                onClick={() => setModalImage(PortalImg4)}
+                alt="Forums page"
+              />
+            </div>
+            <div
+              className="carousel-item"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            >
+              <img
+                src={PortalImg5}
+                className="d-block w-100"
+                onClick={() => setModalImage(PortalImg5)}
+                alt="A forum page"
+              />
             </div>
           </div>
           <button
@@ -117,7 +177,13 @@ const ProjectsPage = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <h4>Weather App</h4>
+          <a
+            href="https://github.com/Brijsunil2/weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>Weather App</h4>
+          </a>
           <h5>Frontend</h5>
           <p>
             This web app utilizes the OpenWeatherMap API to fetch weather
@@ -203,20 +269,22 @@ const ProjectsPage = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <h4>Portal</h4>
-          <h5>Frontend</h5>
+          <a
+            href="https://github.com/Brijsunil2/counter-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h4>Counter App</h4>
+          </a>
+          <h5>Frontend / Fake Backend</h5>
           <p>
-            This project is my current on going project so far. The goal of this
-            project is to make a website domain that hosts a few apps.
-            <br /> <br />
-            The homepage contains login / signup, time and weather sections.
-            Weather data is fetched from OpenWeatherMap API. Once user is
-            logged-in the user will have access to a users forum page where they
-            can create user forums similar to how Reddit works.
+            This was one of my first react apps created. Instead of a generic
+            todolist, I added a twist to the app and made it more like a grocery
+            list with counters for each item.
           </p>
           <div className="pills-list d-flex flex-wrap">
             <ButtonPills name="React" />
-            <ButtonPills name="MongoDB" />
+            <ButtonPills name="Json-Server" />
             <ButtonPills name="JavaScript" />
             <ButtonPills name="CSS" />
             <ButtonPills name="HTML" />
@@ -224,75 +292,20 @@ const ProjectsPage = () => {
           </div>
         </div>
         <div id="projectThree" className="carousel slide col-md-6">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#projectThree"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#projectThree"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#projectThree"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
           <div className="carousel-inner">
             <div
               className="carousel-item active"
               data-bs-toggle="modal"
               data-bs-target="#imageModal"
             >
-              <img src={RedBox} className="d-block w-100" alt="..." />
-            </div>
-            <div
-              className="carousel-item"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-            >
-              <img src={GreenBox} className="d-block w-100" alt="..." />
-            </div>
-            <div
-              className="carousel-item"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-            >
-              <img src={BlueBox} className="d-block w-100" alt="..." />
+              <img
+                src={CounterImg1}
+                className="d-block w-100"
+                onClick={() => setModalImage(CounterImg1)}
+                alt="Homepage for counter app"
+              />
             </div>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#projectThree"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#projectThree"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
 
@@ -303,7 +316,7 @@ const ProjectsPage = () => {
               <img
                 src={modalImage}
                 className="d-block w-100"
-                alt="Enlarged Image"
+                alt="Enlarged"
               />
             </div>
           </div>

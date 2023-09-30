@@ -41,4 +41,13 @@
  .carousel-indicators {
   z-index: 2;
  }
+
+ a {
+  text-decoration: none;
+ }
+
+ .project-title {
+  display: flex;
+  vertical-align: middle;
+ }
 }
