@@ -188,7 +188,7 @@ const ProjectsPage = () => {
           <p>
             This web app utilizes the OpenWeatherMap API to fetch weather
             conditions for the current user location or a searched user
-            location. Used Webpack as the bundler and vanllia JavaScript.
+            location. Used Webpack as the bundler and vanilla JavaScript.
           </p>
           <div className="pills-list d-flex flex-wrap">
             <ButtonPills name="JavaScript" />
