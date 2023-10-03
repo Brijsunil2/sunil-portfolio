@@ -66,7 +66,7 @@ const HomePage = () => {
           whileTap={{ scale: 0.9 }}
         >
           <a
-            href="https://www.linkedin.com/in/sunil-b-575960183/"
+            href="https://www.linkedin.com/in/sunil-brijlall/"
             target="_blank"
             rel="noreferrer"
           >
