@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.37960f52.css",
-    "main.js": "/sunil-portfolio/static/js/main.d1c0a357.js",
+    "main.css": "/sunil-portfolio/static/css/main.4a3243dd.css",
+    "main.js": "/sunil-portfolio/static/js/main.32552b3f.js",
     "static/media/Portal_Img_5.png": "/sunil-portfolio/static/media/Portal_Img_5.177d35cc21b8df0617cd.png",
     "static/media/Weather_App_1.png": "/sunil-portfolio/static/media/Weather_App_1.7a3cd184657bd8830801.png",
     "static/media/Portal_Img_4.png": "/sunil-portfolio/static/media/Portal_Img_4.8f346f8488bf773f35d0.png",
@@ -13,11 +13,11 @@
     "static/media/guy_on_computer.svg": "/sunil-portfolio/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
     "static/media/c-programming.svg": "/sunil-portfolio/static/media/c-programming.6295470a17567c0599b55873f66ef96a.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.37960f52.css.map": "/sunil-portfolio/static/css/main.37960f52.css.map",
-    "main.d1c0a357.js.map": "/sunil-portfolio/static/js/main.d1c0a357.js.map"
+    "main.4a3243dd.css.map": "/sunil-portfolio/static/css/main.4a3243dd.css.map",
+    "main.32552b3f.js.map": "/sunil-portfolio/static/js/main.32552b3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.37960f52.css",
-    "static/js/main.d1c0a357.js"
+    "static/css/main.4a3243dd.css",
+    "static/js/main.32552b3f.js"
   ]
 }
