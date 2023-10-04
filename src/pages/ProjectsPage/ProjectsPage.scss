@@ -15,7 +15,7 @@
       padding: 0.4rem;
       max-height: 20rem;
       position: relative;
-      width: 50px;
+      max-width: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -49,5 +49,10 @@
  .project-title {
   display: flex;
   vertical-align: middle;
+ }
+
+ .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
+  background-color: rgb(94, 234, 212);
+  border-radius: 1rem;
  }
 }

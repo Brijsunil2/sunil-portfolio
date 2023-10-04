@@ -94,7 +94,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={PortalImg1}
-                className="d-block w-100"
+                className="d-block"
                 onClick={() => setModalImage(PortalImg1)}
                 alt="Homepage before login"
               />
@@ -106,7 +106,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={PortalImg2}
-                className="d-block w-100"
+                className="d-block"
                 onClick={() => setModalImage(PortalImg2)}
                 alt="Signup section"
               />
@@ -118,7 +118,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={PortalImg3}
-                className="d-block w-100"
+                className="d-block"
                 onClick={() => setModalImage(PortalImg3)}
                 alt="Homepage after login"
               />
@@ -130,7 +130,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={PortalImg4}
-                className="d-block w-100"
+                className="d-block"
                 onClick={() => setModalImage(PortalImg4)}
                 alt="Forums page"
               />
@@ -142,7 +142,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={PortalImg5}
-                className="d-block w-100"
+                className="d-block"
                 onClick={() => setModalImage(PortalImg5)}
                 alt="A forum page"
               />
@@ -222,7 +222,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={WeatherApp1}
-                className="d-block w-100"
+                className="d-block"
                 alt="Weather app homepage one"
                 onClick={() => setModalImage(WeatherApp1)}
               />
@@ -234,7 +234,7 @@ const ProjectsPage = () => {
             >
               <img
                 src={WeatherApp2}
-                className="d-block w-100"
+                className="d-block"
                 alt="Weather app homepage two"
                 onClick={() => setModalImage(WeatherApp2)}
               />
@@ -315,7 +315,7 @@ const ProjectsPage = () => {
             <div class="modal-body">
               <img
                 src={modalImage}
-                className="d-block w-100"
+                className="d-block"
                 alt="Enlarged"
               />
             </div>
