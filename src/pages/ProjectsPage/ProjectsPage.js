@@ -317,6 +317,9 @@ const ProjectsPage = () => {
                 src={modalImage}
                 className="d-block"
                 alt="Enlarged"
+                style={{
+                  width: "100%"
+                }}
               />
             </div>
           </div>
