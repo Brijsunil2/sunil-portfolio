@@ -25,11 +25,11 @@ const AboutPage = () => {
     >
       <h2>About Me</h2>
       <p className="aboutme-p">
-        I'm Sunil, a fairly recent university graduate and I am passionate about
-        web development. Personally I am motivated to learn, improve and would
-        be happy to use my web development skills in a professional setting. I
+        I'm Sunil, a fairly recent university computer science graduate and I am passionate about
+        computer science field. Personally I am motivated to learn, improve and would
+        be happy to use my computer science skills in a professional setting. I
         love doing both frontend and backend tasks since I aspire to eventually
-        become a full stack developer.
+        become a full stack developer one day.
         <br />
       </p>
 

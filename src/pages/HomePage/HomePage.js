@@ -43,9 +43,9 @@ const HomePage = () => {
       </svg>
       <p>
         I am a recent Computer Science graduate looking for a position in the
-        web development field so I can utilize my web development skills in a
+        computer science field so I can utilize my skills in a
         professional setting. Please check out the rest of my portfolio by
-        navigating through the navbar.
+        navigating through the navigation bar.
       </p>
 
       <motion.div
