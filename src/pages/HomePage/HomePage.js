@@ -41,6 +41,7 @@ const HomePage = () => {
           y="100"
         />
       </svg>
+      <h4>Software / Web Developer</h4>
       <p>
         I am a recent Computer Science graduate looking for a position in the
         computer science field so I can utilize my skills in a

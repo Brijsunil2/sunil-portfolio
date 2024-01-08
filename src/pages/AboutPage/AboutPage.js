@@ -24,15 +24,6 @@ const AboutPage = () => {
       transition={{ duration: 0.4 }}
     >
       <h2>About Me</h2>
-      <p className="aboutme-p">
-        I'm Sunil, a fairly recent university computer science graduate and I am passionate about
-        computer science field. Personally I am motivated to learn, improve and would
-        be happy to use my computer science skills in a professional setting. I
-        love doing both frontend and backend tasks since I aspire to eventually
-        become a full stack developer one day.
-        <br />
-      </p>
-
       <div className="skills-container">
         <h3>Languages</h3>
         <p>
@@ -70,11 +61,9 @@ const AboutPage = () => {
             <h4>Wilfrid Laurier University</h4>
             <h5>Honours BSc Computer Science</h5>
             <p>
-              My main selection of courses revolved around frontend and backend
-              development. Other topics includes Object Oriented Programming,
+              My main selection of courses focused around web development and software engineering. Topics includes Object Oriented Programming,
               Data Structures, Computer Networks, Internet Computing, Algorithm
-              Design and Analysis, Software Engineering, Big Data, AI,
-              Databases.
+              Design and Analysis, Big Data, AI, Databases.
             </p>
           </div>
         </div>

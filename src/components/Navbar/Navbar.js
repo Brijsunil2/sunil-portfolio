@@ -67,22 +67,6 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <NavLink
-                className="about-link"
-                to="/about"
-                exact="true"
-                activeclassname="active"
-                onClick={toggleNavbar}
-              >
-                <FaInfoCircle />
-                <h2>About</h2>
-              </NavLink>
-            </motion.li>
-            <motion.li
-              transition={{ duration: 0.1 }}
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <NavLink
                 className="projects-link"
                 to="/projects"
                 exact="true"
@@ -91,6 +75,22 @@ const Navbar = () => {
               >
                 <FaProjectDiagram />
                 <h2>Projects</h2>
+              </NavLink>
+            </motion.li>
+            <motion.li
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <NavLink
+                className="about-link"
+                to="/about"
+                exact="true"
+                activeclassname="active"
+                onClick={toggleNavbar}
+              >
+                <FaInfoCircle />
+                <h2>About</h2>
               </NavLink>
             </motion.li>
             <motion.li
