@@ -7,6 +7,7 @@ import { CiWarning } from "react-icons/ci";
 import weatherImg from "../../assets/images/weather-app.png";
 import portalDemoLoginImg from "../../assets/images/portal-demo-login.png";
 import portalHome from "../../assets/images/portal-home.png";
+import forumsScreen from "../../assets/images/forums-screen.png";
 
 const ProjectsPage = () => {
   return (
@@ -25,16 +26,8 @@ const ProjectsPage = () => {
 
       <div className="my-3">
         <div className="row m-1">
-          <div className="col-lg-2">
+          <div className="col-lg-3">
             <img src={portalHome} alt="Portal demo login page" />
-          </div>
-          <div className="col">
-            <h4>Portal</h4>
-            <h5>Frontend / Backend</h5>
-          </div>
-        </div>
-        <div className="row m-1">
-          <div className="col-lg-2 my-1">
             <a
               href="https://github.com/Brijsunil2/portal-release"
               target="_blank"
@@ -53,8 +46,17 @@ const ProjectsPage = () => {
             </a>
           </div>
           <div className="col">
+            <h4>Portal</h4>
+            <h5>Frontend / Backend</h5>
             <p>
-              This web application uses the portal demo in order to host various applications on the site. Currently the only application that is being hosted on portal is the user forum applcation which is one of my projects. I plan on using this application as a host site for future applications to have all my future projects use the authentication provided from portal. Future plans will be implementing and integrating a calendar and file storage apps. Also future plans on adding better security and authentication.
+              This web application uses the portal demo in order to host various
+              applications on the site. Currently the only application that is
+              being hosted on portal is the user forum applcation which is one
+              of my projects. I plan on using this application as a host site
+              for future applications to have all my future projects use the
+              authentication provided from portal. Future plans will be
+              implementing and integrating a calendar and file storage apps.
+              Also future plans on adding better security and authentication.
             </p>
             <div className="pills-list d-flex flex-wrap">
               <ButtonPills name="React" />
@@ -77,16 +79,8 @@ const ProjectsPage = () => {
 
       <div className="my-3">
         <div className="row m-1">
-          <div className="col-lg-2">
-            <img src={portalDemoLoginImg} alt="Demo forums page" />
-          </div>
-          <div className="col">
-            <h4>Forums-Demo</h4>
-            <h5>Frontend / Backend</h5>
-          </div>
-        </div>
-        <div className="row m-1">
-          <div className="col-lg-2 my-1">
+          <div className="col-lg-3">
+            <img src={forumsScreen} alt="Demo forums page" />
             <a
               href="https://github.com/Brijsunil2/forums"
               target="_blank"
@@ -97,6 +91,8 @@ const ProjectsPage = () => {
             </a>
           </div>
           <div className="col">
+            <h4>Forums-Demo</h4>
+            <h5>Frontend / Backend</h5>
             <p>
               This is a users forum web application where users have the ability
               to create and send posts through user forums. The user is able to
@@ -123,16 +119,8 @@ const ProjectsPage = () => {
 
       <div className="my-3">
         <div className="row m-1">
-          <div className="col-lg-2">
+          <div className="col-lg-3">
             <img src={portalDemoLoginImg} alt="Portal demo login page" />
-          </div>
-          <div className="col">
-            <h4>Portal-Demo</h4>
-            <h5>Frontend / Backend</h5>
-          </div>
-        </div>
-        <div className="row m-1">
-          <div className="col-lg-2 my-1">
             <a
               href="https://github.com/Brijsunil2/portal"
               target="_blank"
@@ -151,6 +139,8 @@ const ProjectsPage = () => {
             </a>
           </div>
           <div className="col">
+            <h4>Portal-Demo</h4>
+            <h5>Frontend / Backend</h5>
             <p>
               A website used to act as a template user authentication site. The
               user is able to create an account, login and view a varity of web
@@ -177,16 +167,8 @@ const ProjectsPage = () => {
 
       <div className="my-3">
         <div className="row m-1">
-          <div className="col-lg-2">
+          <div className="col-lg-3">
             <img src={weatherImg} alt="Weather app homepage" />
-          </div>
-          <div className="col">
-            <h4>Weather App</h4>
-            <h5>Frontend</h5>
-          </div>
-        </div>
-        <div className="row m-1">
-          <div className="col-lg-2 my-1">
             <a
               href="https://github.com/Brijsunil2/weather-app"
               target="_blank"
@@ -205,6 +187,8 @@ const ProjectsPage = () => {
             </a>
           </div>
           <div className="col">
+            <h4>Weather App</h4>
+            <h5>Frontend</h5>
             <p>
               This web app utilizes the OpenWeatherMap API to fetch weather
               conditions for the current user location or a searched user
@@ -215,6 +199,67 @@ const ProjectsPage = () => {
               <ButtonPills name="CSS" />
               <ButtonPills name="HTML" />
               <ButtonPills name="Webpack" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Other Projects</h2>
+
+      <div className="my-3">
+        <div className="row m-1">
+          <div className="col-lg-2">
+            <a
+              href="https://github.com/Brijsunil2/counter-app"
+              target="_blank"
+              rel="noreferrer"
+              className="d-flex align-items-center"
+            >
+              <FaGithub className="m-1" /> Github Repo
+            </a>
+          </div>
+          <div className="col">
+            <h4>Counter App</h4>
+            <h5>Frontend / Fake Backend</h5>
+            <p>
+              Simple counter app used to make a list of items along with a
+              counter for each item. Basically like a grocery list or a list of
+              anything the user wants. Motivation for creating this project was
+              to understand the basics of React and Bootstrap. Also the idea
+              came from a friend who just wanted a simple counter to count
+              items.
+            </p>
+            <div className="pills-list d-flex flex-wrap">
+              <ButtonPills name="React" />
+              <ButtonPills name="CSS" />
+              <ButtonPills name="HTML" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-3">
+        <div className="row m-1">
+          <div className="col-lg-2">
+            <a
+              href="https://github.com/Brijsunil2/UDP-File-Transfer"
+              target="_blank"
+              rel="noreferrer"
+              className="d-flex align-items-center"
+            >
+              <FaGithub className="m-1" /> Github Repo
+            </a>
+          </div>
+          <div className="col">
+            <h4>UDP File Transfer</h4>
+            <h5>Frontend</h5>
+            <p>
+              A simple file transfer project using java that allows the user to
+              transfer files between users. Files transfered could be text,
+              images, audio and small videos.
+            </p>
+            <div className="pills-list d-flex flex-wrap">
+              <ButtonPills name="Java" />
             </div>
           </div>
         </div>

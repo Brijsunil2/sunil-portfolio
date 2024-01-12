@@ -23,7 +23,6 @@ const AboutPage = () => {
       animate={{ x: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <h2>About Me</h2>
       <div className="skills-container">
         <h3>Languages</h3>
         <p>
@@ -61,7 +60,8 @@ const AboutPage = () => {
             <h4>Wilfrid Laurier University</h4>
             <h5>Honours BSc Computer Science</h5>
             <p>
-              My main selection of courses focused around web development and software engineering. Topics includes Object Oriented Programming,
+              My main selection of courses focused around web development and
+              software engineering. Topics includes Object Oriented Programming,
               Data Structures, Computer Networks, Internet Computing, Algorithm
               Design and Analysis, Big Data, AI, Databases.
             </p>
@@ -102,7 +102,7 @@ const AboutPage = () => {
               Mark, explain, assist with issues regarding student assignments.
               <br />
               <br />
-              Topics required to know are basic  networking protocols such as IP,
+              Topics required to know are basic networking protocols such as IP,
               TCP and UDP, Dijkstra's Shortest Path Algorithm, basic routing
             </p>
           </div>
