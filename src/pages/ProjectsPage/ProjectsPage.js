@@ -50,13 +50,13 @@ const ProjectsPage = () => {
             <h5>Frontend / Backend</h5>
             <p>
               This web application uses the portal demo in order to host various
-              applications on the site. Currently the only application that is
-              being hosted on portal is the user forum applcation which is one
+              applications on the site. Currently, the only application that is
+              being hosted on portal is the user forum application, which is one
               of my projects. I plan on using this application as a host site
               for future applications to have all my future projects use the
-              authentication provided from portal. Future plans will be
+              authentication provided from portal. Future plans will include
               implementing and integrating a calendar and file storage apps.
-              Also future plans on adding better security and authentication.
+              Also, future plans include adding better security and authentication.
             </p>
             <div className="pills-list d-flex flex-wrap">
               <ButtonPills name="React" />
@@ -94,10 +94,10 @@ const ProjectsPage = () => {
             <h4>Forums-Demo</h4>
             <h5>Frontend / Backend</h5>
             <p>
-              This is a users forum web application where users have the ability
+              This is a user forum web application where users have the ability
               to create and send posts through user forums. The user is able to
               create forums and share links of the forum to users. Since this is
-              a demo verson their is no user authentication. Please view the
+              a demo version, there is no user authentication. Please view the
               current project section as it is integrated into the portal web
               application.
             </p>
@@ -143,10 +143,9 @@ const ProjectsPage = () => {
             <h5>Frontend / Backend</h5>
             <p>
               A website used to act as a template user authentication site. The
-              user is able to create an account, login and view a varity of web
-              based applications. Since this is the demo verson the sites are
-              just place holders. The focus here was user authentication. Please
-              see current project for fully integrated version.
+              user is able to create an account, login, and view a  variety of web-based applications. Since this is the demo version the sites are
+              just placeholders. The focus here was user authentication. Please
+              see the current project for a fully integrated version.
             </p>
             <div className="pills-list d-flex flex-wrap">
               <ButtonPills name="React" />
@@ -222,10 +221,10 @@ const ProjectsPage = () => {
             <h4>Counter App</h4>
             <h5>Frontend / Fake Backend</h5>
             <p>
-              Simple counter app used to make a list of items along with a
-              counter for each item. Basically like a grocery list or a list of
+              A simple counter app used to make a list of items along with a
+              counter for each item. Basically, it's like a grocery list or a list of
               anything the user wants. Motivation for creating this project was
-              to understand the basics of React and Bootstrap. Also the idea
+              to understand the basics of React and Bootstrap. Also, the idea
               came from a friend who just wanted a simple counter to count
               items.
             </p>
@@ -254,9 +253,9 @@ const ProjectsPage = () => {
             <h4>UDP File Transfer</h4>
             <h5>Frontend</h5>
             <p>
-              A simple file transfer project using java that allows the user to
-              transfer files between users. Files transfered could be text,
-              images, audio and small videos.
+              A simple file transfer project using Java that allows the user to
+              transfer files between users. Files  transferred  could be text,
+              images, audio, and small videos.
             </p>
             <div className="pills-list d-flex flex-wrap">
               <ButtonPills name="Java" />

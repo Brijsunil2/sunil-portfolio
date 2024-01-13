@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.4a3243dd.css",
-    "main.js": "/sunil-portfolio/static/js/main.a053cbd3.js",
-    "static/media/Portal_Img_5.png": "/sunil-portfolio/static/media/Portal_Img_5.177d35cc21b8df0617cd.png",
-    "static/media/Weather_App_1.png": "/sunil-portfolio/static/media/Weather_App_1.7a3cd184657bd8830801.png",
-    "static/media/Portal_Img_4.png": "/sunil-portfolio/static/media/Portal_Img_4.8f346f8488bf773f35d0.png",
-    "static/media/Portal_Img_1.png": "/sunil-portfolio/static/media/Portal_Img_1.5cee2de225f051626a2a.png",
-    "static/media/Weather_App_2.png": "/sunil-portfolio/static/media/Weather_App_2.1ca08ec745636eefcce0.png",
-    "static/media/Portal_Img_3.png": "/sunil-portfolio/static/media/Portal_Img_3.a6a27786de59c6317e1f.png",
-    "static/media/Portal_Img_2.png": "/sunil-portfolio/static/media/Portal_Img_2.e0663a221cfb197e9c8c.png",
-    "static/media/Counter_App_1.png": "/sunil-portfolio/static/media/Counter_App_1.af33fe0953ab63d96abf.png",
+    "main.css": "/sunil-portfolio/static/css/main.a687eef7.css",
+    "main.js": "/sunil-portfolio/static/js/main.78f8d94d.js",
+    "static/media/black-linen.png": "/sunil-portfolio/static/media/black-linen.8a1abc775dec4ce9e1d1.png",
+    "static/media/forums-screen.png": "/sunil-portfolio/static/media/forums-screen.70d83590f4b6aa568c3d.png",
+    "static/media/weather-app.png": "/sunil-portfolio/static/media/weather-app.b6452ea887de94f38a80.png",
+    "static/media/portal-home.png": "/sunil-portfolio/static/media/portal-home.1788276d210e727525fc.png",
+    "static/media/portal-demo-login.png": "/sunil-portfolio/static/media/portal-demo-login.1c8f4a41830ef54b9605.png",
     "static/media/guy_on_computer.svg": "/sunil-portfolio/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
     "static/media/c-programming.svg": "/sunil-portfolio/static/media/c-programming.6295470a17567c0599b55873f66ef96a.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.4a3243dd.css.map": "/sunil-portfolio/static/css/main.4a3243dd.css.map",
-    "main.a053cbd3.js.map": "/sunil-portfolio/static/js/main.a053cbd3.js.map"
+    "main.a687eef7.css.map": "/sunil-portfolio/static/css/main.a687eef7.css.map",
+    "main.78f8d94d.js.map": "/sunil-portfolio/static/js/main.78f8d94d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3243dd.css",
-    "static/js/main.a053cbd3.js"
+    "static/css/main.a687eef7.css",
+    "static/js/main.78f8d94d.js"
   ]
 }

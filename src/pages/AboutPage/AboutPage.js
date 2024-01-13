@@ -60,8 +60,8 @@ const AboutPage = () => {
             <h4>Wilfrid Laurier University</h4>
             <h5>Honours BSc Computer Science</h5>
             <p>
-              My main selection of courses focused around web development and
-              software engineering. Topics includes Object Oriented Programming,
+              My main selection of courses focused on web development and
+              software engineering. Topics include Object-Oriented Programming,
               Data Structures, Computer Networks, Internet Computing, Algorithm
               Design and Analysis, Big Data, AI, Databases.
             </p>
@@ -76,18 +76,24 @@ const AboutPage = () => {
             <p className="time">Summer 2022 - Present</p>
           </div>
           <div className="col-sm-10">
-            <h4>Geek Squad Agent 1</h4>
-            <h5>Best Buy</h5>
+            <h4>Best Buy - Geek Squad</h4>
+
+            <h5>Agent Advisor </h5>
+            <p>
+              This role includes the same responsibilities as a geek squad agent, plus some extra responsibilities. Additional responsibilities include using computer knowledge to assist with computer sales and being able to run the customer service counter. 
+            </p>
+            
+            <h5>Geek Squad Agent 1 </h5>
             <p>
               Assist clients with tech issues they are currently having and
-              offering them an appropriate solution. Other responsibilities
+              offer them an appropriate solution. Other responsibilities
               include setting up and doing software fixes to laptops and
               desktops.
               <br />
               <br />
-              Few of my achievements would be, being able to flex throughout the
-              store, being able to run most of the precinct alone and being a
-              part of Best Buy's leadership program Learn2Lead.
+              A few of my achievements would be being able to flex throughout the
+              store, being able to run most of the precinct alone, and being a
+              part of Best Buy's leadership program, Learn2Lead.
             </p>
           </div>
         </div>
@@ -99,11 +105,11 @@ const AboutPage = () => {
             <h4>Marker / IA for Networking Course</h4>
             <h5>Wilfrid Laurier University</h5>
             <p>
-              Mark, explain, assist with issues regarding student assignments.
+              Mark, explain, and assist with issues regarding student assignments.
               <br />
               <br />
               Topics required to know are basic networking protocols such as IP,
-              TCP and UDP, Dijkstra's Shortest Path Algorithm, basic routing
+              TCP and UDP, Dijkstra's Shortest Path Algorithm, and basic routing.
             </p>
           </div>
         </div>
