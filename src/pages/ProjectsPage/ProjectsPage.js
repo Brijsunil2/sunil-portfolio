@@ -275,6 +275,25 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
+
+      <div className="my-3">
+        <div className="row m-1">
+          <div className="col-lg-2"></div>
+          <div className="col">
+            <h4>FoodBox</h4>
+            <h5>Android App</h5>
+            <p>
+              Develop an Android application as a team to allow users to create
+              and search food recipes using a relational database.
+            </p>
+            <div className="pills-list d-flex flex-wrap">
+              <ButtonPills name="Java" />
+              <ButtonPills name="Android Studio" />
+              <ButtonPills name="SQL Lite" />
+            </div>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };

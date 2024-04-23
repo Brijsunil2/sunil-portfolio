@@ -43,10 +43,11 @@ const HomePage = () => {
       </svg>
       <h4>Software / Web Developer</h4>
       <p>
-        I am a recent Computer Science graduate looking for a position in the
-        computer science field so I can utilize my skills in a
-        professional setting. Please check out the rest of my portfolio by
-        navigating through the navigation bar.
+        Motivated Computer Science graduate with a strong foundation in
+        programming and a passion for software and web development. Eager to
+        apply academic knowledge, skills and relevant work experience to
+        effectively contribute to innovative projects. Please check out the rest
+        of my portfolio by navigating through the navigation bar.
       </p>
 
       <motion.div

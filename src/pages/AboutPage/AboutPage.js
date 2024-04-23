@@ -78,22 +78,33 @@ const AboutPage = () => {
           <div className="col-sm-10">
             <h4>Best Buy - Geek Squad</h4>
 
+            <h5>Geek Squad in Home Agent </h5>
+            <p>
+              This role includes the same responsibilities as a geek squad
+              agent, plus some extra responsibilities. Additionals include
+              providing professional service to in home and business clients.
+              Services include troubleshooting, installing or setting up tv's,
+              computers and networks.
+            </p>
+
             <h5>Agent Advisor </h5>
             <p>
-              This role includes the same responsibilities as a geek squad agent, plus some extra responsibilities. Additional responsibilities include using computer knowledge to assist with computer sales and being able to run the customer service counter. 
+              This role includes the same responsibilities as a geek squad
+              agent, plus some extra responsibilities. Additional
+              responsibilities include using computer knowledge to assist with
+              computer sales and being able to run the customer service counter.
             </p>
-            
+
             <h5>Geek Squad Agent 1 </h5>
             <p>
               Assist clients with tech issues they are currently having and
-              offer them an appropriate solution. Other responsibilities
-              include setting up and doing software fixes to laptops and
-              desktops.
+              offer them an appropriate solution. Other responsibilities include
+              setting up and doing software fixes to laptops and desktops.
               <br />
-              <br />
-              A few of my achievements would be being able to flex throughout the
-              store, being able to run most of the precinct alone, and being a
-              part of Best Buy's leadership program, Learn2Lead.
+              <br />A few of my achievements would be being able to flex
+              throughout the store, being able to run most of the precinct
+              alone, and being a part of Best Buy's leadership program,
+              Learn2Lead.
             </p>
           </div>
         </div>
@@ -105,11 +116,30 @@ const AboutPage = () => {
             <h4>Marker / IA for Networking Course</h4>
             <h5>Wilfrid Laurier University</h5>
             <p>
-              Mark, explain, and assist with issues regarding student assignments.
+              Mark, explain, and assist with issues regarding student
+              assignments.
               <br />
               <br />
               Topics required to know are basic networking protocols such as IP,
-              TCP and UDP, Dijkstra's Shortest Path Algorithm, and basic routing.
+              TCP and UDP, Dijkstra's Shortest Path Algorithm, and basic
+              routing.
+            </p>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-sm-2">
+            <p className="time">Summer 2017</p>
+          </div>
+          <div className="col-sm-10">
+            <h4>Summer Camp Volunteer</h4>
+            <h5>KidsAbility Centre for Child Development</h5>
+            <p>
+              Aided with Minecraft and Lego camps and made sure that camps were
+              running smoothly.
+              <br />
+              <br />
+              Ensure the safety of children when participating in camp events.
             </p>
           </div>
         </div>
