@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.38601d2c.css",
-    "main.js": "/sunil-portfolio/static/js/main.0ee0bd3c.js",
+    "main.css": "/sunil-portfolio/static/css/main.3e96305f.css",
+    "main.js": "/sunil-portfolio/static/js/main.79427733.js",
+    "static/media/triage_start_page.png": "/sunil-portfolio/static/media/triage_start_page.138feebbce58685969f8.png",
     "static/media/black-linen.png": "/sunil-portfolio/static/media/black-linen.8a1abc775dec4ce9e1d1.png",
     "static/media/forums-screen.png": "/sunil-portfolio/static/media/forums-screen.70d83590f4b6aa568c3d.png",
     "static/media/weather-app.png": "/sunil-portfolio/static/media/weather-app.b6452ea887de94f38a80.png",
@@ -10,11 +11,11 @@
     "static/media/guy_on_computer.svg": "/sunil-portfolio/static/media/guy_on_computer.b74858db0668955b6e49f0e05308d7ee.svg",
     "static/media/c-programming.svg": "/sunil-portfolio/static/media/c-programming.6295470a17567c0599b55873f66ef96a.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.38601d2c.css.map": "/sunil-portfolio/static/css/main.38601d2c.css.map",
-    "main.0ee0bd3c.js.map": "/sunil-portfolio/static/js/main.0ee0bd3c.js.map"
+    "main.3e96305f.css.map": "/sunil-portfolio/static/css/main.3e96305f.css.map",
+    "main.79427733.js.map": "/sunil-portfolio/static/js/main.79427733.js.map"
   },
   "entrypoints": [
-    "static/css/main.38601d2c.css",
-    "static/js/main.0ee0bd3c.js"
+    "static/css/main.3e96305f.css",
+    "static/js/main.79427733.js"
   ]
 }
