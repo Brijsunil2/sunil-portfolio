@@ -1,6 +1,5 @@
 import "./AboutPage.scss";
 import { motion } from "framer-motion";
-import { DiEclipse } from "react-icons/di";
 import {
   BiLogoJavascript,
   BiLogoHtml5,
@@ -12,7 +11,9 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 import { FaSass, FaGithub, FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { SiMysql, SiPostgresql } from "react-icons/si";
+import { DiEclipse } from "react-icons/di";
 import CProgramming from "../../assets/images/c-programming.svg";
 
 const AboutPage = () => {
@@ -23,129 +24,140 @@ const AboutPage = () => {
       animate={{ x: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <div className="skills-container">
-        <h3>Languages</h3>
-        <p>
-          <BiLogoHtml5 color="#f06529" title="HTML5" />
-          <BiLogoCss3 color="#264de4" title="CSS" />
-          <FaSass color="#cc6699" title="Sass" />
-          <BiLogoJavascript color="#f0db4f" title="JavaScript" />
-          <SiMysql color="#00758F" title="SQL" />
-          <BiLogoPython color="#4B8BBE" title="Python" />
-          <BiLogoJava color="#5382a1" title="Java" />
-          <img src={CProgramming} title="C" />
-        </p>
-        <h3>Frameworks</h3>
-        <p>
-          <BiLogoReact color="#61DBFB" title="React" />
-          <BiLogoMongodb color="#4DB33D" title="MongoDB" />
-          <FaBootstrap color="#712cf9" title="Bootstrap" />
-        </p>
-        <h3>Tools</h3>
-        <p>
-          <BiLogoVisualStudio color="#0078d7" title="VsCode" />
-          <DiEclipse color="#341d19" title="Eclipse" />
-          <FaGithub color="#171515" title="Github" />
-          <FaGitAlt color="#F1502F" title="Git" />
-        </p>
-      </div>
-
-      <h2>Education</h2>
-      <div className="education-container">
-        <div className="row">
-          <div className="col-sm-2">
-            <p className="time">2022</p>
-          </div>
-          <div className="col-sm-10">
-            <h4>Wilfrid Laurier University</h4>
-            <h5>Honours BSc Computer Science</h5>
-            <p>
-              My main selection of courses focused on web development and
-              software engineering. Topics include Object-Oriented Programming,
-              Data Structures, Computer Networks, Internet Computing, Algorithm
-              Design and Analysis, Big Data, AI, Databases.
-            </p>
+      <section className="skills-container">
+        <h3>Skills</h3>
+        <div className="skills-section">
+          <h4>Languages</h4>
+          <div className="icon-list">
+            <BiLogoHtml5 color="#f06529" title="HTML5" />
+            <BiLogoCss3 color="#264de4" title="CSS" />
+            <FaSass color="#cc6699" title="Sass" />
+            <BiLogoJavascript color="#f0db4f" title="JavaScript" />
+            <TbSql color="#00758F" title="SQL" />
+            <BiLogoPython color="#4B8BBE" title="Python" />
+            <BiLogoJava color="#5382a1" title="Java" />
+            <img src={CProgramming} alt="C Programming" title="C" />
           </div>
         </div>
-      </div>
-
-      <h2>Experience</h2>
-      <div className="experience-container">
-        <div className="row">
-          <div className="col-sm-2">
-            <p className="time">Summer 2022 - Present</p>
-          </div>
-          <div className="col-sm-10">
-            <h4>Best Buy - Geek Squad</h4>
-
-            <h5>Geek Squad in Home Agent </h5>
-            <p>
-              This role includes the same responsibilities as a geek squad
-              agent, plus some extra responsibilities. Additionals include
-              providing professional service to in home and business clients.
-              Services include troubleshooting, installing or setting up tv's,
-              computers and networks.
-            </p>
-
-            <h5>Agent Advisor </h5>
-            <p>
-              This role includes the same responsibilities as a geek squad
-              agent, plus some extra responsibilities. Additional
-              responsibilities include using computer knowledge to assist with
-              computer sales and being able to run the customer service counter.
-            </p>
-
-            <h5>Geek Squad Agent 1 </h5>
-            <p>
-              Assist clients with tech issues they are currently having and
-              offer them an appropriate solution. Other responsibilities include
-              setting up and doing software fixes to laptops and desktops.
-              <br />
-              <br />A few of my achievements would be being able to flex
-              throughout the store, being able to run most of the precinct
-              alone, and being a part of Best Buy's leadership program,
-              Learn2Lead.
-            </p>
+        <div className="skills-section">
+          <h4>Frameworks</h4>
+          <div className="icon-list">
+            <BiLogoReact color="#61DBFB" title="React" />
+            <FaBootstrap color="#712cf9" title="Bootstrap" />
           </div>
         </div>
-        <div className="row">
-          <div className="col-sm-2">
-            <p className="time">Fall 2021</p>
-          </div>
-          <div className="col-sm-10">
-            <h4>Marker / IA for Networking Course</h4>
-            <h5>Wilfrid Laurier University</h5>
-            <p>
-              Mark, explain, and assist with issues regarding student
-              assignments.
-              <br />
-              <br />
-              Topics required to know are basic networking protocols such as IP,
-              TCP and UDP, Dijkstra's Shortest Path Algorithm, and basic
-              routing.
-            </p>
+        <div className="skills-section">
+          <h4>Database Management Systems</h4>
+          <div className="icon-list">
+            <SiMysql color="#00758F" title="MySQL" />
+            <BiLogoMongodb color="#4DB33D" title="MongoDB" />
+            <SiPostgresql color="#336791" title="PostgreSQL" />
           </div>
         </div>
+        <div className="skills-section">
+          <h4>Tools</h4>
+          <div className="icon-list">
+            <BiLogoVisualStudio color="#0078d7" title="VSCode" />
+            <DiEclipse color="#2C2255" title="Eclipse" />
+            <FaGithub color="#171515" title="GitHub" />
+            <FaGitAlt color="#F1502F" title="Git" />
+          </div>
+        </div>
+      </section>
 
-        <div className="row">
-          <div className="col-sm-2">
-            <p className="time">Summer 2017</p>
-          </div>
-          <div className="col-sm-10">
-            <h4>Summer Camp Volunteer</h4>
-            <h5>KidsAbility Centre for Child Development</h5>
-            <p>
-              Aided with Minecraft and Lego camps and made sure that camps were
-              running smoothly.
-              <br />
-              <br />
-              Ensure the safety of children when participating in camp events.
-            </p>
+      <section className="education-container">
+        <h2>Education</h2>
+        <div className="education-item">
+          <div className="row">
+            <div className="col-sm-2">
+              <p className="time">2022</p>
+            </div>
+            <div className="col-sm-10">
+              <h4>Wilfrid Laurier University</h4>
+              <h5>Honours BSc Computer Science</h5>
+              <p>
+                Focused on web development and software engineering, with
+                coursework in Object-Oriented Programming, Data Structures,
+                Computer Networks, Algorithm Design, Big Data, AI, and
+                Databases.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="experience-container">
+        <h2>Experience</h2>
+        <ExperienceItem
+          time="Summer 2022 - Present"
+          title="Best Buy - Geek Squad"
+          roles={[
+            {
+              role: "Geek Squad In-Home Agent",
+              description:
+                "Provided professional service to in-home and business clients. Services included troubleshooting, installing, or setting up TVs, computers, and networks.",
+            },
+            {
+              role: "Agent Advisor",
+              description:
+                "Assisted with computer sales and managed the customer service counter, leveraging deep technical knowledge.",
+            },
+            {
+              role: "Geek Squad Agent 1",
+              description:
+                "Assisted clients with tech issues and performed software fixes on laptops and desktops. Recognized for flexibility and leadership, participating in Best Buy's Learn2Lead program.",
+            },
+          ]}
+        />
+
+        <ExperienceItem
+          time="Fall 2021"
+          title="Marker / IA for Networking Course"
+          company="Wilfrid Laurier University"
+          roles={[
+            {
+              role: "Marker / IA",
+              description:
+                "Marked assignments and provided assistance on topics like IP, TCP, UDP protocols, Dijkstra's Algorithm, and basic routing.",
+            },
+          ]}
+        />
+
+        <ExperienceItem
+          time="Summer 2017"
+          title="Summer Camp Volunteer"
+          company="KidsAbility Centre for Child Development"
+          roles={[
+            {
+              role: "Volunteer",
+              description:
+                "Aided with Minecraft and Lego camps, ensuring smooth operation and child safety during events.",
+            },
+          ]}
+        />
+      </section>
     </motion.div>
   );
 };
+
+const ExperienceItem = ({ time, title, company, roles }) => (
+  <div className="experience-item">
+    <div className="row">
+      <div className="col-sm-2">
+        <p className="time">{time}</p>
+      </div>
+      <div className="col-sm-10">
+        <h4>{title}</h4>
+        {company && <h5>{company}</h5>}
+        {roles.map((role, index) => (
+          <div key={index}>
+            <h5>{role.role}</h5>
+            <p>{role.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+);
 
 export default AboutPage;

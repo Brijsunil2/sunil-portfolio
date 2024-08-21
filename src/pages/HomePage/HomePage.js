@@ -46,8 +46,7 @@ const HomePage = () => {
         Motivated Computer Science graduate with a strong foundation in
         programming and a passion for software and web development. Eager to
         apply academic knowledge, skills and relevant work experience to
-        effectively contribute to innovative projects. Please check out the rest
-        of my portfolio by navigating through the navigation bar.
+        effectively contribute to innovative projects. Explore my portfolio to see how I bring ideas to life.
       </p>
 
       <motion.div
