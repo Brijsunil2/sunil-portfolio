@@ -35,4 +35,7 @@ This portfolio website is designed to showcase my skills and projects. It's a pl
 
 - **Tools & Platforms**:
   - Git & GitHub
-  - Vite
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
