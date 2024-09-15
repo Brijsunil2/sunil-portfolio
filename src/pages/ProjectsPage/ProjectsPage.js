@@ -5,9 +5,7 @@ import { HiLink } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 import { CiWarning } from "react-icons/ci";
 import weatherImg from "../../assets/images/weather-app.png";
-import portalDemoLoginImg from "../../assets/images/portal-demo-login.png";
 import portalHome from "../../assets/images/portal-home.png";
-import forumsScreen from "../../assets/images/forums-screen.png";
 import triageStartPage from "../../assets/images/triage_start_page.png";
 
 const ProjectsPage = () => {
@@ -18,10 +16,10 @@ const ProjectsPage = () => {
       animate={{ x: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <div className="alert alert-warning text-center my-3">
-        <CiWarning color="red" /> Links to live demos may take a moment to
-        load <CiWarning color="red" />
-      </div>
+      {/* <div className="alert alert-warning text-center my-3">
+        <CiWarning color="red" /> Links to live demos may take a moment to load{" "}
+        <CiWarning color="red" />
+      </div> */}
 
       <h2 className="section-title">Featured Projects</h2>
 
@@ -49,7 +47,7 @@ const ProjectsPage = () => {
 
         <Project
           title="Portal"
-          description="A versatile portal for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features."
+          description="A versatile website for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features. The user forum application is where users can create and share forums."
           technologies={[
             "React",
             "Vite",
@@ -66,47 +64,6 @@ const ProjectsPage = () => {
           ]}
           image={portalHome}
           githubLink="https://github.com/Brijsunil2/portal-release"
-          liveLink="https://portal-64si.onrender.com"
-        />
-
-        <Project
-          title="Forums-Demo"
-          description="A user forum application where users can create and share forums. Currently, a demo version without authentication, integrated within the Portal application."
-          technologies={[
-            "React",
-            "Vite",
-            "MongoDB",
-            "JavaScript",
-            "CSS",
-            "HTML",
-            "Bootstrap",
-            "React Bootstrap",
-            "Redux Toolkit",
-            "Express.js",
-          ]}
-          image={forumsScreen}
-          githubLink="https://github.com/Brijsunil2/forums"
-        />
-
-        <Project
-          title="Portal-Demo"
-          description="A template for user authentication, allowing account creation, login, and access to web applications. This demo version focuses on user authentication."
-          technologies={[
-            "React",
-            "Vite",
-            "MongoDB",
-            "JavaScript",
-            "CSS",
-            "HTML",
-            "Bootstrap",
-            "React Bootstrap",
-            "Redux Toolkit",
-            "Express.js",
-            "Authentication",
-          ]}
-          image={portalDemoLoginImg}
-          githubLink="https://github.com/Brijsunil2/portal"
-          liveLink="https://portal-demo.onrender.com"
         />
 
         <Project
@@ -115,7 +72,6 @@ const ProjectsPage = () => {
           technologies={["JavaScript", "CSS", "HTML", "Webpack"]}
           image={weatherImg}
           githubLink="https://github.com/Brijsunil2/weather-app"
-          liveLink="https://weather-app-ffud.onrender.com"
         />
       </div>
 
