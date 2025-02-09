@@ -15,15 +15,17 @@ const HomePage = () => {
       <h2>
         Hi, I'm <span>Sunil Brijlall</span>
       </h2>
-      <h3>Welcome to my portfolio!</h3>
 
-      <h4>Software / Web Developer</h4>
+      <h4>Computer Science Graduate | Full-Stack Developer</h4>
       <p>
-        Motivated Computer Science graduate with a strong foundation in
-        programming and a passion for software and web development. Eager to
-        apply academic knowledge, skills and relevant work experience to
-        effectively contribute to innovative projects. Explore my portfolio to
-        see how I bring ideas to life.
+      Motivated Computer Science graduate with a solid foundation in
+          programming and a deep passion for full-stack development. I am eager
+          to apply my academic knowledge, practical skills, and relevant work
+          experience to contribute effectively to innovative and challenging
+          projects. My expertise spans HTML, CSS, JavaScript, and React, with a
+          focus on creating responsive and user-friendly applications. Explore
+          my portfolio to see how I bring ideas to life and drive projects to
+          success.
       </p>
 
       <motion.div
