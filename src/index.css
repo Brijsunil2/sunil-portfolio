@@ -1,5 +1,19 @@
+:root {
+  --main-deep-blue: #2c3e50;
+  --main-pale-gray: #ecf0f1;
+  --main-light-gray-blue: #34495e;
+  --main-teal: #1abc9c;
+  --main-darkend-blue: #2c3e50;
+  --main-gray: #666666;
+  --main-light-grey: #aaaaaa;
+  --main-very-light-pink: #ffebee;
+  --main-very-light-blue: #e3f2fd;
+  --main-very-light-gray: #f5f5f5;
+}
+
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -8,14 +22,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #183d3d;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  background-image: url("./assets/images/black-linen.png");
+  color: var(--main-deep-blue);
+  font-family: "Oswald", sans-serif;
+  background: var(--main-very-light-gray);
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
+}
+
+section {
+  scroll-margin-top: 80px;
 }
 
 @media (max-width: 576px) {

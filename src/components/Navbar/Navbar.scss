@@ -1,9 +1,11 @@
 .navbar {
+  padding: 0.6rem 16%;
+
   .logo {
-    display: block;
+    display: flex;
     text-align: center;
+    align-items: center;
     text-decoration: none;
-    margin-left: 25px;
 
     & img {
       width: 30px;
@@ -11,10 +13,10 @@
     }
 
     & h1 {
-      font-size: 16px;
-      color: white;
+      color: var(--main-deep-blue);
+      font-size: 1.2rem;
       margin: 0;
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: "Bebas Neue", sans-serif;
     }
   }
 
@@ -23,19 +25,9 @@
 
     a {
       display: block;
-      color: #93B1A6;
+      color: var(--main-deep-blue);
       text-decoration: none;
       min-width: 80px;
-      padding: 10px;
-      border-radius: 5px;
-
-      &:hover {
-        background-color: #5C8374;
-      }
-
-      &.active {
-        color: #2aff17;
-      }
     }
 
     svg {
@@ -54,17 +46,11 @@
   }
 
   .navbar-toggler {
-    background-color: #93B1A6;
-  }
-
-  @media (min-width: 576px) {
-    .navbar-nav {
-      transform: translateX(-40px);
-    }
   }
 }
 
-.bg-body-tertiary {
-  background-color: #040D12 !important;
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.6rem 4%;
+  }
 }
-

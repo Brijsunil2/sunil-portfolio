@@ -39,6 +39,7 @@ const AboutSection = () => {
 
   return (
     <motion.section
+      id="about"
       className="about-section"
       initial={{ x: 1000 }}
       animate={{ x: 0 }}
