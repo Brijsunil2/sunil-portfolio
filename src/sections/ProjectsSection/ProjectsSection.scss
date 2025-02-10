@@ -1,0 +1,56 @@
+.projects-section {
+  margin: 100px 10%;
+  margin-bottom: 0;
+
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+  }
+
+  .row {
+    margin: 25px;
+    display: flex;
+
+    .pills-list {
+      margin-bottom: 20px;
+
+      .btn-pill-container {
+        margin: 0 0.5em 0.5em 0;
+        background-color: rgb(94, 234, 212);
+        color: black;
+      }
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    h5 {
+      opacity: 50%;
+      margin: 0;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding-right: 1em;
+  }
+
+  .project-title {
+    display: flex;
+    vertical-align: middle;
+  }
+
+  img {
+    border: 2px rgb(255, 255, 255) solid;
+  }
+
+  img:hover {
+    border: 2px rgb(94, 234, 212) solid;
+    opacity: 80%;
+    transition: 1s;
+  }
+}

@@ -1,3 +1,4 @@
+import "./ProjectsSection.scss";
 import { motion } from "framer-motion";
 import { CiWarning } from "react-icons/ci";
 import weatherImg from "../../assets/images/weather-app.png";
@@ -96,7 +97,7 @@ const ProjectsSection = () => {
         />
       </div>
     </motion.section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
