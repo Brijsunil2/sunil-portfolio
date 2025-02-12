@@ -1,14 +1,13 @@
 :root {
   --main-deep-blue: #2c3e50;
-  --main-pale-gray: #ecf0f1;
+  --main-pale-blue: #d8f0f7;
   --main-light-gray-blue: #34495e;
-  --main-teal: #1abc9c;
-  --main-darkend-blue: #2c3e50;
+  --main-teal: rgb(94 234 212);
+  --main-darkend-blue: #272999;
   --main-gray: #666666;
   --main-light-grey: #aaaaaa;
-  --main-very-light-pink: #ffebee;
   --main-very-light-blue: #e3f2fd;
-  --main-very-light-gray: #f5f5f5;
+  --main-very-light-gray: #f0f0f0;
 }
 
 html {

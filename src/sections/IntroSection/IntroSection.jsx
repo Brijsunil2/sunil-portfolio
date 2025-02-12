@@ -1,12 +1,11 @@
 import "./IntroSection.scss";
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const IntroSection = () => {
   return (
     <motion.section
-      className="intro-section d-flex flex-column align-items-center"
+      className="intro-section d-flex flex-column"
       initial={{ x: 1000 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.4 }}
@@ -27,21 +26,10 @@ const IntroSection = () => {
         success.
       </p>
 
-      <motion.div
-        transition={{ duration: 0.1 }}
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <NavLink className="contact-link" to="/contact" exact="true">
-          <FaEnvelope />
-          Contact Me
-        </NavLink>
-      </motion.div>
-
       <div className="socials-container">
         <motion.div
-          transition={{ duration: 0.1 }}
-          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 0.2 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <a
@@ -50,11 +38,12 @@ const IntroSection = () => {
             rel="noreferrer"
           >
             <FaLinkedin />
+            <span>LinkedIn</span>
           </a>
         </motion.div>
         <motion.div
-          transition={{ duration: 0.1 }}
-          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 0.2 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <a
@@ -63,6 +52,17 @@ const IntroSection = () => {
             rel="noreferrer"
           >
             <FaGithub />
+            <span>Github</span>
+          </a>
+        </motion.div>
+        <motion.div
+          transition={{ duration: 0.2 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <a className="contact-link" href="#contact" exact="true">
+            <FaEnvelope />
+            <span>Contact Me</span>
           </a>
         </motion.div>
       </div>
