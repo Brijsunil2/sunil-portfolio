@@ -13,7 +13,7 @@ const IntroSection = () => {
       <h2>
         Hi, I'm <span>Sunil Brijlall</span>
       </h2>
-
+      <hr/>
       <h4>Computer Science Graduate | Full-Stack Developer</h4>
       <p>
         Motivated Computer Science graduate with a solid foundation in
@@ -22,8 +22,7 @@ const IntroSection = () => {
         experience to contribute effectively to innovative and challenging
         projects. My expertise spans HTML, CSS, JavaScript, and React, with a
         focus on creating responsive and user-friendly applications. Explore my
-        portfolio to see how I bring ideas to life and drive projects to
-        success.
+        portfolio to see how I bring ideas to life.
       </p>
 
       <div className="socials-container">
@@ -66,6 +65,7 @@ const IntroSection = () => {
           </a>
         </motion.div>
       </div>
+      <hr/>
     </motion.section>
   );
 };

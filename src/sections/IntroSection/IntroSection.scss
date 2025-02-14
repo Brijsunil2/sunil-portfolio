@@ -1,15 +1,28 @@
 .intro-section {
-  padding: 4rem 0;
+  padding: 11rem 10% 10rem 10%;
+  background-color: var(--main-very-light-gray);
+
+  hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-gray);
+    width: 10%;               
+  }
+
   h2, h4, p {
     max-width: 70%;
     padding-top: 1rem;
+
+    @media (max-width: 1320px) {
+      max-width: 100%;
+    }
   }
 
   .socials-container {
     display: flex;
-    justify-content: center;
+    width: fit-content;
     gap: 10px;
-    padding: 10px;
+    padding-top: 2rem;
 
     a {
       display: flex;
