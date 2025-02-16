@@ -14,7 +14,6 @@ import { FaSass, FaGithub, FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { SiMysql, SiPostgresql } from "react-icons/si";
 import { DiEclipse } from "react-icons/di";
-import CProgramming from "../../assets/images/c-programming.svg";
 
 const AboutSection = () => {
   const ExperienceItem = ({ time, title, company, roles }) => (
@@ -38,53 +37,9 @@ const AboutSection = () => {
   );
 
   return (
-    <motion.section
-      id="about"
-      className="about-section"
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.4 }}
-    >
-      <section className="skills-container">
-        <h3>Skills</h3>
-        <div className="skills-section">
-          <h4>Languages</h4>
-          <div className="icon-list">
-            <BiLogoHtml5 color="#f06529" title="HTML5" />
-            <BiLogoCss3 color="#264de4" title="CSS" />
-            <FaSass color="#cc6699" title="Sass" />
-            <BiLogoJavascript color="#f0db4f" title="JavaScript" />
-            <TbSql color="#00758F" title="SQL" />
-            <BiLogoPython color="#4B8BBE" title="Python" />
-            <BiLogoJava color="#5382a1" title="Java" />
-            <img src={CProgramming} alt="C Programming" title="C" />
-          </div>
-        </div>
-        <div className="skills-section">
-          <h4>Frameworks</h4>
-          <div className="icon-list">
-            <BiLogoReact color="#61DBFB" title="React" />
-            <FaBootstrap color="#712cf9" title="Bootstrap" />
-          </div>
-        </div>
-        <div className="skills-section">
-          <h4>Database Management Systems</h4>
-          <div className="icon-list">
-            <SiMysql color="#00758F" title="MySQL" />
-            <BiLogoMongodb color="#4DB33D" title="MongoDB" />
-            <SiPostgresql color="#336791" title="PostgreSQL" />
-          </div>
-        </div>
-        <div className="skills-section">
-          <h4>Tools</h4>
-          <div className="icon-list">
-            <BiLogoVisualStudio color="#0078d7" title="VSCode" />
-            <DiEclipse color="#2C2255" title="Eclipse" />
-            <FaGithub color="#171515" title="GitHub" />
-            <FaGitAlt color="#F1502F" title="Git" />
-          </div>
-        </div>
-      </section>
+    <section id="about" className="about-section">
+      <h2>About Me</h2>
+      <hr />
 
       <section className="education-container">
         <h2>Education</h2>
@@ -157,7 +112,69 @@ const AboutSection = () => {
           ]}
         />
       </section>
-    </motion.section>
+
+      <h3>Skills</h3>
+      <section className="skills-container">
+        <div className="skill">
+          <h4>Languages</h4>
+          <div className="icon-list">
+            <div className="icon">
+              <BiLogoHtml5 color="#f06529" title="HTML" />
+              <p>HTML</p>
+            </div>
+            <div className="icon">
+              <BiLogoCss3 color="#264de4" title="CSS" />
+              <p>CSS</p>
+            </div>
+            <div className="icon">
+              <FaSass color="#cc6699" title="Sass" />
+              <p>SASS</p>
+            </div>
+            <div className="icon">
+              <BiLogoJavascript color="#f0db4f" title="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div className="icon">
+              <TbSql color="#00758F" title="SQL" />
+              <p>SQL</p>
+            </div>
+            <div className="icon">
+              <BiLogoPython color="#4B8BBE" title="Python" />
+              <p>Python</p>
+            </div>
+            <div className="icon">
+              <BiLogoJava color="#5382a1" title="Java" />
+              <p>Java</p>
+            </div>
+          </div>
+        </div>
+        <div className="skill">
+          <h4>Frameworks</h4>
+          <div className="icon-list">
+            <BiLogoReact color="#61DBFB" title="React" />
+            <FaBootstrap color="#712cf9" title="Bootstrap" />
+          </div>
+        </div>
+        <div className="skill">
+          <h4>Database</h4>
+          <div className="icon-list">
+            <SiMysql color="#00758F" title="MySQL" />
+            <BiLogoMongodb color="#4DB33D" title="MongoDB" />
+            <SiPostgresql color="#336791" title="PostgreSQL" />
+          </div>
+        </div>
+        <div className="skill">
+          <h4>Tools</h4>
+          <div className="icon-list">
+            <BiLogoVisualStudio color="#0078d7" title="VSCode" />
+            <DiEclipse color="#2C2255" title="Eclipse" />
+            <FaGithub color="#171515" title="GitHub" />
+            <FaGitAlt color="#F1502F" title="Git" />
+          </div>
+        </div>
+      </section>
+      <hr />
+    </section>
   );
 };
 

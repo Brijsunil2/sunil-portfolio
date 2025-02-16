@@ -4,16 +4,11 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const IntroSection = () => {
   return (
-    <motion.section
-      className="intro-section d-flex flex-column"
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.4 }}
-    >
+    <section className="intro-section d-flex flex-column">
       <h2>
         Hi, I'm <span>Sunil Brijlall</span>
       </h2>
-      <hr/>
+      <hr />
       <h4>Computer Science Graduate | Full-Stack Developer</h4>
       <p>
         Motivated Computer Science graduate with a solid foundation in
@@ -65,8 +60,8 @@ const IntroSection = () => {
           </a>
         </motion.div>
       </div>
-      <hr/>
-    </motion.section>
+      <hr />
+    </section>
   );
 };
 

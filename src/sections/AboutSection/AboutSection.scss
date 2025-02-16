@@ -2,6 +2,13 @@
   margin: 100px 10%;
   margin-bottom: 0;
 
+  hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-gray);
+    width: 10%;               
+  }
+
   .aboutme-p, .education-container, .experience-container {
     margin: 25px;
   }
@@ -49,28 +56,20 @@
   }
 
   .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+
+    .skill {
+      padding: 1rem;
+      border-radius: 1rem;
+    }
 
     svg {
       margin: 2px;
-      height: 35px;
-      width: 35px;
-      transition: 0.2s;
-
-      &:hover {
-        scale: 1.5;
-      }
-    }
-
-    img {
-      margin: 2px;
-      height: 35px;
-      width: 35px;
-      transition: 0.2s;
-
-      &:hover {
-        scale: 1.5;
-      }
+      min-height: 5rem;
+      min-width: 5rem;
     }
   }
 }
