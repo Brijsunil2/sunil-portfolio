@@ -15,9 +15,14 @@ export const introData = {
       Icon: FaLinkedin,
       text: "LinkedIn",
       href: "https://www.linkedin.com/in/sunil-brijlall/",
+      target: true,
     },
-    { Icon: FaGithub, text: "Github", href: "https://github.com/Brijsunil2" },
-    { Icon: FaEnvelope, text: "Contact Me", href: "#contact" },
+    {
+      Icon: FaGithub,
+      text: "Github",
+      href: "https://github.com/Brijsunil2",
+      target: true,
+    },
+    { Icon: FaEnvelope, text: "Contact Me", href: "#contact", target: false },
   ],
 };
-

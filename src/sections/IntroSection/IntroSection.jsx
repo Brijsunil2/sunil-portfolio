@@ -1,64 +1,38 @@
 import "./IntroSection.scss";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
   return (
     <section className="intro-section d-flex flex-column">
       <h2>
-        Hi, I'm <span>Sunil Brijlall</span>
+        Hi, I'm <span>{introData.name}</span>
       </h2>
       <hr />
-      <h4>Computer Science Graduate | Full-Stack Developer</h4>
-      <p>
-        Motivated Computer Science graduate with a solid foundation in
-        programming and a deep passion for full-stack development. I am eager to
-        apply my academic knowledge, practical skills, and relevant work
-        experience to contribute effectively to innovative and challenging
-        projects. My expertise spans HTML, CSS, JavaScript, and React, with a
-        focus on creating responsive and user-friendly applications. Explore my
-        portfolio to see how I bring ideas to life.
-      </p>
+      <h4>
+        {introData.qualifications.map((qualification, index) => (
+          <span key={index}>
+            {qualification}
+            {index < introData.qualifications.length - 1 && " | "}
+          </span>
+        ))}
+      </h4>
+      <p>{introData.intro}</p>
 
       <div className="socials-container">
-        <motion.div
-          transition={{ duration: 0.2 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <a
-            href="https://www.linkedin.com/in/sunil-brijlall/"
-            target="_blank"
-            rel="noreferrer"
+        {introData.links.map((link, index) => (
+          <motion.div
+            transition={{ duration: 0.2 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            key={index}
           >
-            <FaLinkedin />
-            <span>LinkedIn</span>
-          </a>
-        </motion.div>
-        <motion.div
-          transition={{ duration: 0.2 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <a
-            href="https://github.com/Brijsunil2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub />
-            <span>Github</span>
-          </a>
-        </motion.div>
-        <motion.div
-          transition={{ duration: 0.2 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <a className="contact-link" href="#contact" exact="true">
-            <FaEnvelope />
-            <span>Contact Me</span>
-          </a>
-        </motion.div>
+            <a href={link.href} target={link.target ? "_blank" : ""}>
+              <link.Icon />
+              <span>{link.text}</span>
+            </a>
+          </motion.div>
+        ))}
       </div>
       <hr />
     </section>
