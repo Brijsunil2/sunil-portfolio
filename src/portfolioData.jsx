@@ -19,9 +19,9 @@ import pythonIcon from "./assets/icons/python.svg";
 import reactIcon from "./assets/icons/react.svg";
 import sassIcon from "./assets/icons/sass.svg";
 import vscodeIcon from "./assets/icons/visual-studio-code.svg";
-import neonIcon from "./assets/icons/neon-icon.svg"
-import reduxIcon from "./assets/icons/redux.svg"
-import viteIcon from "./assets/icons/vitejs.svg"
+import neonIcon from "./assets/icons/neon-icon.svg";
+import reduxIcon from "./assets/icons/redux.svg";
+import viteIcon from "./assets/icons/vitejs.svg";
 
 const siteName = "Sunil's Portfolio";
 
@@ -154,4 +154,77 @@ const skillsData = {
   ],
 };
 
-export { siteName, introData, educationData, experienceData, skillsData };
+const projectsData = [
+  {
+    name: "TriageCare",
+    type: "Frontend | Backend",
+    githubRepo: "https://github.com/Brijsunil2/triage-care",
+    text: "A modern hospital triage system designed to streamline the patient check-in process, enhance the efficiency of initial medical assessments, and improve overall patient care.",
+    notes: [],
+    images: [],
+    pills: [
+      { Icon: reactIcon, text: "React" },
+      { Icon: viteIcon, text: "Vitejs" },
+      { Icon: javascriptIcon, text: "JavaScript" },
+      { Icon: htmlIcon, text: "HTML" },
+      { Icon: cssIcon, text: "CSS" },
+      { Icon: bootstrapIcon, text: "Bootstrap" },
+      { Icon: bootstrapIcon, text: "React Bootstrap" },
+      { Icon: reduxIcon, text: "Redux Toolkit" },
+      { Icon: expressIcon, text: "Express.js" },
+      { Icon: nodejsIcon, text: "node.js" },
+      { Icon: postgresIcon, text: "PostgreSQL" },
+      { Icon: neonIcon, text: "Neon" },
+    ],
+  },
+  {
+    name: "Portal",
+    type: "Frontend | Backend",
+    githubRepo: "https://github.com/Brijsunil2/portal-release",
+    text: "A versatile website for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features. The user forum application is where users can create and share forums.",
+    notes: [],
+    images: [],
+    pills: [
+      { Icon: reactIcon, text: "React" },
+      { Icon: viteIcon, text: "Vitejs" },
+      { Icon: javascriptIcon, text: "JavaScript" },
+      { Icon: htmlIcon, text: "HTML" },
+      { Icon: cssIcon, text: "CSS" },
+      { Icon: bootstrapIcon, text: "Bootstrap" },
+      { Icon: bootstrapIcon, text: "React Bootstrap" },
+      { Icon: reduxIcon, text: "Redux Toolkit" },
+      { Icon: expressIcon, text: "Express.js" },
+      { Icon: nodejsIcon, text: "node.js" },
+      { Icon: mongoDbIcon, text: "MongoDB" },
+      { Icon: null, text: "Authentication" },
+      { Icon: neonIcon, text: "Neon" },
+    ],
+  },
+  {
+    name: "Weather App",
+    type: "Frontend",
+    githubRepo: "https://github.com/Brijsunil2/weather-app",
+    text: "A web app using the OpenWeatherMap API to fetch weather data for user locations. Built with vanilla JavaScript and Webpack.",
+    notes: [],
+    images: [],
+    pills: [
+      { Icon: javascriptIcon, text: "JavaScript" },
+      { Icon: htmlIcon, text: "HTML" },
+      { Icon: cssIcon, text: "CSS" },
+      { Icon: null, text: "Webpack" },
+    ],
+  },
+  {
+    name: "UDP File Transfer",
+    type: "Desktop Test Application",
+    githubRepo: "https://github.com/Brijsunil2/UDP-File-Transfer",
+    text: "A Java application for transferring files between users, supporting text, images, audio, and small videos.",
+    notes: [],
+    images: [],
+    pills: [
+      { Icon: javaIcon, text: "Java" },
+    ],
+  },
+];
+
+export { siteName, introData, educationData, experienceData, skillsData, projectsData };
