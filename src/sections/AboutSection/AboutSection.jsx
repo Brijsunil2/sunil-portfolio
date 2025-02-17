@@ -1,5 +1,4 @@
 import "./AboutSection.scss";
-import { motion } from "framer-motion";
 import {
   BiLogoJavascript,
   BiLogoHtml5,
