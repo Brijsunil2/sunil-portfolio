@@ -3,22 +3,25 @@ import webDevCertificate from "./assets/images/web_dev_certificate.png";
 
 import bootstrapIcon from "./assets/icons/bootstrap.svg";
 import cssIcon from "./assets/icons/css-3.svg";
-import eclipseIcon from "./assets/icons/eclipse-icon.svg"
-import expressIcon from "./assets/icons/express.svg"
-import gitIcon from "./assets/icons/git-icon.svg"
-import githubIcon from "./assets/icons/github-icon.svg"
-import htmlIcon from "./assets/icons/html-5.svg"
-import javaIcon from "./assets/icons/java.svg"
-import javascriptIcon from "./assets/icons/javascript.svg"
-import mongoDbIcon from "./assets/icons/mongodb-icon.svg"
-import mySQLIcon from "./assets/icons/mysql.svg"
-import nodejsIcon from "./assets/icons/nodejs-icon-alt.svg"
-import postgresIcon from "./assets/icons/postgresql.svg"
-import postmanIcon from "./assets/icons/postman-icon.svg"
-import pythonIcon from "./assets/icons/python.svg"
-import reactIcon from "./assets/icons/react.svg"
-import sassIcon from "./assets/icons/sass.svg"
-import vscodeIcon from "./assets/icons/visual-studio-code.svg"
+import eclipseIcon from "./assets/icons/eclipse-icon.svg";
+import expressIcon from "./assets/icons/express.svg";
+import gitIcon from "./assets/icons/git-icon.svg";
+import githubIcon from "./assets/icons/github-icon.svg";
+import htmlIcon from "./assets/icons/html-5.svg";
+import javaIcon from "./assets/icons/java.svg";
+import javascriptIcon from "./assets/icons/javascript.svg";
+import mongoDbIcon from "./assets/icons/mongodb-icon.svg";
+import mySQLIcon from "./assets/icons/mysql.svg";
+import nodejsIcon from "./assets/icons/nodejs-icon-alt.svg";
+import postgresIcon from "./assets/icons/postgresql.svg";
+import postmanIcon from "./assets/icons/postman-icon.svg";
+import pythonIcon from "./assets/icons/python.svg";
+import reactIcon from "./assets/icons/react.svg";
+import sassIcon from "./assets/icons/sass.svg";
+import vscodeIcon from "./assets/icons/visual-studio-code.svg";
+import neonIcon from "./assets/icons/neon-icon.svg"
+import reduxIcon from "./assets/icons/redux.svg"
+import viteIcon from "./assets/icons/vitejs.svg"
 
 const siteName = "Sunil's Portfolio";
 
@@ -118,34 +121,37 @@ const experienceData = [
 
 const skillsData = {
   frontend: [
-    {Icon: htmlIcon, title: "HTML"},
-    {Icon: cssIcon, title: "CSS"},
-    {Icon: sassIcon, title: "SASS"},
-    {Icon: javascriptIcon, title: "JavaScript"},
-    {Icon: reactIcon, title: "React"},
-    {Icon: bootstrapIcon, title: "Bootstrap"},
+    { Icon: htmlIcon, title: "HTML" },
+    { Icon: cssIcon, title: "CSS" },
+    { Icon: sassIcon, title: "SASS" },
+    { Icon: javascriptIcon, title: "JavaScript" },
+    { Icon: reactIcon, title: "React" },
+    { Icon: viteIcon, title: "Vitejs" },
+    { Icon: reduxIcon, title: "Redux Toolkit" },
+    { Icon: bootstrapIcon, title: "Bootstrap" },
   ],
   backend: [
-    {Icon: javascriptIcon, title: "JavaScript"},
-    {Icon: nodejsIcon, title: "Node.js"},
-    {Icon: expressIcon, title: "Express.js"},
+    { Icon: javascriptIcon, title: "JavaScript" },
+    { Icon: nodejsIcon, title: "Node.js" },
+    { Icon: expressIcon, title: "Express.js" },
   ],
   database: [
-    {Icon: mySQLIcon, title: "MySQL"},
-    {Icon: mongoDbIcon, title: "MongoDB"},
-    {Icon: postgresIcon, title: "PostgreSQL"},
+    { Icon: mySQLIcon, title: "MySQL" },
+    { Icon: mongoDbIcon, title: "MongoDB" },
+    { Icon: postgresIcon, title: "PostgreSQL" },
   ],
   tools: [
-    {Icon: vscodeIcon, title: "VSCode"},
-    {Icon: eclipseIcon, title: "Eclipse"},
-    {Icon: githubIcon, title: "GitHub"},
-    {Icon: gitIcon, title: "Git"},
-    {Icon: postmanIcon, title: "Postman"},
+    { Icon: vscodeIcon, title: "VSCode" },
+    { Icon: eclipseIcon, title: "Eclipse" },
+    { Icon: githubIcon, title: "GitHub" },
+    { Icon: gitIcon, title: "Git" },
+    { Icon: postmanIcon, title: "Postman" },
+    { Icon: neonIcon, title: "Neon" },
   ],
   bonus: [
-    {Icon: pythonIcon, title: "Python"},
-    {Icon: javaIcon, title: "Java"},
-  ]
-}
+    { Icon: pythonIcon, title: "Python" },
+    { Icon: javaIcon, title: "Java" },
+  ],
+};
 
-export { siteName, introData, educationData, experienceData };
+export { siteName, introData, educationData, experienceData, skillsData };
