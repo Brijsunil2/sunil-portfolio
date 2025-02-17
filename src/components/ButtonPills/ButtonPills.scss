@@ -1,10 +1,18 @@
 .btn-pill-container {
+  display: flex;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 0.7rem;
-  color: rgb(94, 234, 212);
-  border: 1px solid rgb(94, 234, 212);
+  color: var(--main-teal);
+  border: 1px solid var(--main-teal);
   padding: 0.3rem 1rem;
   border-radius: 1rem;
   margin-bottom: 4px;
   margin-right: 4px;
+
+  img {
+    height: 0.8rem;
+    width: auto;
+    margin-right: 8px;
+  }
 }
