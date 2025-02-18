@@ -44,10 +44,8 @@
       list-style: none;
     }
   }
-}
 
-@media (max-width: 576px) {
-  .navbar {
+  @media (max-width: 768px) {
     padding: 0.6rem 4%;
   }
 }

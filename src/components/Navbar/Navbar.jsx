@@ -2,7 +2,7 @@ import "./Navbar.scss";
 import { motion } from "framer-motion";
 import Logo from "../../assets/images/guy_on_computer.svg";
 import { GiSkills } from "react-icons/gi";
-import { FaHammer , FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import { FaHammer , FaProjectDiagram, FaEnvelope, FaBookOpen  } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -36,6 +36,16 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav">
+          <motion.li
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <a className="education-link" href="#education">
+                <FaBookOpen />
+                <h2>Education</h2>
+              </a>
+            </motion.li>
             <motion.li
               transition={{ duration: 0.1 }}
               whileHover={{ scale: 1.2 }}
