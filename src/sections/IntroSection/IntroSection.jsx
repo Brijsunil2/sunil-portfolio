@@ -3,7 +3,7 @@ import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
   return (
-    <section className="intro-section section-wrapper">
+    <section className="intro-section">
       <h1>
         Hi, I'm <span>{introData.name}</span>
       </h1>
