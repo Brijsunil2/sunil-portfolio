@@ -55,15 +55,19 @@ const educationData = [
     place: "Wilfrid Laurier University",
     subText: "Honours BSc Computer Science",
     duration: "2022",
-    text: "Focused on web development and software engineering, with coursework in Object-Oriented Programming, Data Structures, Computer Networks, Algorithm Design, Big Data, AI, and Databases.",
-    image: "",
+    summary:
+      "Focused on web development and software engineering, with coursework in Object-Oriented Programming, Data Structures, Computer Networks, Algorithm Design, Big Data, AI, and Databases.",
+    image: null,
+    imageAlt: "Computer Science Degree",
   },
   {
     place: "Udemy",
     subText: "Full-Stack Web Development Bootcamp",
     duration: "2024",
-    text: "Learn the latest technologies, including Javascript, React, Node and even Web3 development. Built fully-fledged websites and web apps and mastered frontend development with React.",
+    summary:
+      "Learn the latest technologies, including Javascript, React, Node and even Web3 development. Built fully-fledged websites and web apps and mastered frontend development with React.",
     image: webDevCertificate,
+    imageAlt: "Udemy Full-Stack Web Development Certificate",
   },
 ];
 
@@ -221,10 +225,15 @@ const projectsData = [
     text: "A Java application for transferring files between users, supporting text, images, audio, and small videos.",
     notes: [],
     images: [],
-    pills: [
-      { iconSrc: javaIcon, text: "Java" },
-    ],
+    pills: [{ iconSrc: javaIcon, text: "Java" }],
   },
 ];
 
-export { siteName, introData, educationData, experienceData, skillsData, projectsData };
+export {
+  siteName,
+  introData,
+  educationData,
+  experienceData,
+  skillsData,
+  projectsData,
+};
