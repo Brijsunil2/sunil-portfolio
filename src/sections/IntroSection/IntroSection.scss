@@ -1,6 +1,35 @@
+@import "../../styles/colors.scss";
+
 .intro-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .intro-section-wrapper {
+    h1 {
+      span {
+        color: map-get($colors, "secondary-blue");
+      }
+    }
+
+    h5 {
+      padding-bottom: 1rem;
+      color: map-get($colors, "dark-grey");
+    }
+  }
+
+  .socials-container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    a {
+      color: map-get($colors, "accent-yellow");
+      svg {
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+      }
+    }
+  }
 }

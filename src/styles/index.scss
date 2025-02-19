@@ -39,6 +39,7 @@ h4 {
 
 h5 {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 h6 {
@@ -49,6 +50,16 @@ p {
   font-weight: 200;
 }
 
+a {
+  text-decoration: none;
+}
+
 small {
   font-size: 0.75rem;
+}
+
+.wrapper-width-md {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    max-width: map-get($breakpoints, "md");
+  }
 }
