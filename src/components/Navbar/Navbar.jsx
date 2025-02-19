@@ -15,9 +15,6 @@ const Navbar = () => {
         >
           <a className="logo" href="/">
             <img src={Logo} alt="website logo" />
-            <h1>
-              Sunil's <br /> Portfolio
-            </h1>
           </a>
         </motion.div>
         <button

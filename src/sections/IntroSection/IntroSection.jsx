@@ -4,7 +4,7 @@ import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
   return (
-    <section className="intro-section d-flex flex-column">
+    <section className="intro-section">
       <h2>
         Hi, I'm <span>{introData.name}</span>
       </h2>

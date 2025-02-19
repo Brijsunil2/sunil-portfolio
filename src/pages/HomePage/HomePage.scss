@@ -1,9 +1,11 @@
 .home-page {
   margin: 0 10%;
-  padding: 5rem 4rem;
+  padding: 0 4rem;
   max-width: 1200px;
+  transform: translateY(5rem);
 
   @media (max-width: 768px) {
     margin: 0;
+    padding: 1rem;
   }
 }
