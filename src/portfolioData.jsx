@@ -5,8 +5,8 @@ import {
   FaBookOpen,
   FaHammer,
   FaProjectDiagram,
+  FaLightbulb,
 } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
 
 import webDevCertificate from "./assets/images/web_dev_certificate.png";
 
@@ -36,7 +36,33 @@ const siteName = "Sunil's Portfolio";
 
 const navbarData = {
   name: "Sunil's",
-  links: [],
+  links: [
+    {
+      label: "Education",
+      Icon: FaBookOpen,
+      link: "#educationSection",
+    },
+    {
+      label: "Skills",
+      Icon: FaLightbulb,
+      link: "#skillsSection",
+    },
+    {
+      label: "Projects",
+      Icon: FaProjectDiagram,
+      link: "#projectsSection",
+    },
+    {
+      label: "Experience",
+      Icon: FaHammer,
+      link: "#experienceSection",
+    },
+    {
+      label: "Contact",
+      Icon: FaEnvelope,
+      link: "#contactSection",
+    },
+  ],
 };
 
 const introData = {
@@ -250,4 +276,5 @@ export {
   experienceData,
   skillsData,
   projectsData,
+  navbarData,
 };
