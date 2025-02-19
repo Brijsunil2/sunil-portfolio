@@ -23,7 +23,7 @@ const IntroSection = () => {
           <div
             key={index}
           >
-            <a href={link.href} target={link.target ? "_blank" : ""}>
+            <a href={link.href} target={link.target ? "_blank" : ""} rel="noreferrer">
               <link.Icon />
               <span>{link.text}</span>
             </a>
