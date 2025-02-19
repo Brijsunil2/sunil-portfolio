@@ -1,6 +1,4 @@
 import "./ProjectsSection.scss";
-import { motion } from "framer-motion";
-import { CiWarning } from "react-icons/ci";
 import weatherImg from "../../assets/images/weather-app.png";
 import portalHome from "../../assets/images/portal-home.png";
 import triageStartPage from "../../assets/images/triage_start_page.png";
@@ -8,16 +6,8 @@ import Project from "./Project";
 
 const ProjectsSection = () => {
   return (
-    <motion.section
-      className="projects-section"
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.4 }}
-    >
-      {/* <div className="alert alert-warning text-center my-3">
-        <CiWarning color="red" /> Links to live demos may take a moment to load{" "}
-        <CiWarning color="red" />
-      </div> */}
+    <section
+      className="projects-section">
 
       <h2 className="section-title">Featured Projects</h2>
 
@@ -96,7 +86,7 @@ const ProjectsSection = () => {
           technologies={["Java", "Android Studio", "SQLite"]}
         />
       </div>
-    </motion.section>
+    </section>
   );
 };
 

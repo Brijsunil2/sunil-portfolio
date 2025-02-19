@@ -1,10 +1,9 @@
 import "./IntroSection.scss";
-import { motion } from "framer-motion";
 import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
   return (
-    <section className="intro-section">
+    <section className="intro-section section-wrapper">
       <h2>
         Hi, I'm <span>{introData.name}</span>
       </h2>
@@ -21,17 +20,14 @@ const IntroSection = () => {
 
       <div className="socials-container">
         {introData.links.map((link, index) => (
-          <motion.div
-            transition={{ duration: 0.2 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+          <div
             key={index}
           >
             <a href={link.href} target={link.target ? "_blank" : ""}>
               <link.Icon />
               <span>{link.text}</span>
             </a>
-          </motion.div>
+          </div>
         ))}
       </div>
       <hr />

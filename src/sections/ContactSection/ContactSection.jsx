@@ -1,5 +1,4 @@
 import "./ContactSection.scss";
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -36,11 +35,8 @@ const ContactSection = () => {
   };
 
   return (
-    <motion.section
+    <section
       className="contact-section"
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.4 }}
     >
       <h2>Contact Me</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -114,7 +110,7 @@ const ContactSection = () => {
           Send
         </button>
       </form>
-    </motion.section>
+    </section>
   );
 };
 

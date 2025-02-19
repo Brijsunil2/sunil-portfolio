@@ -9,12 +9,12 @@ import EducationSection from "../../sections/EducationSection/EducationSection";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <IntroSection />
+      {/* <IntroSection />
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
-      <ContactSection />
+      <ContactSection /> */}
     </div>
   );
 };

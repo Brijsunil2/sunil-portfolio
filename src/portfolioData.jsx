@@ -1,4 +1,13 @@
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaBookOpen,
+  FaHammer,
+  FaProjectDiagram,
+} from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+
 import webDevCertificate from "./assets/images/web_dev_certificate.png";
 
 import bootstrapIcon from "./assets/icons/bootstrap.svg";
@@ -24,6 +33,11 @@ import reduxIcon from "./assets/icons/redux.svg";
 import viteIcon from "./assets/icons/vitejs.svg";
 
 const siteName = "Sunil's Portfolio";
+
+const navbarData = {
+  name: "Sunil's",
+  links: [],
+};
 
 const introData = {
   name: "Sunil Brijlall",
