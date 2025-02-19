@@ -10,11 +10,11 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <IntroSection />
-      <EducationSection />
+      {/* <EducationSection />
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
-      <ContactSection />
+      <ContactSection /> */}
     </div>
   );
 };

@@ -4,18 +4,17 @@ import { introData } from "../../portfolioData";
 const IntroSection = () => {
   return (
     <section className="intro-section section-wrapper">
-      <h2>
+      <h1>
         Hi, I'm <span>{introData.name}</span>
-      </h2>
-      <hr />
-      <h4>
+      </h1>
+      <h3>
         {introData.qualifications.map((qualification, index) => (
           <span key={index}>
             {qualification}
             {index < introData.qualifications.length - 1 && " | "}
           </span>
         ))}
-      </h4>
+      </h3>
       <p>{introData.intro}</p>
 
       <div className="socials-container">
@@ -25,12 +24,10 @@ const IntroSection = () => {
           >
             <a href={link.href} target={link.target ? "_blank" : ""} rel="noreferrer">
               <link.Icon />
-              <span>{link.text}</span>
             </a>
           </div>
         ))}
       </div>
-      <hr />
     </section>
   );
 };

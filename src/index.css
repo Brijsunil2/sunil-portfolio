@@ -1,0 +1,56 @@
+:root {
+  --bg-color: #0d0b1a;
+  --light-grey: #dbdbdb;
+  --dark-grey: #333333;
+  --black: #000000;
+  --secondary-blue: #7986cb;
+  --muted-turquoise: #4dd0e1;
+  --accent-yellow: #ffeb3b;
+}
+
+.inter-font {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", serif;
+  font-size: 16px;
+  color: var(--light-grey);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-weight: 200;
+}
+
+small {
+  font-size: 0.75rem;
+}
