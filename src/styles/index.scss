@@ -29,12 +29,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 h5 {
@@ -58,8 +59,23 @@ small {
   font-size: 0.75rem;
 }
 
+hr {
+  margin: 0.5rem 0;
+  width: 2rem;
+}
+
+.section-bottom-margin {
+  margin: 10rem 0;
+}
+
 .wrapper-width-md {
   @media (min-width: map-get($breakpoints, "lg")) {
     max-width: map-get($breakpoints, "md");
+  }
+}
+
+.wrapper-width-xl {
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    max-width: map-get($breakpoints, "xl");
   }
 }
