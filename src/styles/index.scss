@@ -26,11 +26,13 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 600;
+  color: map-get($colors, "secondary-blue");
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 500;
+  color: map-get($colors, "muted-turquoise");
 }
 
 h4 {
@@ -45,6 +47,10 @@ h5 {
 
 h6 {
   font-size: 0.875rem;
+}
+
+h4, small {
+  color: map-get($colors, "dark-grey");
 }
 
 p {
@@ -65,7 +71,7 @@ hr {
 }
 
 .section-bottom-margin {
-  margin: 10rem 0;
+  margin: 15rem 0;
 }
 
 .wrapper-width-md {

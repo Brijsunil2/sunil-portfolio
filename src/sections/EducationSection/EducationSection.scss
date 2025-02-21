@@ -1,20 +1,6 @@
-@import "../../styles/colors.scss";
 @import "../../styles//variables.scss";
 
 .education-section {
-  h2 {
-    color: map-get($colors, "warm-coral");
-  }
-
-  h3 {
-    color: map-get($colors, "muted-turquoise");
-  }
-
-  h4,
-  small {
-    color: map-get($colors, "dark-grey");
-  }
-
   .summary {
     padding-top: 1rem;
   }

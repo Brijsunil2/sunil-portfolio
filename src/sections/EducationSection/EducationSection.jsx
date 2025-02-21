@@ -4,7 +4,7 @@ import { educationData } from "../../portfolioData";
 
 const EducationSection = () => {
   return (
-    <section id="educationSection" className="education-section wrapper-width-xl section-bottom-margin ">
+    <section id="educationSection" className="education-section wrapper-width-xl section-bottom-margin">
       <hr/>
       <h2>Education</h2>
       {educationData.map((education, index) => (

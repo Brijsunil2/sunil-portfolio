@@ -11,9 +11,9 @@ const HomePage = () => {
     <div className="home-page">
       <IntroSection />
       <EducationSection />
-      {/* <SkillsSection />
+      <SkillsSection />
       <ProjectsSection />
-      <ExperienceSection />
+      {/* <ExperienceSection />
       <ContactSection /> */}
     </div>
   );

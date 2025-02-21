@@ -1,0 +1,53 @@
+@import "../../styles//colors.scss";
+
+.skills-section {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .skill-subsection {
+    padding: 1rem;
+
+    h3 {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 5rem;
+      color: map-get($colors, "light-grey");
+      font-size: 0.9rem;
+
+      p {
+        padding-top: 4px;
+      }
+
+      .image-wrapper {
+        background-color: map-get($colors, "light-grey");
+        border: solid 3px map-get($colors, "dark-grey");
+        border-radius: 10px;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 80%;
+        }
+      }
+
+      img {
+        max-width: 3rem;
+        max-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 8px;
+      }
+    }
+  }
+}

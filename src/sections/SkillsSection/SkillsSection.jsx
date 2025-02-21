@@ -5,7 +5,11 @@ import { skillsData } from "../../portfolioData";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="skills-section">
+    <section
+      id="skillsSection"
+      className="skills-section wrapper-width-xl section-bottom-margin"
+    >
+      <hr />
       <h2>Skills</h2>
       {Object.keys(skillsData).map((key) => (
         <article key={key} className={`skill-subsection skill-${key}`}>
@@ -13,13 +17,18 @@ const SkillsSection = () => {
           <div className="skills-wrapper">
             {skillsData[key].map((skill, index) => (
               <div key={index} className="skill">
-                {skill.iconSrc && <img src={skill.iconSrc} alt={skill.title} />}
+                {skill.iconSrc && (
+                  <div className="image-wrapper">
+                    <img src={skill.iconSrc} alt={skill.title} />
+                  </div>
+                )}
                 <p>{skill.title}</p>
               </div>
             ))}
           </div>
         </article>
       ))}
+      <hr />
     </section>
   );
 };

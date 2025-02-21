@@ -171,7 +171,7 @@ const skillsData = {
     { iconSrc: javascriptIcon, title: "JavaScript" },
     { iconSrc: reactIcon, title: "React" },
     { iconSrc: viteIcon, title: "Vitejs" },
-    { iconSrc: reduxIcon, title: "Redux Toolkit" },
+    { iconSrc: reduxIcon, title: "Redux" },
     { iconSrc: bootstrapIcon, title: "Bootstrap" },
   ],
   backend: [
@@ -192,7 +192,7 @@ const skillsData = {
     { iconSrc: postmanIcon, title: "Postman" },
     { iconSrc: neonIcon, title: "Neon" },
   ],
-  bonus: [
+  other: [
     { iconSrc: pythonIcon, title: "Python" },
     { iconSrc: javaIcon, title: "Java" },
   ],
@@ -203,10 +203,11 @@ const projectsData = [
     name: "TriageCare",
     type: "Frontend | Backend",
     githubRepo: "https://github.com/Brijsunil2/triage-care",
+    liveLink: null,
     text: "A modern hospital triage system designed to streamline the patient check-in process, enhance the efficiency of initial medical assessments, and improve overall patient care.",
     notes: [],
     images: [],
-    pills: [
+    skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
       { iconSrc: javascriptIcon, text: "JavaScript" },
@@ -225,10 +226,11 @@ const projectsData = [
     name: "Portal",
     type: "Frontend | Backend",
     githubRepo: "https://github.com/Brijsunil2/portal-release",
+    liveLink: null,
     text: "A versatile website for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features. The user forum application is where users can create and share forums.",
     notes: [],
     images: [],
-    pills: [
+    skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
       { iconSrc: javascriptIcon, text: "JavaScript" },
@@ -248,10 +250,11 @@ const projectsData = [
     name: "Weather App",
     type: "Frontend",
     githubRepo: "https://github.com/Brijsunil2/weather-app",
+    liveLink: null,
     text: "A web app using the OpenWeatherMap API to fetch weather data for user locations. Built with vanilla JavaScript and Webpack.",
     notes: [],
     images: [],
-    pills: [
+    skills: [
       { iconSrc: javascriptIcon, text: "JavaScript" },
       { iconSrc: htmlIcon, text: "HTML" },
       { iconSrc: cssIcon, text: "CSS" },
@@ -262,10 +265,11 @@ const projectsData = [
     name: "UDP File Transfer",
     type: "Desktop Test Application",
     githubRepo: "https://github.com/Brijsunil2/UDP-File-Transfer",
+    liveLink: null,
     text: "A Java application for transferring files between users, supporting text, images, audio, and small videos.",
     notes: [],
     images: [],
-    pills: [{ iconSrc: javaIcon, text: "Java" }],
+    skills: [{ iconSrc: javaIcon, text: "Java" }],
   },
 ];
 
