@@ -31,6 +31,12 @@ import vscodeIcon from "./assets/icons/visual-studio-code.svg";
 import neonIcon from "./assets/icons/neon-icon.svg";
 import reduxIcon from "./assets/icons/redux.svg";
 import viteIcon from "./assets/icons/vitejs.svg";
+import webpackIcon from "./assets/icons/webpack.svg";
+
+import forumsScreenImg from "./assets/images/forums-screen.png";
+import portalLoginImg from "./assets/images/portal-demo-login.png";
+import portalHomeImg from "./assets/images/portal-home.png";
+import triageStartPageImg from "./assets/images/triage_start_page.png";
 
 const siteName = "Sunil's Portfolio";
 
@@ -205,8 +211,12 @@ const projectsData = [
     githubRepo: "https://github.com/Brijsunil2/triage-care",
     liveLink: null,
     text: "A modern hospital triage system designed to streamline the patient check-in process, enhance the efficiency of initial medical assessments, and improve overall patient care.",
-    notes: [],
-    images: [],
+    notes: [
+      "Developed mobile friendly front-end interface using React, Bootstrap and CSS, ensuring optimal experience for all screen sizes.",
+      "Implemented RESTful APIs for efficient data management for client and visit data between the client and server.",
+      "Utilized a Postgres database to store an retrieve client personal and visit information.",
+    ],
+    images: [triageStartPageImg],
     skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
@@ -217,7 +227,7 @@ const projectsData = [
       { iconSrc: bootstrapIcon, text: "React Bootstrap" },
       { iconSrc: reduxIcon, text: "Redux Toolkit" },
       { iconSrc: expressIcon, text: "Express.js" },
-      { iconSrc: nodejsIcon, text: "node.js" },
+      { iconSrc: nodejsIcon, text: "Node.js" },
       { iconSrc: postgresIcon, text: "PostgreSQL" },
       { iconSrc: neonIcon, text: "Neon" },
     ],
@@ -228,8 +238,12 @@ const projectsData = [
     githubRepo: "https://github.com/Brijsunil2/portal-release",
     liveLink: null,
     text: "A versatile website for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features. The user forum application is where users can create and share forums.",
-    notes: [],
-    images: [],
+    notes: [
+      "Utilized MERN stack to develop a high-performance, manageable and responsive user interface for real-time interaction using OO principals for React components.",
+      "Integrated WebSocket for a real-time chat feature and JWT for secure user authentication.",
+      "Designed and implemented RESTful APIs using MongoDb in order use CRUD operations for forum sessions and user data.",
+    ],
+    images: [portalHomeImg, portalLoginImg, forumsScreenImg],
     skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
@@ -240,9 +254,9 @@ const projectsData = [
       { iconSrc: bootstrapIcon, text: "React Bootstrap" },
       { iconSrc: reduxIcon, text: "Redux Toolkit" },
       { iconSrc: expressIcon, text: "Express.js" },
-      { iconSrc: nodejsIcon, text: "node.js" },
+      { iconSrc: nodejsIcon, text: "Node.js" },
       { iconSrc: mongoDbIcon, text: "MongoDB" },
-      { iconSrc: null, text: "Authentication" },
+      { iconSrc: webpackIcon, text: "Authentication" },
       { iconSrc: neonIcon, text: "Neon" },
     ],
   },

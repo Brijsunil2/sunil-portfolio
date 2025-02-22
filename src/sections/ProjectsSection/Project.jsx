@@ -14,6 +14,9 @@ const Project = ({
 }) => {
   return (
     <div className="project-item">
+      <div className="images">
+
+      </div>
       <h3>{name}</h3>
       <small>{type}</small>
       {githubRepo && (
@@ -34,7 +37,7 @@ const Project = ({
       </ul>
       <div className="skill-pills">
         {skills.map((skill, index) => (
-          <ButtonPills img={skill.iconSrc} name={skill.text} />
+          <ButtonPills key={index} img={skill.iconSrc} name={skill.text} />
         ))}
       </div>
     </div>
