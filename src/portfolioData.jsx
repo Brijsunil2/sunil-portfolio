@@ -128,7 +128,7 @@ const experienceData = [
           "Provided on-site technical support for a variety of devices, including computers, mobile devices, and smart home systems.",
           "Diagnosed hardware and software issues, ensuring quick resolution to minimize downtime.",
           "Communicated technical information to non-technical clients.",
-          "Similar responsiblities as a Geek Sqaud In-Store Agent",
+          "Similar responsiblities as a Geek Sqaud In-Store Agent.",
         ],
       },
       {

@@ -13,8 +13,8 @@ const HomePage = () => {
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
-      {/* <ExperienceSection />
-      <ContactSection /> */}
+      <ExperienceSection />
+      {/* <ContactSection /> */}
     </div>
   );
 };

@@ -3,12 +3,13 @@ import { experienceData } from "../../portfolioData";
 
 const ExperienceSection = () => {
   return (
-    <section id="experiences" className="experiences-section">
+    <section id="experiences" className="experiences-section section-bottom-margin wrapper-width-xl">
+      <hr/>
       <h2>Experience</h2>
       {experienceData.map((experience, i) => (
         <article key={i} className="experience-wrapper">
           <h3>{experience.company}</h3>
-          <p className="duration-label">{experience.duration}</p>
+          <small className="duration-label">{experience.duration}</small>
           {
             experience.positions.map((position, j) => (
               <div key={j}>
@@ -25,6 +26,7 @@ const ExperienceSection = () => {
           }
         </article>
       ))}
+      <hr/>
     </section>
   );
 };

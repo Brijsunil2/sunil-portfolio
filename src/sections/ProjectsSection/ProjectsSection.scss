@@ -28,6 +28,8 @@
       align-items: center;
       
       .project-repo {
+        display: flex;
+        align-items: center;
         padding-left: 0.5rem;
         color: map-get($colors, "accent-yellow" );
       }
