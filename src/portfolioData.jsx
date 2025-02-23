@@ -256,7 +256,7 @@ const projectsData = [
       { iconSrc: expressIcon, text: "Express.js" },
       { iconSrc: nodejsIcon, text: "Node.js" },
       { iconSrc: mongoDbIcon, text: "MongoDB" },
-      { iconSrc: webpackIcon, text: "Authentication" },
+      { iconSrc: null, text: "Authentication" },
       { iconSrc: neonIcon, text: "Neon" },
     ],
   },
@@ -272,7 +272,7 @@ const projectsData = [
       { iconSrc: javascriptIcon, text: "JavaScript" },
       { iconSrc: htmlIcon, text: "HTML" },
       { iconSrc: cssIcon, text: "CSS" },
-      { iconSrc: null, text: "Webpack" },
+      { iconSrc: webpackIcon, text: "Webpack" },
     ],
   },
   {

@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
+
+.projects-section {
+  .project-article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1.5rem;
+
+    .image-wrapper {
+      width: 100%;
+      height: 100%;
+      padding-right: 1.5rem;
+
+      img {
+        width: calc(100% - 1.5rem);
+
+        &:hover {
+          transition: 0.5s;
+          cursor: pointer;
+          opacity: 70%;
+        }
+      }
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      
+      .project-repo {
+        padding-left: 0.5rem;
+        color: map-get($colors, "accent-yellow" );
+      }
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+
+      .btn-pill-container {
+        margin-bottom: 6px;
+        margin-right: 6px;
+      }
+    }
+
+    @media (max-width: map-get($breakpoints, "sm")) {
+      display: block;
+
+      .image-wrapper {
+        padding: 0;
+        padding-bottom: 1rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

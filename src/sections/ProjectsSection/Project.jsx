@@ -13,34 +13,42 @@ const Project = ({
   skills,
 }) => {
   return (
-    <div className="project-item">
-      <div className="images">
+    <article className="project-article">
+      <div className="image-wrapper"></div>
+      <div>
+        <h3>
+          {name}
+          {githubRepo && (
+            <a
+              className="project-repo"
+              href={githubRepo}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
+          )}
+        </h3>
+        <small>{type}</small>
 
+        {liveLink && (
+          <a className="project-livelink" href={liveLink}>
+            <HiLink /> Live Link
+          </a>
+        )}
+        <p>{text}</p>
+        <ul>
+          {notes.map((note, index) => (
+            <li key={index}>{note}</li>
+          ))}
+        </ul>
+        <div className="skill-pills">
+          {skills.map((skill, index) => (
+            <ButtonPills key={index} img={skill.iconSrc} name={skill.text} />
+          ))}
+        </div>
       </div>
-      <h3>{name}</h3>
-      <small>{type}</small>
-      {githubRepo && (
-        <a className="project-repo" href={githubRepo}>
-          <FaGithub /> Project Repository
-        </a>
-      )}
-      {liveLink && (
-        <a className="project-livelink" href={liveLink}>
-          <HiLink /> Live Link
-        </a>
-      )}
-      <p>{text}</p>
-      <ul>
-        {notes.map((note, index) => (
-          <li key={index}>{note}</li>
-        ))}
-      </ul>
-      <div className="skill-pills">
-        {skills.map((skill, index) => (
-          <ButtonPills key={index} img={skill.iconSrc} name={skill.text} />
-        ))}
-      </div>
-    </div>
+    </article>
   );
 };
 
