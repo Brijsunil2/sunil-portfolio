@@ -41,6 +41,7 @@
     textarea {
       min-height: 4rem;
       max-width: calc(100% - 1rem - 4px);
+      field-sizing: content;
     }
 
     button {

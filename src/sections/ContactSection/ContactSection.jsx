@@ -42,7 +42,7 @@ const ContactSection = () => {
   return (
     <section className="contact-section wrapper-width-xl section-bottom-margin">
       <hr />
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
           <div className="col input-label">

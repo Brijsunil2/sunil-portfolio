@@ -49,11 +49,14 @@ h6 {
   font-size: 0.875rem;
 }
 
-h4, small {
+h4,
+small {
   color: map-get($colors, "dark-grey");
 }
 
-p, li{
+p,
+li {
+  font-size: 1rem;
   font-weight: 200;
 }
 
