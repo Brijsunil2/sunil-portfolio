@@ -7,6 +7,7 @@ const ContactSection = () => {
   const [submitMsg, setSubmitMsg] = useState({
     msg: "",
     color: "black",
+    hidden: true,
   });
 
   const sendEmail = (e) => {
@@ -24,24 +25,27 @@ const ContactSection = () => {
           setSubmitMsg({
             msg: "Message was sent successfully!",
             color: "green",
+            hidden: false,
           });
-          console.log(res.text);
         },
         (err) => {
-          setSubmitMsg({ msg: "Error: Unable to send message.", color: "red" });
+          setSubmitMsg({
+            msg: "Error: Unable to send message.",
+            color: "red",
+            hidden: false,
+          });
           console.log(err.text);
         }
       );
   };
 
   return (
-    <section
-      className="contact-section"
-    >
+    <section className="contact-section wrapper-width-xl section-bottom-margin">
+      <hr />
       <h2>Contact Me</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row">
-          <div className="col-sm-6 mb-3">
+          <div className="col input-label">
             <label htmlFor="userFirstnameInput" className="form-label">
               Firstname
             </label>
@@ -53,7 +57,7 @@ const ContactSection = () => {
               required
             />
           </div>
-          <div className="col-sm-6 mb-3">
+          <div className="col input-label">
             <label htmlFor="userLastnameInput" className="form-label">
               Lastname
             </label>
@@ -66,7 +70,7 @@ const ContactSection = () => {
             />
           </div>
         </div>
-        <div className="mb-3">
+        <div className="input-label">
           <label htmlFor="userEmailInput" className="form-label">
             Email Address
           </label>
@@ -79,7 +83,7 @@ const ContactSection = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="input-label">
           <label htmlFor="userSubjectInput" className="form-label">
             Subject
           </label>
@@ -91,7 +95,7 @@ const ContactSection = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="input-label">
           <label htmlFor="userMessageInput" className="form-label">
             Message
           </label>
@@ -103,13 +107,14 @@ const ContactSection = () => {
             required
           />
         </div>
-        <p className="form-msg" style={{ color: submitMsg.color }}>
+        <p hidden={submitMsg.hidden}>
           {submitMsg.msg}
         </p>
         <button type="submit" className="btn btn-primary">
           Send
         </button>
       </form>
+      <hr />
     </section>
   );
 };
