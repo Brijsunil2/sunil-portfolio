@@ -7,7 +7,7 @@ const CustomCursor = () => {
     height: '0px',
     borderRadius: '50%',
     background: '#ffffff',
-    boxShadow: '0 0 140px 70px rgba(247, 145, 225, 0.3)',
+    boxShadow: '0 0 140px 80px rgba(247, 145, 225, 0.2)',
     pointerEvents: 'none',
     transform: 'translate(-50%, -50%)',
     zIndex: '9999',

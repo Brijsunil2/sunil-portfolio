@@ -8,7 +8,21 @@ import {
   FaLightbulb,
 } from "react-icons/fa";
 
-import webDevCertificate from "./assets/images/web_dev_certificate.png";
+import webDevCertificateImg from "./assets/images/education/web_dev_certificate.png";
+import computerScienceDegreeImg from "./assets/images/education/computer_science_degree.jpg";
+
+import portal1Img from "./assets/images/projects/portal/portal_login_page.png";
+import portal2Img from "./assets/images/projects/portal/portal_signup_page.png";
+import portal3Img from "./assets/images/projects/portal/portal_home_page.png";
+import portal4Img from "./assets/images/projects/portal/portal_settings_page.png";
+import portal5Img from "./assets/images/projects/portal/portal_forums_page.png";
+import portal6Img from "./assets/images/projects/portal/portal_forum_page.png";
+
+import triageCare1Img from "./assets/images/projects/triage_care/triage_start_page.png";
+import triageCare2Img from "./assets/images/projects/triage_care/patient_info_page.png";
+import triageCare3Img from "./assets/images/projects/triage_care/visit_info_page.png";
+import triageCare4Img from "./assets/images/projects/triage_care/terms_and_conditions_page.png";
+import triageCare5Img from "./assets/images/projects/triage_care/triage_complete_page.png";
 
 import bootstrapIcon from "./assets/icons/bootstrap.svg";
 import cssIcon from "./assets/icons/css-3.svg";
@@ -32,11 +46,6 @@ import neonIcon from "./assets/icons/neon-icon.svg";
 import reduxIcon from "./assets/icons/redux.svg";
 import viteIcon from "./assets/icons/vitejs.svg";
 import webpackIcon from "./assets/icons/webpack.svg";
-
-import forumsScreenImg from "./assets/images/forums-screen.png";
-import portalLoginImg from "./assets/images/portal-demo-login.png";
-import portalHomeImg from "./assets/images/portal-home.png";
-import triageStartPageImg from "./assets/images/triage_start_page.png";
 
 const siteName = "Sunil's Portfolio";
 
@@ -103,7 +112,7 @@ const educationData = [
     duration: "2022",
     summary:
       "Focused on web development and software engineering, with coursework in Object-Oriented Programming, Data Structures, Computer Networks, Algorithm Design, Big Data, AI, and Databases.",
-    image: null,
+    image: computerScienceDegreeImg,
     imageAlt: "Computer Science Degree",
   },
   {
@@ -112,7 +121,7 @@ const educationData = [
     duration: "2024",
     summary:
       "Learn the latest technologies, including Javascript, React, Node and even Web3 development. Built fully-fledged websites and web apps and mastered frontend development with React.",
-    image: webDevCertificate,
+    image: webDevCertificateImg,
     imageAlt: "Udemy Full-Stack Web Development Certificate",
   },
 ];
@@ -216,7 +225,13 @@ const projectsData = [
       "Implemented RESTful APIs for efficient data management for client and visit data between the client and server.",
       "Utilized a Postgres database to store an retrieve client personal and visit information.",
     ],
-    images: [triageStartPageImg],
+    images: [
+      triageCare1Img,
+      triageCare2Img,
+      triageCare3Img,
+      triageCare4Img,
+      triageCare5Img,
+    ],
     skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
@@ -243,7 +258,14 @@ const projectsData = [
       "Integrated WebSocket for a real-time chat feature and JWT for secure user authentication.",
       "Designed and implemented RESTful APIs using MongoDb in order use CRUD operations for forum sessions and user data.",
     ],
-    images: [portalHomeImg, portalLoginImg, forumsScreenImg],
+    images: [
+      portal1Img,
+      portal2Img,
+      portal3Img,
+      portal4Img,
+      portal5Img,
+      portal6Img,
+    ],
     skills: [
       { iconSrc: reactIcon, text: "React" },
       { iconSrc: viteIcon, text: "Vitejs" },
