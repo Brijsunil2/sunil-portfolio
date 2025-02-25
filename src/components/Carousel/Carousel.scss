@@ -1,0 +1,52 @@
+@import "../../styles/colors.scss";
+
+.carousel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 16px;
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: map-get($colors, "accent-yellow");
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.left {
+      left: 1.2rem;
+    }
+
+    &.right {
+      right: 1.2rem;
+    }
+  }
+
+  svg {
+    z-index: 2;
+  }
+
+  .carousel-item {
+    width: fit-content;
+    
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

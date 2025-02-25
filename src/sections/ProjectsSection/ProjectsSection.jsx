@@ -18,6 +18,7 @@ const ProjectsSection = () => {
             liveLink={project.liveLink}
             text={project.text}
             notes={project.notes}
+            images={project.images}
             skills={project.skills}
           />
         ))}

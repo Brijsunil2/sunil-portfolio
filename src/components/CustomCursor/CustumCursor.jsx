@@ -10,7 +10,7 @@ const CustomCursor = () => {
     boxShadow: '0 0 140px 80px rgba(247, 145, 225, 0.2)',
     pointerEvents: 'none',
     transform: 'translate(-50%, -50%)',
-    zIndex: '9999',
+    zIndex: '2',
   };
 
   useEffect(() => {

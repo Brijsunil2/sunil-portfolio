@@ -1,4 +1,5 @@
 import ButtonPills from "../../components/ButtonPills/ButtonPills";
+import Carousel from "../../components/Carousel/Carousel";
 import { HiLink } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 
@@ -14,7 +15,9 @@ const Project = ({
 }) => {
   return (
     <article className="project-article">
-      <div className="image-wrapper"></div>
+      <div className="image-wrapper">
+        <Carousel images={images} />
+      </div>
       <div>
         <h3>
           {name}
