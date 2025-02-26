@@ -16,7 +16,7 @@ const Project = ({
   return (
     <article className="project-article">
       <div className="image-wrapper">
-        <Carousel images={images} />
+        {images && images.length > 0 && <Carousel images={images} />}
       </div>
       <div>
         <h3>
