@@ -39,7 +39,7 @@
       }
     }
 
-    @media (max-width: map-get($breakpoints, "md")) {
+    @media (max-width: map-get($breakpoints, "lg")) {
       display: block;
 
       .image-wrapper {
