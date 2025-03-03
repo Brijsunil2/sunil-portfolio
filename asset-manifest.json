@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.77b11544.css",
-    "main.js": "/sunil-portfolio/static/js/main.d9329cfa.js",
+    "main.css": "/sunil-portfolio/static/css/main.4750c610.css",
+    "main.js": "/sunil-portfolio/static/js/main.b15cf8a1.js",
     "static/media/computer_science_degree.jpg": "/sunil-portfolio/static/media/computer_science_degree.5412d134ba5a0ad1ecd3.jpg",
     "static/media/portal_forum_page.png": "/sunil-portfolio/static/media/portal_forum_page.7c7e426b065dce6675df.png",
     "static/media/web_dev_certificate.png": "/sunil-portfolio/static/media/web_dev_certificate.db948412d5077d0f9541.png",
@@ -38,11 +38,11 @@
     "static/media/webpack.svg": "/sunil-portfolio/static/media/webpack.b460dec8736fcf92a8c77006b62f825a.svg",
     "static/media/mongodb-icon.svg": "/sunil-portfolio/static/media/mongodb-icon.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.77b11544.css.map": "/sunil-portfolio/static/css/main.77b11544.css.map",
-    "main.d9329cfa.js.map": "/sunil-portfolio/static/js/main.d9329cfa.js.map"
+    "main.4750c610.css.map": "/sunil-portfolio/static/css/main.4750c610.css.map",
+    "main.b15cf8a1.js.map": "/sunil-portfolio/static/js/main.b15cf8a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b11544.css",
-    "static/js/main.d9329cfa.js"
+    "static/css/main.4750c610.css",
+    "static/js/main.b15cf8a1.js"
   ]
 }
