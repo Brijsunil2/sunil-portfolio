@@ -1,17 +1,35 @@
 import "./EducationSection.scss";
 
+import { useState } from "react";
 import { educationData } from "../../portfolioData";
+import Modal from "../../components/Modal/Modal";
+import ModalOverlay from "../../components/Modal/ModalOverlay";
 
 const EducationSection = () => {
+  const [modalData, setModalData] = useState(null);
+  const [modalActive, setModalActive] = useState(false);
+
   return (
-    <section id="educationSection" className="education-section wrapper-width-xl section-bottom-margin">
-      <hr/>
+    <section
+      id="educationSection"
+      className="education-section wrapper-width-xl section-bottom-margin"
+    >
+      <hr />
       <h2>Education</h2>
       {educationData.map((education, index) => (
         <article key={index} className="education-article">
           <div className="image-wrapper">
             {education.image && (
-              <img src={education.image} alt={education.imageAlt} />
+              <>
+                <ModalOverlay
+                  togglerFunc={() => {
+                    setModalData(education);
+                    setModalActive(true);
+                  }}
+                >
+                  <img src={education.image} alt={education.imageAlt} />
+                </ModalOverlay>
+              </>
             )}
           </div>
           <div>
@@ -22,7 +40,12 @@ const EducationSection = () => {
           </div>
         </article>
       ))}
-      <hr/>
+      <hr />
+      <Modal active={modalActive} onClose={() => setModalActive(false)}>
+        <div className="image-wrapper">
+          {modalData && <img src={modalData.image} alt={modalData.imageAlt} />}
+        </div>
+      </Modal>
     </section>
   );
 };
