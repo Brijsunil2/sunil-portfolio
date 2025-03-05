@@ -7,18 +7,6 @@
     padding-top: 1rem;
   }
 
-  .image-wrapper {
-    border-radius: 16px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-    }
-  }
-
   .education-article {
     display: grid;
     grid-template-columns: 1fr 2fr;

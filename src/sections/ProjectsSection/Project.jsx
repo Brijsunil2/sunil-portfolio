@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ButtonPills from "../../components/ButtonPills/ButtonPills";
 import Carousel from "../../components/Carousel/Carousel";
-import Modal from "../../components/Modal/Modal";
 import { HiLink } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 
@@ -15,13 +14,12 @@ const Project = ({
   images,
   skills,
 }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <article className="project-article">
-      <div className="image-wrapper">
+      <div className="project-carousel">
         {images && images.length > 0 && (
-          <Carousel imageUrls={images} togglerFunc={() => setIsModalOpen(true)} />
+          <Carousel imageUrls={images} />
         )}
       </div>
       <div>
@@ -57,10 +55,6 @@ const Project = ({
           ))}
         </div>
       </div>
-
-      <Modal active={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <Carousel images={images} />
-      </Modal>
     </article>
   );
 };
