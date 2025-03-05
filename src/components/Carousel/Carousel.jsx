@@ -1,62 +1,52 @@
 import "./Carousel.scss";
 import { useState, useEffect, useRef } from "react";
 import { FaAngleLeft, FaAngleRight, FaExpand } from "react-icons/fa";
+import { GoDot, GoDotFill  } from "react-icons/go";
 
-const Carousel = ({
-  images,
-  togglerFunc = null,
-  togglerIcon = <FaExpand />,
-}) => {
-  const [imgIndex, setImageIndex] = useState(0);
-  const [imageHeight, setImageHeight] = useState("100%");
-  const imgRef = useRef(null);
+const Carousel = ({ imageUrls }) => {
+  const [imageIndex, setImageIndex] = useState(0);
 
-  useEffect(() => {
-    if (imgRef.current) {
-      setImageHeight(imgRef.current.clientHeight);
-    }
-  }, [images]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (imgRef.current) {
-        setImageHeight(imgRef.current.clientHeight);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const showPrevImage = () => {
+    setImageIndex((imageIndex - 1 + imageUrls.length) % imageUrls.length);
+  };
+  const showNextImage = () => {
+    setImageIndex((imageIndex + 1) % imageUrls.length);
+  };
 
   return (
-    <div className="carousel" style={{ maxHeight: imageHeight }}>
-      <div className="carousel-item" style={{ maxHeight: imageHeight }}>
-        {images && <img src={images[imgIndex]} ref={imgRef} />}
+    <div className="carousel">
+      <div className="carousel-img-container">
+        {imageUrls.map((url) => (
+          <img
+            key={url}
+            className="carousel-img"
+            src={url}
+            loading="lazy"
+            alt="carousel"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
+        ))}
       </div>
-      {togglerFunc && (
-        <button className="toggler" onClick={togglerFunc}>
-          {togglerIcon}
-        </button>
-      )}
 
-      {images && images.length > 1 && (
-        <>
-          <button
-            className="left"
-            onClick={() => setImageIndex((imgIndex - 1 + images.length) % images.length)}
-          >
-            <FaAngleLeft />
-          </button>
-          <button
-            className="right"
-            onClick={() => setImageIndex((imgIndex + 1) % images.length)}
-          >
-            <FaAngleRight />
-          </button>
-        </>
-      )}
+      <button
+        className="carousel-btn"
+        style={{ left: 0 }}
+        onClick={showPrevImage}
+      >
+        <FaAngleLeft />
+      </button>
+      <button
+        className="carousel-btn"
+        style={{ right: 0 }}
+        onClick={showNextImage}
+      >
+        <FaAngleRight />
+      </button>
+      <div className="carousel-dots">
+        {imageUrls.map((_, index) => (
+          <button key={index} className="carousel-dot-btn" onClick={() => setImageIndex(index)}>{index === imageIndex ? <GoDotFill /> : <GoDot />}</button>
+        ))}
+      </div>
     </div>
   );
 };

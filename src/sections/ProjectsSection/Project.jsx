@@ -21,7 +21,7 @@ const Project = ({
     <article className="project-article">
       <div className="image-wrapper">
         {images && images.length > 0 && (
-          <Carousel images={images} togglerFunc={() => setIsModalOpen(true)} />
+          <Carousel imageUrls={images} togglerFunc={() => setIsModalOpen(true)} />
         )}
       </div>
       <div>

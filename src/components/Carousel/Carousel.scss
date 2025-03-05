@@ -2,63 +2,70 @@
 @import "../../styles/variables.scss";
 
 .carousel {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.384);
-  border-radius: 16px;
-  overflow: hidden;
   width: 100%;
+  height: 100%;
+  position: relative;
 
-  button {
+  &-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: translate 300ms ease-in-out;
+  }
+
+  &-btn {
+    all: unset;
+    display: block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    color: map-get($colors, "accent-yellow");
-    border: none;
+    top: calc(50% - 1rem);
     cursor: pointer;
-    z-index: 3;
-    font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.384);
-    border-radius: 50%;
+    color: map-get($colors, "accent-yellow");
+    background-color: map-get($colors, "bg-color-secondary");
     width: 2rem;
     height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: scale 100ms ease-in-out;
 
-    &.left {
-      left: 0.2rem;
+    &:hover {
+      scale: 1.2;
     }
 
-    &.right {
-      right: 0.2rem;
-    }
-
-    &.toggler {
-      top: 1.2rem;
-      right: 0.2rem;
-      @media screen and (max-width: map-get($breakpoints, "sm")) {
-        display: none;
-      }
-    }
   }
 
-  svg {
-    z-index: 2;
-  }
-
-  .carousel-item {
-    width: 100%;
+  &-dots {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    gap: 0.25rem;
+    background-color: map-get($colors, "bg-color-secondary");
+    border-radius: 1rem;
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
+  &-dot-btn {
+    all: unset;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    color: map-get($colors, "accent-yellow");
+    transition: scale 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.5;
     }
   }
 }
