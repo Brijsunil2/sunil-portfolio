@@ -13,9 +13,9 @@ const EducationSection = () => {
       <h2>Education</h2>
       {educationData.map((education, index) => (
         <article key={index} className="education-article">
-          <div className="education-img">
+          <div className="education-img-container">
             {education.image && (
-              <img src={education.image} alt={education.imageAlt} />
+              <img className="education-img" src={education.image} alt={education.imageAlt} loading="lazy"/>
             )}
           </div>
           <div>
