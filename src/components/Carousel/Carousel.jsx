@@ -1,6 +1,6 @@
 import "./Carousel.scss";
-import { useState, useEffect, useRef } from "react";
-import { FaAngleLeft, FaAngleRight, FaExpand } from "react-icons/fa";
+import { useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { GoDot, GoDotFill  } from "react-icons/go";
 
 const Carousel = ({ imageUrls }) => {

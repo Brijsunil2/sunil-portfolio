@@ -1,6 +1,6 @@
-import { useState } from "react";
 import ButtonPills from "../../components/ButtonPills/ButtonPills";
 import Carousel from "../../components/Carousel/Carousel";
+import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 import { HiLink } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 
@@ -14,12 +14,13 @@ const Project = ({
   images,
   skills,
 }) => {
-
   return (
     <article className="project-article">
       <div className="project-carousel">
         {images && images.length > 0 && (
-          <Carousel imageUrls={images} />
+          <ModalOpenBtn>
+            <Carousel imageUrls={images} />
+          </ModalOpenBtn>
         )}
       </div>
       <div>
