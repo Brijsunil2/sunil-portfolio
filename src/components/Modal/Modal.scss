@@ -1,0 +1,85 @@
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: map-get($breakpoints, "lg");
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: map-get($colors, "bg-color-secondary");
+
+  &::backdrop {
+    background: map-get($colors, "bg-color-secondary");
+  }
+  
+  &-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: map-get($colors, "bg-color-secondary");
+    padding: 1rem;
+    overflow: auto;
+  }
+
+  &-close-btn {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: map-get($colors, "accent-yellow");
+    border: solid 1px map-get($colors, "accent-yellow");
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: scale 100ms ease-in-out, color 100ms ease-in-out;
+    z-index: 10;
+
+    &:hover {
+      scale: 1.2;
+      color: map-get($colors, "invalid-red");
+    }
+  }
+}
+
+.modal-open-btn-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .modal-open {
+    &-btn {
+      all: unset;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      color: map-get($colors, "accent-yellow");
+      background-color: map-get($colors, "bg-color-secondary");
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: scale 100ms ease-in-out;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}

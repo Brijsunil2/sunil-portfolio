@@ -1,9 +1,8 @@
 import "./EducationSection.scss";
-
 import { educationData } from "../../portfolioData";
+import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 
 const EducationSection = () => {
-
   return (
     <section
       id="educationSection"
@@ -15,7 +14,16 @@ const EducationSection = () => {
         <article key={index} className="education-article">
           <div className="education-img-container">
             {education.image && (
-              <img className="education-img" src={education.image} alt={education.imageAlt} loading="lazy"/>
+              <ModalOpenBtn>
+                <div className="education-img-container">
+                  <img
+                    className="education-img"
+                    src={education.image}
+                    alt={education.imageAlt}
+                    loading="lazy"
+                  />
+                </div>
+              </ModalOpenBtn>
             )}
           </div>
           <div>
