@@ -1,7 +1,7 @@
 import "./Carousel.scss";
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import { GoDot, GoDotFill  } from "react-icons/go";
+import { GoDot, GoDotFill } from "react-icons/go";
 
 const Carousel = ({ imageUrls }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -17,14 +17,15 @@ const Carousel = ({ imageUrls }) => {
     <div className="carousel">
       <div className="carousel-img-container">
         {imageUrls.map((url) => (
-          <img
-            key={url}
-            className="carousel-img"
-            src={url}
-            loading="lazy"
-            alt="carousel"
-            style={{ translate: `${-100 * imageIndex}%` }}
-          />
+          <div className="carousel-img-wrapper" key={url}>
+            <img
+              className="carousel-img"
+              src={url}
+              loading="lazy"
+              alt="carousel"
+              style={{ translate: `${-100 * imageIndex}%` }}
+            />
+          </div>
         ))}
       </div>
 
@@ -44,7 +45,13 @@ const Carousel = ({ imageUrls }) => {
       </button>
       <div className="carousel-dots">
         {imageUrls.map((_, index) => (
-          <button key={index} className="carousel-dot-btn" onClick={() => setImageIndex(index)}>{index === imageIndex ? <GoDotFill /> : <GoDot />}</button>
+          <button
+            key={index}
+            className="carousel-dot-btn"
+            onClick={() => setImageIndex(index)}
+          >
+            {index === imageIndex ? <GoDotFill /> : <GoDot />}
+          </button>
         ))}
       </div>
     </div>
