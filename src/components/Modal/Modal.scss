@@ -10,19 +10,22 @@
   max-width: map-get($breakpoints, "lg");
   transform: translate(-50%, -50%);
   border: none;
-  border-radius: 1rem;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  background-color: map-get($colors, "bg-color-secondary");
+  background-color: map-get($colors, "light-grey-dim");
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
 
   &::backdrop {
     background: map-get($colors, "bg-color-secondary");
   }
-  
+
   &-content {
     position: relative;
-    background-color: map-get($colors, "light-grey");
+    background-color: map-get($colors, "light-grey-dim");
     width: 100%;
     height: 100%;
+    padding: 0.5rem;
   }
 
   &-close-btn {
