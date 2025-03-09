@@ -1,9 +1,15 @@
 import "./SkillsSection.scss";
 import { firstLetterUpper } from "../../utils/utils";
-
+import useSectionAnimation from "../../components/hooks/useSectionAnimation";
 import { skillsData } from "../../portfolioData";
 
 const SkillsSection = () => {
+  const slideInRef = useSectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("skill-slide-in");
+    }
+  });
+
   return (
     <section
       id="skillsSection"
@@ -16,7 +22,14 @@ const SkillsSection = () => {
           <h3>{firstLetterUpper(key)}</h3>
           <div className="skills-wrapper">
             {skillsData[key].map((skill, index) => (
-              <div key={index} className="skill">
+              <div
+                key={index}
+                className="skill"
+                ref={slideInRef}
+                style={{
+                  "--delay": `${index * 50}ms`,
+                }}
+              >
                 {skill.iconSrc && (
                   <div className="image-wrapper">
                     <img src={skill.iconSrc} alt={skill.title} />

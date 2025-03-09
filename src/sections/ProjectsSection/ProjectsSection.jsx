@@ -1,11 +1,13 @@
 import "./ProjectsSection.scss";
-
 import { projectsData } from "../../portfolioData";
 import Project from "./Project";
 
 const ProjectsSection = () => {
+
   return (
-    <section className="projects-section section-bottom-margin wrapper-width-xl">
+    <section
+      className="projects-section section-bottom-margin wrapper-width-xl"
+    >
       <hr />
       <h2>Projects</h2>
       <article className="projects-article">

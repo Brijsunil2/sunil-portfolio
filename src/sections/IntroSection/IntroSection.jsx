@@ -1,9 +1,19 @@
 import "./IntroSection.scss";
+import useSectionAnimation from "../../components/hooks/useSectionAnimation";
 import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
+  const slideInRef = useSectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-in");
+    }
+  });
+
   return (
-    <section className="intro-section wrapper-width-md">
+    <section
+      className="intro-section wrapper-width-md initial-slide-in"
+      ref={slideInRef}
+    >
       <div className="intro-section-wrapper">
         <h1>
           Hi, I'm <span>{introData.name}.</span>
@@ -20,14 +30,14 @@ const IntroSection = () => {
 
         <div className="socials-container">
           {introData.links.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                target={link.target ? "_blank" : ""}
-                rel="noreferrer"
-              >
-                <link.Icon />
-              </a>
+            <a
+              key={index}
+              href={link.href}
+              target={link.target ? "_blank" : ""}
+              rel="noreferrer"
+            >
+              <link.Icon />
+            </a>
           ))}
         </div>
       </div>

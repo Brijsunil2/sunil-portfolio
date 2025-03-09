@@ -3,6 +3,7 @@ import { educationData } from "../../portfolioData";
 import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 
 const EducationSection = () => {
+
   return (
     <section
       id="educationSection"

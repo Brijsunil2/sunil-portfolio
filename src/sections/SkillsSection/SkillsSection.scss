@@ -49,5 +49,27 @@
         padding: 8px;
       }
     }
+
+    .skill-slide-in {
+      opacity: 0;
+      transition: none;
+      animation: slideIn 0.5s ease-out forwards;
+      animation-delay: var(--delay, 0ms);
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      50% {
+        opacity: 0.5;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 }

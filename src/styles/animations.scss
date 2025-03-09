@@ -16,3 +16,22 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+.initial-slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(10 px);
+  transition: all 1s;
+}
+
+.slide-in{
+  transform: translateX(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  .initial-slide-in {
+    transition: none;
+  }
+}

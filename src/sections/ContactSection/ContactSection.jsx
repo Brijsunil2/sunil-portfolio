@@ -1,9 +1,16 @@
 import "./ContactSection.scss";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import useSectionAnimation from "../../components/hooks/useSectionAnimation";
 
 const ContactSection = () => {
   const form = useRef();
+  const slideInRef = useSectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-in");
+    }
+  });
+
   const [submitMsg, setSubmitMsg] = useState({
     msg: "",
     color: "black",
@@ -40,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact-section wrapper-width-xl section-bottom-margin">
+    <section ref={slideInRef} className="contact-section wrapper-width-xl section-bottom-margin initial-slide-in">
       <hr />
       <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -107,9 +114,7 @@ const ContactSection = () => {
             required
           />
         </div>
-        <p hidden={submitMsg.hidden}>
-          {submitMsg.msg}
-        </p>
+        <p hidden={submitMsg.hidden}>{submitMsg.msg}</p>
         <button type="submit" className="btn btn-primary">
           Send
         </button>
