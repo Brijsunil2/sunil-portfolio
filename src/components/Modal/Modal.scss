@@ -15,6 +15,22 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
+  animation: bounceIn 0.6s ease-in-out forwards;
+
+  @keyframes bounceIn {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
 
   &::backdrop {
     background: map-get($colors, "bg-color-secondary");
