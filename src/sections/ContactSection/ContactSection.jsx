@@ -5,9 +5,9 @@ import useIntersectionAnimation from "../../components/hooks/useIntersectionAnim
 
 const ContactSection = () => {
   const form = useRef();
-  const slideInRef = useIntersectionAnimation((entry) => {
+  const fadeInRef = useIntersectionAnimation((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("slide-in");
+      entry.target.classList.add("fade-in");
     }
   });
 
@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section ref={slideInRef} className="contact-section wrapper-width-xl section-bottom-margin initial-slide-in">
+    <section className="contact-section wrapper-width-xl section-bottom-margin">
       <hr />
       <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail}>
@@ -62,6 +62,10 @@ const ContactSection = () => {
               id="userFirstnameInput"
               name="user_firstname"
               required
+              ref={fadeInRef}
+              style={{
+                "--delay": `${1 * 100}ms`,
+              }}
             />
           </div>
           <div className="col input-label">
@@ -74,6 +78,10 @@ const ContactSection = () => {
               id="userLastnameInput"
               name="user_lastname"
               required
+              ref={fadeInRef}
+              style={{
+                "--delay": `${2 * 100}ms`,
+              }}
             />
           </div>
         </div>
@@ -88,6 +96,10 @@ const ContactSection = () => {
             aria-describedby="emailHelp"
             name="user_email"
             required
+            ref={fadeInRef}
+            style={{
+              "--delay": `${3 * 100}ms`,
+            }}
           />
         </div>
         <div className="input-label">
@@ -100,6 +112,10 @@ const ContactSection = () => {
             id="userSubjectInput"
             name="user_subject"
             required
+            ref={fadeInRef}
+            style={{
+              "--delay": `${4 * 100}ms`,
+            }}
           />
         </div>
         <div className="input-label">
@@ -112,6 +128,10 @@ const ContactSection = () => {
             id="userMessageInput"
             name="user_message"
             required
+            ref={fadeInRef}
+            style={{
+              "--delay": `${5 * 100}ms`,
+            }}
           />
         </div>
         <p hidden={submitMsg.hidden}>{submitMsg.msg}</p>

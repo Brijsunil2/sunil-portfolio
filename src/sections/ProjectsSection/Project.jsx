@@ -3,6 +3,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 import { HiLink } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
+import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 
 const Project = ({
   name,
@@ -14,16 +15,28 @@ const Project = ({
   images,
   skills,
 }) => {
+  const slideInLeftRef = useIntersectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-from-left");
+    }
+  })
+
+  const slideInRightRef = useIntersectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-from-right");
+    }
+  })
+
   return (
     <article className="project-article">
-      <div className="project-carousel">
+      <div className="project-carousel initial" ref={slideInLeftRef}>
         {images && images.length > 0 && (
           <ModalOpenBtn>
             <Carousel imageUrls={images} />
           </ModalOpenBtn>
         )}
       </div>
-      <div>
+      <div className="project-content-container initial" ref={slideInRightRef}>
         <h3>
           {name}
           {githubRepo && (

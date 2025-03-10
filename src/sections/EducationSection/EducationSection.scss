@@ -1,6 +1,7 @@
 @import "../../styles//variables.scss";
 
 .education-section {
+  overflow-x: hidden;
   .summary {
     padding-top: 1rem;
   }
@@ -29,6 +30,36 @@
       width: 100%;
       height: 100%;
       display: block;
+    }
+  }
+
+  .education-img-container {
+    &.initial {
+      opacity: 0;
+      transform: translateX(-100%);
+      filter: blur(10 px);
+      transition: all 1s;
+    }
+
+    &.animate-from-left {
+      transform: translateX(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  .education-text-container {
+    &.initial{
+      opacity: 0;
+      transform: translateX(100%);
+      filter: blur(10 px);
+      transition: all 1s;
+    }
+
+    &.animate-from-right {
+      transform: translateX(0);
+      filter: blur(10 px);
+      opacity: 1;
     }
   }
 }

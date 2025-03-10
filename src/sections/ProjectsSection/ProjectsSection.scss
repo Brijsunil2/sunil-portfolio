@@ -7,6 +7,7 @@
     grid-template-columns: 1fr 2fr;
     padding: 1.5rem;
     gap: 1.5rem;
+    overflow-x: hidden;
 
     &:last-child {
       margin-bottom: 2rem;
@@ -36,6 +37,36 @@
       .btn-pill-container {
         margin-bottom: 6px;
         margin-right: 6px;
+      }
+    }
+
+    .project-carousel {
+      &.initial {
+        opacity: 0;
+        transform: translateX(-100%);
+        filter: blur(10 px);
+        transition: all 1s;
+      }
+  
+      &.animate-from-left {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+  
+    .project-content-container {
+      &.initial{
+        opacity: 0;
+        transform: translateX(100%);
+        filter: blur(10 px);
+        transition: all 1s;
+      }
+  
+      &.animate-from-right {
+        transform: translateX(0);
+        filter: blur(10 px);
+        opacity: 1;
       }
     }
 

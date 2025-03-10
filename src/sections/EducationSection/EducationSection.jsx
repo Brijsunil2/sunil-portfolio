@@ -4,9 +4,15 @@ import useIntersectionAnimation from "../../components/hooks/useIntersectionAnim
 import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 
 const EducationSection = () => {
-  const slideInRef = useIntersectionAnimation((entry) => {
+  const slideInLeftRef = useIntersectionAnimation((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry.target)
+      entry.target.classList.add("animate-from-left");
+    }
+  })
+
+  const slideInRightRef = useIntersectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-from-right");
     }
   })
 
@@ -19,7 +25,7 @@ const EducationSection = () => {
       <h2>Education</h2>
       {educationData.map((education, index) => (
         <article key={index} className="education-article">
-          <div className="education-img-container">
+          <div className="education-img-container initial" ref={slideInLeftRef}>
             {education.image && (
               <ModalOpenBtn>
                 <div className="education-img-container">
@@ -33,7 +39,7 @@ const EducationSection = () => {
               </ModalOpenBtn>
             )}
           </div>
-          <div>
+          <div className="education-text-container initial" ref={slideInRightRef}>
             <h3>{education.place}</h3>
             <h4>{education.subText}</h4>
             <small className="duration-label">{education.duration}</small>

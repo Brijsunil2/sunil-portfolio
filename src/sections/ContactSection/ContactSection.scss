@@ -9,7 +9,6 @@
     flex-direction: column;
     gap: 0.7rem;
 
-
     label {
       color: map-get($colors, "light-grey");
       font-size: 0.9rem;
@@ -17,7 +16,8 @@
       font-weight: 300;
     }
 
-    input, textarea {
+    input,
+    textarea {
       min-height: 1rem;
       border: none;
       border-radius: 4px;
@@ -66,13 +66,34 @@
       width: 100%;
     }
 
+    .form-control {
+      &.fade-in {
+        opacity: 0;
+        transition: none;
+        animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: var(--delay, 0ms);
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          filter: blur(10 px);
+          transform: translateY(32px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0);
+          transform: translateY(0);
+        }
+      }
+    }
+
     .row {
       display: flex;
       gap: 0.7rem;
 
       @media (max-width: map-get($breakpoints, "sm")) {
         flex-direction: column;
-
       }
     }
   }
