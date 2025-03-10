@@ -30,9 +30,14 @@
 
     a {
       color: map-get($colors, "accent-yellow");
+      transition: scale 0.3s ease;
       svg {
         min-width: 1.5rem;
         min-height: 1.5rem;
+      }
+
+      &:hover {
+        scale: 1.2;
       }
     }
   }
