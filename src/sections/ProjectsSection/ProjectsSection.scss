@@ -16,12 +16,17 @@
     h3 {
       display: flex;
       align-items: center;
-      
+
       .project-repo {
         display: flex;
         align-items: center;
         padding-left: 0.5rem;
-        color: map-get($colors, "accent-yellow" );
+        color: map-get($colors, "accent-yellow");
+        transition: scale 0.3s;
+
+        &:hover {
+          scale: 1.2;
+        }
       }
     }
 
@@ -37,6 +42,22 @@
       .btn-pill-container {
         margin-bottom: 6px;
         margin-right: 6px;
+
+        &:hover {
+          animation: swipe 0.3s;
+        }
+
+        @keyframes swipe {
+          0% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(5px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
       }
     }
 
@@ -47,22 +68,22 @@
         filter: blur(10 px);
         transition: all 1s;
       }
-  
+
       &.animate-from-left {
         transform: translateX(0);
         filter: blur(0);
         opacity: 1;
       }
     }
-  
+
     .project-content-container {
-      &.initial{
+      &.initial {
         opacity: 0;
         transform: translateX(100%);
         filter: blur(10 px);
         transition: all 1s;
       }
-  
+
       &.animate-from-right {
         transform: translateX(0);
         filter: blur(10 px);
