@@ -1,8 +1,14 @@
 import "./EducationSection.scss";
 import { educationData } from "../../portfolioData";
+import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 
 const EducationSection = () => {
+  const slideInRef = useIntersectionAnimation((entry) => {
+    if (entry.isIntersecting) {
+      console.log(entry.target)
+    }
+  })
 
   return (
     <section

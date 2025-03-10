@@ -1,11 +1,11 @@
 import "./ContactSection.scss";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import useSectionAnimation from "../../components/hooks/useSectionAnimation";
+import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 
 const ContactSection = () => {
   const form = useRef();
-  const slideInRef = useSectionAnimation((entry) => {
+  const slideInRef = useIntersectionAnimation((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("slide-in");
     }

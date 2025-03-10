@@ -1,9 +1,9 @@
 import "./IntroSection.scss";
-import useSectionAnimation from "../../components/hooks/useSectionAnimation";
+import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 import { introData } from "../../portfolioData";
 
 const IntroSection = () => {
-  const slideInRef = useSectionAnimation((entry) => {
+  const slideInRef = useIntersectionAnimation((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("slide-in");
     }

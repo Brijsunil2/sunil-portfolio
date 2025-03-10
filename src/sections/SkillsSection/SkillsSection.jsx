@@ -1,10 +1,10 @@
 import "./SkillsSection.scss";
 import { firstLetterUpper } from "../../utils/utils";
-import useSectionAnimation from "../../components/hooks/useSectionAnimation";
+import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 import { skillsData } from "../../portfolioData";
 
 const SkillsSection = () => {
-  const slideInRef = useSectionAnimation((entry) => {
+  const slideInRef = useIntersectionAnimation((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("skill-slide-in");
     }
