@@ -87,7 +87,7 @@ const introData = {
     "Aspiring Full-Stack Developer",
   ],
   intro:
-    "Motivated Computer Science graduate with a solid foundation in programming and a deep passion for full-stack development. I am eager to apply my academic knowledge, practical skills, and relevant work experience to contribute effectively to innovative and challenging projects. My expertise spans HTML, CSS, JavaScript, and React, with a focus on creating responsive and user-friendly applications. Explore my portfolio to see how I bring ideas to life.",
+    "Motivated Computer Science graduate with a solid foundation in programming and a deep passion for full-stack development. With my academic knowledge, practical skills, and relevant work experience to innovative and complete on time and in budget challenging projects. My expertise spans HTML, CSS, JavaScript, and React, with a focus on creating responsive and user-friendly applications. Explore my portfolio to see how I bring ideas to life.",
   links: [
     {
       Icon: FaLinkedin,
