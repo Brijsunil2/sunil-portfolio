@@ -120,7 +120,7 @@ const educationData = [
     subText: "Full-Stack Web Development Bootcamp",
     duration: "2024",
     summary:
-      "Learn the latest technologies, including Javascript, React, Node and even Web3 development. Built fully-fledged websites and web apps and mastered frontend development with React.",
+      "Learn the latest technologies, including Javascript, React, Node and even Web3 development. Built fully-fledged websites and web apps and mastered front-end development with React.",
     image: webDevCertificateImg,
     imageAlt: "Udemy Full-Stack Web Development Certificate",
   },
@@ -137,7 +137,7 @@ const experienceData = [
           "Provided on-site technical support for a variety of devices, including computers, mobile devices, and smart home systems.",
           "Diagnosed hardware and software issues, ensuring quick resolution to minimize downtime.",
           "Communicated technical information to non-technical clients.",
-          "Similar responsiblities as a Geek Sqaud In-Store Agent.",
+          "Similar responsibilities as a Geek Squad In-Store Agent.",
         ],
       },
       {
@@ -146,7 +146,7 @@ const experienceData = [
           "Assisted clients with technical issues by diagnosing and performing software fixes on laptops and desktops.",
           "Recognized for flexibility and leadership, participating in Best Buy's Learn2Lead program.",
           "Assisted with computer sales, using technical knowledge to guide customer decisions.",
-          "Trained new team members on best practices and job related tasks.",
+          "Trained new team members on best practices and job-related tasks.",
         ],
       },
     ],
@@ -221,9 +221,9 @@ const projectsData = [
     liveLink: null,
     text: "A modern hospital triage system designed to streamline the patient check-in process, enhance the efficiency of initial medical assessments, and improve overall patient care.",
     notes: [
-      "Developed mobile friendly front-end interface using React, Bootstrap and CSS, ensuring optimal experience for all screen sizes.",
+      "Developed mobile-friendly front-end interface using React, Bootstrap, and CSS, ensuring optimal experience for all screen sizes.",
       "Implemented RESTful APIs for efficient data management for client and visit data between the client and server.",
-      "Utilized a Postgres database to store an retrieve client personal and visit information.",
+      "Utilized a Postgres database to store and retrieve client personal and visit information.",
     ],
     images: [
       triageCare1Img,
@@ -254,9 +254,9 @@ const projectsData = [
     liveLink: null,
     text: "A versatile website for hosting various applications, currently featuring a user forum. Future plans include integrating a calendar, file storage, and improved security features. The user forum application is where users can create and share forums.",
     notes: [
-      "Utilized MERN stack to develop a high-performance, manageable and responsive user interface for real-time interaction using OO principals for React components.",
+      "Utilized MERN stack to develop a high-performance, manageable, and responsive user interface for real-time interaction using OO principals for React components.",
       "Integrated WebSocket for a real-time chat feature and JWT for secure user authentication.",
-      "Designed and implemented RESTful APIs using MongoDb in order use CRUD operations for forum sessions and user data.",
+      "Designed and implemented RESTful APIs using MongoDB to use CRUD operations for forum sessions and user data.",
     ],
     images: [
       portal1Img,
