@@ -77,6 +77,12 @@
     }
 
     .project-content-container {
+      .project-livelink {
+        font-size: 0.8rem;
+        color: map-get($colors, "accent-yellow");
+        padding: 0 0.5rem;
+      }
+
       &.initial {
         opacity: 0;
         transform: translateX(100%);

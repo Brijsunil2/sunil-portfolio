@@ -218,7 +218,7 @@ const projectsData = [
     name: "TriageCare",
     type: "Frontend | Backend",
     githubRepo: "https://github.com/Brijsunil2/triage-care",
-    liveLink: null,
+    liveLink: "https://brijsunil2.github.io/triage-care",
     text: "A modern hospital triage system designed to streamline the patient check-in process, enhance the efficiency of initial medical assessments, and improve overall patient care.",
     notes: [
       "Developed mobile-friendly front-end interface using React, Bootstrap, and CSS, ensuring optimal experience for all screen sizes.",
