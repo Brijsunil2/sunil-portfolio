@@ -31,7 +31,7 @@ This portfolio website is designed to showcase my skills and projects. It's a pl
   - JavaScript (ES6+)
   - React.js
   - Bootstrap
-  - Framer Motion (for animations)
+  - Vite.js
 
 - **Tools & Platforms**:
   - Git & GitHub
