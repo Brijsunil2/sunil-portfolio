@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.f8862c05.css",
-    "main.js": "/sunil-portfolio/static/js/main.76b38f7e.js",
+    "main.css": "/sunil-portfolio/static/css/main.24e0c179.css",
+    "main.js": "/sunil-portfolio/static/js/main.320ce260.js",
     "static/media/computer_science_degree.jpg": "/sunil-portfolio/static/media/computer_science_degree.5412d134ba5a0ad1ecd3.jpg",
     "static/media/portal_forum_page.png": "/sunil-portfolio/static/media/portal_forum_page.7c7e426b065dce6675df.png",
     "static/media/web_dev_certificate.png": "/sunil-portfolio/static/media/web_dev_certificate.db948412d5077d0f9541.png",
@@ -15,6 +15,10 @@
     "static/media/portal_home_page.png": "/sunil-portfolio/static/media/portal_home_page.d2987ee5601eb1cc1864.png",
     "static/media/portal_signup_page.png": "/sunil-portfolio/static/media/portal_signup_page.4a45b2a4a69204b899be.png",
     "static/media/portal_login_page.png": "/sunil-portfolio/static/media/portal_login_page.7e28fc5ce992642d6c2b.png",
+    "static/media/quick_zip_completed.png": "/sunil-portfolio/static/media/quick_zip_completed.4568dae0fe6931c3400f.png",
+    "static/media/quick_zip_file_uploaded.png": "/sunil-portfolio/static/media/quick_zip_file_uploaded.937ebe17689936d6d643.png",
+    "static/media/quick_zip_start.png": "/sunil-portfolio/static/media/quick_zip_start.4beab3f1dc59436bbc27.png",
+    "static/media/quick_zip_in_progress.png": "/sunil-portfolio/static/media/quick_zip_in_progress.b9b144c3f1e1e5f312bb.png",
     "static/media/postgresql.svg": "/sunil-portfolio/static/media/postgresql.7c0ecebe3a8282bd680c02f40052e0ea.svg",
     "static/media/postman-icon.svg": "/sunil-portfolio/static/media/postman-icon.648705b5f6469f0767a4736d07313ffe.svg",
     "static/media/express.svg": "/sunil-portfolio/static/media/express.7e85c5130978e3593e65a44112bc7390.svg",
@@ -38,11 +42,11 @@
     "static/media/webpack.svg": "/sunil-portfolio/static/media/webpack.b460dec8736fcf92a8c77006b62f825a.svg",
     "static/media/mongodb-icon.svg": "/sunil-portfolio/static/media/mongodb-icon.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.f8862c05.css.map": "/sunil-portfolio/static/css/main.f8862c05.css.map",
-    "main.76b38f7e.js.map": "/sunil-portfolio/static/js/main.76b38f7e.js.map"
+    "main.24e0c179.css.map": "/sunil-portfolio/static/css/main.24e0c179.css.map",
+    "main.320ce260.js.map": "/sunil-portfolio/static/js/main.320ce260.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8862c05.css",
-    "static/js/main.76b38f7e.js"
+    "static/css/main.24e0c179.css",
+    "static/js/main.320ce260.js"
   ]
 }
