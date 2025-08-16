@@ -24,6 +24,11 @@ import triageCare3Img from "./assets/images/projects/triage_care/visit_info_page
 import triageCare4Img from "./assets/images/projects/triage_care/terms_and_conditions_page.png";
 import triageCare5Img from "./assets/images/projects/triage_care/triage_complete_page.png";
 
+import quickZip1Img from "./assets/images/projects/quick_zip/quick_zip_start.png";
+import quickZip2Img from "./assets/images/projects/quick_zip/quick_zip_file_uploaded.png";
+import quickZip3Img from "./assets/images/projects/quick_zip/quick_zip_in_progress.png"; 
+import quickZip4Img from "./assets/images/projects/quick_zip/quick_zip_completed.png";
+
 import bootstrapIcon from "./assets/icons/bootstrap.svg";
 import cssIcon from "./assets/icons/css-3.svg";
 import eclipseIcon from "./assets/icons/eclipse-icon.svg";
@@ -280,6 +285,31 @@ const projectsData = [
       { iconSrc: mongoDbIcon, text: "MongoDB" },
       { iconSrc: null, text: "Authentication" },
       { iconSrc: neonIcon, text: "Neon" },
+    ],
+  },
+  {
+    name: "Quick Zip",
+    type: "Frontend",
+    githubRepo: "https://github.com/Brijsunil2/quick-zip",
+    liveLink: null,
+    text: "QuickZip is a user-friendly web application that allows users to upload multiple files, and download them as a single ZIP archive.",
+    notes: [
+      "React-based web application that allows users to upload and compress files directly in the browser.",
+      "Designed a responsive UI with React, SCSS, and React Icons, emphasizing usability and accessibility.",
+      "Learned about browser memory limits, file APIs, and performance optimizations in client-side applications.",
+    ],
+    images: [
+      quickZip1Img,
+      quickZip2Img,
+      quickZip3Img,
+      quickZip4Img,
+    ],
+    skills: [
+      { iconSrc: reactIcon, text: "React" },
+      { iconSrc: viteIcon, text: "Vitejs" },
+      { iconSrc: javascriptIcon, text: "JavaScript" },
+      { iconSrc: htmlIcon, text: "HTML" },
+      { iconSrc: cssIcon, text: "SCSS" },
     ],
   },
   {
