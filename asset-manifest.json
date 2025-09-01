@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sunil-portfolio/static/css/main.24e0c179.css",
-    "main.js": "/sunil-portfolio/static/js/main.320ce260.js",
+    "main.js": "/sunil-portfolio/static/js/main.46e6e423.js",
     "static/media/computer_science_degree.jpg": "/sunil-portfolio/static/media/computer_science_degree.5412d134ba5a0ad1ecd3.jpg",
     "static/media/portal_forum_page.png": "/sunil-portfolio/static/media/portal_forum_page.7c7e426b065dce6675df.png",
     "static/media/web_dev_certificate.png": "/sunil-portfolio/static/media/web_dev_certificate.db948412d5077d0f9541.png",
@@ -43,10 +43,10 @@
     "static/media/mongodb-icon.svg": "/sunil-portfolio/static/media/mongodb-icon.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
     "index.html": "/sunil-portfolio/index.html",
     "main.24e0c179.css.map": "/sunil-portfolio/static/css/main.24e0c179.css.map",
-    "main.320ce260.js.map": "/sunil-portfolio/static/js/main.320ce260.js.map"
+    "main.46e6e423.js.map": "/sunil-portfolio/static/js/main.46e6e423.js.map"
   },
   "entrypoints": [
     "static/css/main.24e0c179.css",
-    "static/js/main.320ce260.js"
+    "static/js/main.46e6e423.js"
   ]
 }
