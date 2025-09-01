@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sunil-portfolio/static/css/main.24e0c179.css",
-    "main.js": "/sunil-portfolio/static/js/main.46e6e423.js",
+    "main.css": "/sunil-portfolio/static/css/main.7c193dad.css",
+    "main.js": "/sunil-portfolio/static/js/main.1ec1f40f.js",
     "static/media/computer_science_degree.jpg": "/sunil-portfolio/static/media/computer_science_degree.5412d134ba5a0ad1ecd3.jpg",
     "static/media/portal_forum_page.png": "/sunil-portfolio/static/media/portal_forum_page.7c7e426b065dce6675df.png",
     "static/media/web_dev_certificate.png": "/sunil-portfolio/static/media/web_dev_certificate.db948412d5077d0f9541.png",
@@ -25,11 +25,14 @@
     "static/media/mysql.svg": "/sunil-portfolio/static/media/mysql.88631d0de40f60cec048c5f2549eaf37.svg",
     "static/media/sass.svg": "/sunil-portfolio/static/media/sass.8351205a93eafac2e392b26acf7580e1.svg",
     "static/media/react.svg": "/sunil-portfolio/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/jest.svg": "/sunil-portfolio/static/media/jest.bdea2af60148e3a6f8a1df8b135027d8.svg",
     "static/media/visual-studio-code.svg": "/sunil-portfolio/static/media/visual-studio-code.f57bbf46dad2409e508cb50781867a39.svg",
     "static/media/eclipse-icon.svg": "/sunil-portfolio/static/media/eclipse-icon.d0b71bf8670e19fe7952da9526b9da79.svg",
     "static/media/nodejs-icon-alt.svg": "/sunil-portfolio/static/media/nodejs-icon-alt.4d3b4b28f4ec34bba09d462d8feb1ec9.svg",
     "static/media/neon-icon.svg": "/sunil-portfolio/static/media/neon-icon.e80657cb457ca455ca64a5c7387eff99.svg",
     "static/media/github-icon.svg": "/sunil-portfolio/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/openai-icon.svg": "/sunil-portfolio/static/media/openai-icon.22e26a442d82091316fa92144976a1e7.svg",
+    "static/media/github-copilot.svg": "/sunil-portfolio/static/media/github-copilot.2cb36c83d222f2de58fe7dddc33efd32.svg",
     "static/media/redux.svg": "/sunil-portfolio/static/media/redux.a95675408ae17c456965e2f09376c31a.svg",
     "static/media/java.svg": "/sunil-portfolio/static/media/java.83165dfb2f5a7657ce4c73e0ba3cef32.svg",
     "static/media/python.svg": "/sunil-portfolio/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
@@ -42,11 +45,11 @@
     "static/media/webpack.svg": "/sunil-portfolio/static/media/webpack.b460dec8736fcf92a8c77006b62f825a.svg",
     "static/media/mongodb-icon.svg": "/sunil-portfolio/static/media/mongodb-icon.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
     "index.html": "/sunil-portfolio/index.html",
-    "main.24e0c179.css.map": "/sunil-portfolio/static/css/main.24e0c179.css.map",
-    "main.46e6e423.js.map": "/sunil-portfolio/static/js/main.46e6e423.js.map"
+    "main.7c193dad.css.map": "/sunil-portfolio/static/css/main.7c193dad.css.map",
+    "main.1ec1f40f.js.map": "/sunil-portfolio/static/js/main.1ec1f40f.js.map"
   },
   "entrypoints": [
-    "static/css/main.24e0c179.css",
-    "static/js/main.46e6e423.js"
+    "static/css/main.7c193dad.css",
+    "static/js/main.1ec1f40f.js"
   ]
 }
