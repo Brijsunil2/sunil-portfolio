@@ -89,6 +89,25 @@ img {
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 12px; 
+  border-radius: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: map-get($colors, "accent-yellow");
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
 .wrapper-width-md {
   @media (min-width: map-get($breakpoints, "lg")) {
     max-width: map-get($breakpoints, "md");
