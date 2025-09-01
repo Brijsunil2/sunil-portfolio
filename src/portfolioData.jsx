@@ -51,6 +51,8 @@ import neonIcon from "./assets/icons/neon-icon.svg";
 import reduxIcon from "./assets/icons/redux.svg";
 import viteIcon from "./assets/icons/vitejs.svg";
 import webpackIcon from "./assets/icons/webpack.svg";
+import chatgptIcon from "./assets/icons/openai-icon.svg";
+import githubCopilotIcon from "./assets/icons/github-copilot.svg";
 
 const siteName = "Sunil's Portfolio";
 
@@ -211,6 +213,8 @@ const skillsData = {
     { iconSrc: gitIcon, title: "Git" },
     { iconSrc: postmanIcon, title: "Postman" },
     { iconSrc: neonIcon, title: "Neon" },
+    { iconSrc: chatgptIcon, title: "ChatGPT" },
+    { iconSrc: githubCopilotIcon, title: "Github Copilot" },
   ],
   other: [
     { iconSrc: pythonIcon, title: "Python" },
