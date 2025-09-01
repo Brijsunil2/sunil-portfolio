@@ -327,16 +327,6 @@ const projectsData = [
       { iconSrc: webpackIcon, text: "Webpack" },
     ],
   },
-  {
-    name: "UDP File Transfer",
-    type: "Desktop Test Application",
-    githubRepo: "https://github.com/Brijsunil2/UDP-File-Transfer",
-    liveLink: null,
-    text: "A Java application for transferring files between users, supporting text, images, audio, and small videos.",
-    notes: [],
-    images: [],
-    skills: [{ iconSrc: javaIcon, text: "Java" }],
-  },
 ];
 
 export {
