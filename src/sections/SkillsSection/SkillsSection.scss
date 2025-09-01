@@ -18,6 +18,12 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+    .skills-title {
+      text-align: center;
+      margin-top: 0.3rem;
+      font-weight: 600;
+    }
+
     .skill {
       display: flex;
       flex-direction: column;

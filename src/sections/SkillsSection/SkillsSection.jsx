@@ -35,7 +35,7 @@ const SkillsSection = () => {
                     <img src={skill.iconSrc} alt={skill.title} />
                   </div>
                 )}
-                <p>{skill.title}</p>
+                <p className="skills-title">{skill.title}</p>
               </div>
             ))}
           </div>
