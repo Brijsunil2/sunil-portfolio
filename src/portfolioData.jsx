@@ -53,6 +53,7 @@ import viteIcon from "./assets/icons/vitejs.svg";
 import webpackIcon from "./assets/icons/webpack.svg";
 import chatgptIcon from "./assets/icons/openai-icon.svg";
 import githubCopilotIcon from "./assets/icons/github-copilot.svg";
+import jestIcon from "./assets/icons/jest.svg";
 
 const siteName = "Sunil's Portfolio";
 
@@ -195,11 +196,13 @@ const skillsData = {
     { iconSrc: viteIcon, title: "Vitejs" },
     { iconSrc: reduxIcon, title: "Redux" },
     { iconSrc: bootstrapIcon, title: "Bootstrap" },
+    { iconSrc: jestIcon, title: "Jest" },
   ],
   backend: [
     { iconSrc: javascriptIcon, title: "JavaScript" },
     { iconSrc: nodejsIcon, title: "Node.js" },
     { iconSrc: expressIcon, title: "Express.js" },
+    { iconSrc: jestIcon, title: "Jest" },
   ],
   database: [
     { iconSrc: mySQLIcon, title: "MySQL" },
