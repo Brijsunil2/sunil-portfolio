@@ -109,7 +109,7 @@ const introData = {
       href: "https://github.com/Brijsunil2",
       target: true,
     },
-    { Icon: FaEnvelope, text: "Contact Me", href: "#contact", target: false },
+    { Icon: FaEnvelope, text: "Contact Me", href: "#contactSection", target: false },
   ],
 };
 

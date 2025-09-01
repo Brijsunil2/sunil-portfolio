@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact-section wrapper-width-xl section-bottom-margin">
+    <section id="contactSection" className="contact-section wrapper-width-xl section-bottom-margin">
       <hr />
       <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail}>
