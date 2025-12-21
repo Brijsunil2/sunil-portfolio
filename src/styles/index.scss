@@ -1,6 +1,6 @@
 @use "sass:map";
-@import "./colors.scss";
-@import "./variables.scss";
+@use "./colors.scss" as *;
+@use "./variables.scss" as *;
 
 * {
   padding: 0;

@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "../../styles/colors.scss";
+@use "../../styles/colors.scss" as *;
 
 .floating-background {
   position: fixed;      

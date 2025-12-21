@@ -1,6 +1,6 @@
 @use "sass:map";
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
+@use "../../styles/colors.scss" as *;
+@use "../../styles/variables.scss" as *;
 
 .contact-section {
   form {

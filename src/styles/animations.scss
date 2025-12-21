@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "colors";
+@use "colors" as *;
 
 .scroll-to-top {
   display: flex;
