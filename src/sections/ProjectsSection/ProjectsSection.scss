@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/variables.scss";
 @import "../../styles/colors.scss";
 
@@ -21,7 +22,7 @@
         display: flex;
         align-items: center;
         padding-left: 0.5rem;
-        color: map-get($colors, "accent-yellow");
+        color: map.get($colors, "accent-yellow");
         transition: scale 0.3s;
 
         &:hover {
@@ -79,7 +80,7 @@
     .project-content-container {
       .project-livelink {
         font-size: 0.8rem;
-        color: map-get($colors, "accent-yellow");
+        color: map.get($colors, "accent-yellow");
         padding: 0 0.5rem;
       }
 
@@ -97,7 +98,7 @@
       }
     }
 
-    @media (max-width: map-get($breakpoints, "lg")) {
+    @media (max-width: map.get($breakpoints, "lg")) {
       grid-template-columns: 1fr;
     }
   }

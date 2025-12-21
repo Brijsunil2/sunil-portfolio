@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/colors.scss";
 
 .intro-section {
@@ -9,13 +10,13 @@
   .intro-section-wrapper {
     h1 {
       span {
-        color: map-get($colors, "secondary-blue");
+        color: map.get($colors, "secondary-blue");
       }
     }
 
     h5 {
       padding-bottom: 1rem;
-      color: map-get($colors, "dark-grey");
+      color: map.get($colors, "dark-grey");
     }
 
     p {
@@ -29,7 +30,7 @@
     padding: 1rem 0;
 
     a {
-      color: map-get($colors, "accent-yellow");
+      color: map.get($colors, "accent-yellow");
       transition: scale 0.3s ease;
       svg {
         min-width: 1.5rem;

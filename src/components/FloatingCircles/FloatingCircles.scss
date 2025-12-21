@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/colors.scss";
 
 .floating-background {
@@ -9,7 +10,7 @@
   pointer-events: none;  
   overflow: hidden;
   z-index: -1;           
-  background-color: map-get($colors, "bg-color");; 
+  background-color: map.get($colors, "bg-color");; 
 }
 
 .floating-background .circle {

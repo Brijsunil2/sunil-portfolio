@@ -1,11 +1,12 @@
+@use "sass:map";
 @import "../../styles/colors.scss";
 
 .btn-pill-container {
   display: flex;
   align-items: center;
-  color: map-get($colors, "dark-grey");
-  background-color: map-get($colors, "light-grey");
-  border: 2px solid map-get($colors, "dark-grey");
+  color: map.get($colors, "dark-grey");
+  background-color: map.get($colors, "light-grey");
+  border: 2px solid map.get($colors, "dark-grey");
   max-width: fit-content;
   padding: 0.4rem 1rem;
   border-radius: 2rem;

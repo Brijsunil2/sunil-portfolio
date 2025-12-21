@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "./colors.scss";
 @import "./variables.scss";
 
@@ -22,9 +23,9 @@ html {
 }
 
 body {
-  background-color: map-get($colors, "bg-color");
+  background-color: map.get($colors, "bg-color");
   font-family: "Inter", serif;
-  color: map-get($colors, "light-grey");
+  color: map.get($colors, "light-grey");
 }
 
 h1 {
@@ -34,13 +35,13 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 600;
-  color: map-get($colors, "secondary-blue");
+  color: map.get($colors, "secondary-blue");
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: map-get($colors, "muted-turquoise");
+  color: map.get($colors, "muted-turquoise");
 }
 
 h4 {
@@ -59,7 +60,7 @@ h6 {
 
 h4,
 small {
-  color: map-get($colors, "dark-grey");
+  color: map.get($colors, "dark-grey");
 }
 
 p,
@@ -100,7 +101,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: map-get($colors, "accent-yellow");
+  background-color: map.get($colors, "accent-yellow");
   border-radius: 10px;
 }
 
@@ -109,13 +110,13 @@ img {
 }
 
 .wrapper-width-md {
-  @media (min-width: map-get($breakpoints, "lg")) {
-    max-width: map-get($breakpoints, "md");
+  @media (min-width: map.get($breakpoints, "lg")) {
+    max-width: map.get($breakpoints, "md");
   }
 }
 
 .wrapper-width-xl {
-  @media (min-width: map-get($breakpoints, "xxl")) {
-    max-width: map-get($breakpoints, "xl");
+  @media (min-width: map.get($breakpoints, "xxl")) {
+    max-width: map.get($breakpoints, "xl");
   }
 }

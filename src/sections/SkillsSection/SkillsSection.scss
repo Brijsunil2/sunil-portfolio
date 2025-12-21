@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles//colors.scss";
 
 .skills-section {
@@ -29,7 +30,7 @@
       flex-direction: column;
       align-items: center;
       width: 5rem;
-      color: map-get($colors, "light-grey");
+      color: map.get($colors, "light-grey");
       font-size: 0.9rem;
 
       p {
@@ -37,8 +38,8 @@
       }
 
       .image-wrapper {
-        background-color: map-get($colors, "light-grey");
-        border: solid 3px map-get($colors, "dark-grey");
+        background-color: map.get($colors, "light-grey");
+        border: solid 3px map.get($colors, "dark-grey");
         border-radius: 10px;
 
         &:hover {

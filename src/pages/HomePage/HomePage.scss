@@ -1,9 +1,10 @@
+@use "sass:map";
 @import "../../styles/variables.scss";
 
 .home-page {
   margin: 0 10%;
 
-  @media (max-width: map-get($breakpoints, "md")) {
+  @media (max-width: map.get($breakpoints, "md")) {
     margin: 0 1rem;
   }
 }

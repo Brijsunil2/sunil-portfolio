@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/colors.scss";
 @import "../../styles/variables.scss";
 
@@ -41,8 +42,8 @@
     position: absolute;
     top: calc(50% - 1rem);
     cursor: pointer;
-    color: map-get($colors, "accent-yellow");
-    background-color: map-get($colors, "bg-color-secondary");
+    color: map.get($colors, "accent-yellow");
+    background-color: map.get($colors, "bg-color-secondary");
     width: 2rem;
     height: 2rem;
     margin: 0 0.5rem;
@@ -64,7 +65,7 @@
     transform: translateX(-50%);
     display: flex;
     gap: 0.25rem;
-    background-color: map-get($colors, "bg-color-secondary");
+    background-color: map.get($colors, "bg-color-secondary");
     border-radius: 1rem;
   }
 
@@ -73,7 +74,7 @@
     display: block;
     width: 1rem;
     height: 1rem;
-    color: map-get($colors, "accent-yellow");
+    color: map.get($colors, "accent-yellow");
     transition: scale 100ms ease-in-out;
     cursor: pointer;
 

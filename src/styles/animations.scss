@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "colors";
 
 .scroll-to-top {
@@ -8,8 +9,8 @@
   bottom: 2rem;
   right: 2rem;
   z-index: 4;
-  background-color: map-get($colors, "accent-yellow");
-  color: map-get($colors, "bg-color");
+  background-color: map.get($colors, "accent-yellow");
+  color: map.get($colors, "bg-color");
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
