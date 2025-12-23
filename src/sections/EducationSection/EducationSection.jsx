@@ -1,5 +1,5 @@
 import "./EducationSection.scss";
-import { educationData } from "../../portfolioData";
+import { educationData } from "../../data/educationData";
 import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
 import ModalOpenBtn from "../../components/Modal/ModalOpenBtn";
 
