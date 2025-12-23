@@ -1,6 +1,6 @@
 import "./IntroSection.scss";
 import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
-import { introData } from "../../portfolioData";
+import { introData } from "../../data/introData";
 
 const IntroSection = () => {
   const slideInRef = useIntersectionAnimation((entry) => {

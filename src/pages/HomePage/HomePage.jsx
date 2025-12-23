@@ -1,6 +1,6 @@
 import "./HomePage.scss";
 import { FaArrowUp } from "react-icons/fa";
-// import IntroSection from "../../sections/IntroSection/IntroSection";
+import IntroSection from "../../sections/IntroSection/IntroSection";
 // import ProjectsSection from "../../sections/ProjectsSection/ProjectsSection";
 // import ContactSection from "../../sections/ContactSection/ContactSection";
 // import SkillsSection from "../../sections/SkillsSection/SkillsSection";
@@ -12,12 +12,12 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <CustomCursor />
-      {/* <IntroSection /> */}
-      {/* <EducationSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <ContactSection /> */}
+      <IntroSection />
+      {/* <EducationSection /> */}
+      {/* <SkillsSection /> */}
+      {/* <ProjectsSection /> */}
+      {/* <ExperienceSection /> */}
+      {/* <ContactSection /> */}
       <button className="scroll-top-btn scroll-to-top" onClick={() => window.scrollTo(0, 0)}>
         <FaArrowUp />
       </button>
