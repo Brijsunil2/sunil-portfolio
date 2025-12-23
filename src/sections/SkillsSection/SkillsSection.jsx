@@ -1,7 +1,7 @@
 import "./SkillsSection.scss";
 import { firstLetterUpper } from "../../utils/utils";
 import useIntersectionAnimation from "../../components/hooks/useIntersectionAnimation";
-import { skillsData } from "../../portfolioData";
+import { skillsData } from "../../data/skillsData";
 
 const SkillsSection = () => {
   const slideInRef = useIntersectionAnimation((entry) => {

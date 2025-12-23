@@ -3,7 +3,7 @@ import { FaArrowUp } from "react-icons/fa";
 import IntroSection from "../../sections/IntroSection/IntroSection";
 // import ProjectsSection from "../../sections/ProjectsSection/ProjectsSection";
 // import ContactSection from "../../sections/ContactSection/ContactSection";
-// import SkillsSection from "../../sections/SkillsSection/SkillsSection";
+import SkillsSection from "../../sections/SkillsSection/SkillsSection";
 // import ExperienceSection from "../../sections/ExperienceSection/ExperienceSection";
 import EducationSection from "../../sections/EducationSection/EducationSection";
 import CustomCursor from "../../components/CustomCursor/CustumCursor";
@@ -14,7 +14,7 @@ const HomePage = () => {
       <CustomCursor />
       <IntroSection />
       <EducationSection />
-      {/* <SkillsSection /> */}
+      <SkillsSection />
       {/* <ProjectsSection /> */}
       {/* <ExperienceSection /> */}
       {/* <ContactSection /> */}
