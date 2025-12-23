@@ -2,9 +2,9 @@ import "./HomePage.scss";
 import { FaArrowUp } from "react-icons/fa";
 import IntroSection from "../../sections/IntroSection/IntroSection";
 import ProjectsSection from "../../sections/ProjectsSection/ProjectsSection";
-// import ContactSection from "../../sections/ContactSection/ContactSection";
+import ContactSection from "../../sections/ContactSection/ContactSection";
 import SkillsSection from "../../sections/SkillsSection/SkillsSection";
-// import ExperienceSection from "../../sections/ExperienceSection/ExperienceSection";
+import ExperienceSection from "../../sections/ExperienceSection/ExperienceSection";
 import EducationSection from "../../sections/EducationSection/EducationSection";
 import CustomCursor from "../../components/CustomCursor/CustumCursor";
 
@@ -16,8 +16,8 @@ const HomePage = () => {
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
-      {/* <ExperienceSection /> */}
-      {/* <ContactSection /> */}
+      <ExperienceSection />
+      <ContactSection />
       <button className="scroll-top-btn scroll-to-top" onClick={() => window.scrollTo(0, 0)}>
         <FaArrowUp />
       </button>
