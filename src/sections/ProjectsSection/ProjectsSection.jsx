@@ -1,5 +1,5 @@
 import "./ProjectsSection.scss";
-import { projectsData } from "../../portfolioData";
+import { projectsData } from "../../data/projectsData";
 import Project from "./Project";
 
 const ProjectsSection = () => {
