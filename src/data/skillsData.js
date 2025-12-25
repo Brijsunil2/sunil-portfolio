@@ -6,14 +6,17 @@ export const skillsData = {
     { iconSrc: icons.cssIcon, title: "CSS" },
     { iconSrc: icons.sassIcon, title: "SASS" },
     { iconSrc: icons.javascriptIcon, title: "JavaScript" },
+    { iconSrc: null, title: "TypeScript" },
     { iconSrc: icons.reactIcon, title: "React" },
     { iconSrc: icons.viteIcon, title: "Vitejs" },
     { iconSrc: icons.reduxIcon, title: "Redux" },
     { iconSrc: icons.bootstrapIcon, title: "Bootstrap" },
     { iconSrc: icons.jestIcon, title: "Jest" },
+    { iconSrc: null, title: "XML"},
   ],
   backend: [
     { iconSrc: icons.javascriptIcon, title: "JavaScript" },
+    { iconSrc: null, title: "TypeScript" },
     { iconSrc: icons.nodejsIcon, title: "Node.js" },
     { iconSrc: icons.expressIcon, title: "Express.js" },
     { iconSrc: icons.jestIcon, title: "Jest" },
@@ -36,5 +39,10 @@ export const skillsData = {
   other: [
     { iconSrc: icons.pythonIcon, title: "Python" },
     { iconSrc: icons.javaIcon, title: "Java" },
+    { iconSrc: null, title: "C" },
+    { iconSrc: null, title: "C++" },
+    { iconSrc: null, title: "PHP"},
+    { iconSrc: null, title: "Perl"},
+    { iconSrc: null, title: "R"},
   ],
 };
