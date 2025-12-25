@@ -33,6 +33,13 @@ import webpackIcon from "../assets/icons/webpack.svg";
 import chatgptIcon from "../assets/icons/openai-icon.svg";
 import githubCopilotIcon from "../assets/icons/github-copilot.svg";
 import jestIcon from "../assets/icons/jest.svg";
+import typescriptIcon from "../assets/icons/typescript.svg";
+import xmlIcon from "../assets/icons/xml.svg";
+import cIcon from "../assets/icons/c-1.svg";
+import cPlusPlusIcon from "../assets/icons/c++.svg";
+import phpIcon from "../assets/icons/php.svg";
+import perlIcon from "../assets/icons/perl.svg";
+import rIcon from "../assets/icons/r-lang.svg";
 
 export {
   FaEnvelope,
@@ -67,4 +74,11 @@ export {
   chatgptIcon,
   githubCopilotIcon,
   jestIcon,
+  typescriptIcon,
+  xmlIcon,
+  cIcon,
+  cPlusPlusIcon,
+  phpIcon,
+  perlIcon,
+  rIcon
 };
